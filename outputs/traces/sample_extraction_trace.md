@@ -1,39 +1,50 @@
 # Multi-Agent Execution Trace: `MultiAgent_RFP_Extraction_Bid1`
-- **Run ID**: `run_4511edf1`
-- **Timestamp**: `2026-10-02T10:27:00.852092+00:00`
-- **Total Latency**: `342.41 ms`
-- **Total Tokens Consumed**: `4,142 tokens`
+- **Run ID**: `run_4edf6119`
+- **Timestamp**: `2026-10-04T08:02:02.185896+00:00`
+- **Total Latency**: `35784.11 ms`
 - **Total Spans**: `8`
 
 ## Execution Flow Hierarchy
 
 ```mermaid
-flowchart TD
-    Orchestrator["Orchestrator (root_orch)<br/>Plan: Parallel 4-Specialist Fan-Out"]
-    
-    subgraph ParallelSpecialists ["Phase 1: Parallel Domain Specialist Retrieval & Extraction"]
-        Orchestrator --> EntityAgent["EntitySpecialistAgent<br/>Tool: hybrid_search<br/>Chunks: 4 evaluated<br/>Tokens: 730 | Latency: 124.7ms"]
-        Orchestrator --> LogisticsAgent["LogisticsSpecialistAgent<br/>Tool: hybrid_search<br/>Chunks: 5 evaluated<br/>Tokens: 952 | Latency: 139.4ms"]
-        Orchestrator --> ProductAgent["ProductSpecialistAgent<br/>Tool: hybrid_search<br/>Chunks: 4 evaluated<br/>Tokens: 860 | Latency: 115.3ms"]
-        Orchestrator --> LegalAgent["LegalSpecialistAgent<br/>Tool: hybrid_search<br/>Chunks: 3 evaluated<br/>Tokens: 655 | Latency: 78.0ms"]
+sequenceDiagram
+    autonumber
+    participant O as Orchestrator
+    participant E as Entity Specialist
+    participant L as Logistics Specialist
+    participant P as Product Specialist
+    participant G as Legal Specialist
+    participant A as Addendum Reconciler
+    participant V as Validator
+    participant R as Retry Agent
+    participant S as Serializer
+
+    O->>E: Fan-Out Entity Fields
+    O->>L: Fan-Out Logistics Fields
+    O->>P: Fan-Out Product Fields
+    O->>G: Fan-Out Legal Fields
+    E-->>A: Return Extracted Fields
+    L-->>A: Return Extracted Fields
+    P-->>A: Return Extracted Fields
+    G-->>A: Return Extracted Fields
+    A->>V: Pass Reconciled Fields
+    alt Rejected Fields Exist
+        V->>R: Route to Retry Agent
+        R->>V: Re-Audit Repaired Fields
     end
-    
-    EntityAgent & LogisticsAgent & ProductAgent & LegalAgent --> Reconciler["Phase 2: AddendumReconciler<br/>Diff: Due Date -> July 9, 2024 via Addendum 2<br/>Tokens: 520 | Latency: 25.4ms"]
-    
-    Reconciler --> Validator["Phase 3: ValidatorCriticAgent<br/>Provenance Check: PASS (20/20 fields valid)<br/>Hallucination Check: PASS (0 ungrounded claims)<br/>Tokens: 425 | Latency: 7.7ms"]
-    
-    Validator --> Serializer["Phase 4: SerializationNode<br/>Output: Canonical 20-Field BidOutput JSON"]
+    V->>S: Validator Passed
+    S->>O: Final BidOutput
 ```
 
-## Span Details & Tool Invocations
+## Span Details
 
-| Step | Span Name | Agent Type | Status | Latency (ms) | Tokens | Tool Calls / Action | Key Outputs |
-|---|---|---|---|---|---|---|---|
-| 1 | `Orchestrator_FanOut` | Orchestrator | `success` | 1.20 | 160 | Dispatched 4 parallel workers | `target_bid: Bid1` |
-| 2 | `EntitySpecialistAgent` | Specialist | `success` | 124.73 | 730 | `hybrid_search("bid number JA-207652...")` | `bid_number`, `title`, `company_name`, `contact_info` |
-| 3 | `LogisticsSpecialistAgent` | Specialist | `success` | 139.35 | 952 | `hybrid_search("proposal due date deadline...")` | `due_date`, `pre_bid_meeting`, `delivery_date` |
-| 4 | `ProductSpecialistAgent` | Specialist | `success` | 115.27 | 860 | `hybrid_search("student staff computing devices...")` | `product`, `model_no`, `part_no`, `product_specification` |
-| 5 | `LegalSpecialistAgent` | Specialist | `success` | 78.00 | 655 | `hybrid_search("bid bond affidavits cooperative...")` | `bid_bond_requirement`, `additional_documentation` |
-| 6 | `AddendumReconciler` | Reconciliation | `success` | 25.40 | 520 | `chronological_diff()` | Due Date updated from June 25 -> July 9, 2024 (Addendum 2) |
-| 7 | `ValidatorCriticAgent` | Critic | `success` | 7.67 | 425 | `audit_evidence_citations()` | 20/20 passed, 0 rejected, 0 hallucinations |
-| 8 | `SerializationNode` | Output | `success` | 0.02 | 0 | `BidOutput.from_field_dict()` | 20 canonical fields serialized with metadata |
+| Step | Span Name | Status | Latency (ms) | Key Attributes |
+|---|---|---|---|---|
+| 1 | `Orchestrator_FanOut` | `success` | 0.01 | target_bid=Bid1 |
+| 2 | `EntitySpecialistAgent` | `success` | 7714.25 | fields_extracted=['bid_number', 'title', 'company_name', 'bid_summary'], chunks_evaluated=4 |
+| 3 | `LogisticsSpecialistAgent` | `success` | 13161.23 | fields_extracted=['due_date', 'bid_submission_type', 'term_of_bid', 'pre_bid_meeting', 'installation', 'delivery_date', 'payment_terms', 'contact_info'], chunks_evaluated=5 |
+| 4 | `ProductSpecialistAgent` | `success` | 8130.58 | fields_extracted=['mfg_for_registration', 'model_no', 'part_no', 'product', 'product_specification'], chunks_evaluated=0 |
+| 5 | `LegalSpecialistAgent` | `success` | 5323.92 | fields_extracted=['bid_bond_requirement', 'additional_documentation', 'contract_or_cooperative'], chunks_evaluated=1 |
+| 6 | `AddendumReconciler` | `success` | 1432.08 | addendum_changes_count=0, modified_fields=[] |
+| 7 | `ValidatorAgent` | `success` | 11.84 | is_valid=True, passed_fields_count=20, rejected_fields_count=0 |
+| 8 | `SerializationNode` | `success` | 0.05 | total_fields_serialized=20, provenance_verified=True |

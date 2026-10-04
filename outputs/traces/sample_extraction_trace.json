@@ -1,301 +1,133 @@
 {
-  "run_id": "run_4511edf1",
+  "run_id": "run_4edf6119",
   "workflow": "MultiAgent_RFP_Extraction_Bid1",
-  "created_at": "2026-10-02T10:27:00.852092+00:00",
-  "total_latency_ms": 342.41,
-  "total_tokens": 4142,
+  "created_at": "2026-10-04T08:02:02.185896+00:00",
+  "total_latency_ms": 35783.34,
   "spans_count": 8,
   "spans": [
     {
-      "span_id": "root_orch",
+      "span_id": "ecffb8d2",
       "parent_id": null,
       "name": "Orchestrator_FanOut",
-      "agent_type": "Orchestrator",
       "status": "success",
-      "latency_ms": 1.2,
-      "tokens": {
-        "prompt_tokens": 120,
-        "completion_tokens": 40,
-        "total_tokens": 160
-      },
+      "latency_ms": 0.01,
       "attributes": {
-        "target_bid": "Bid1",
-        "plan": "Dispatched 4 parallel domain specialist agents",
-        "parallel_agents": [
-          "EntitySpecialistAgent",
-          "LogisticsSpecialistAgent",
-          "ProductSpecialistAgent",
-          "LegalSpecialistAgent"
-        ]
+        "target_bid": "Bid1"
       },
       "events": [
         {
-          "timestamp": "2026-10-02T10:27:00.852125+00:00",
-          "event": "Dispatching 4 specialist agents in parallel across LangGraph state channels",
-          "payload": {"bid_id": "Bid1"}
+          "timestamp": "2026-10-04T08:02:02.185923+00:00",
+          "event": "Dispatching 4 specialist agents in parallel",
+          "payload": {}
         }
       ]
     },
     {
-      "span_id": "span_entity_01",
-      "parent_id": "root_orch",
+      "span_id": "f9d253cc",
+      "parent_id": null,
       "name": "EntitySpecialistAgent",
-      "agent_type": "Specialist",
       "status": "success",
-      "latency_ms": 124.73,
-      "tokens": {
-        "prompt_tokens": 642,
-        "completion_tokens": 88,
-        "total_tokens": 730
-      },
-      "tool_calls": [
-        {
-          "tool": "hybrid_search",
-          "query": "bid number JA-207652 issuing organization Dallas ISD title summary",
-          "top_k": 4,
-          "retrieved_chunks": [
-            {
-              "chunk_id": "bid1_html_c001",
-              "file_name": "BidNet_Direct_Bid1.html",
-              "page": 1,
-              "score": 0.942
-            },
-            {
-              "chunk_id": "bid1_rfp_c001",
-              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
-              "page": 1,
-              "score": 0.915
-            }
-          ]
-        }
-      ],
+      "latency_ms": 7714.25,
       "attributes": {
-        "evidence_source": "hybrid_search_tool",
-        "chunks_evaluated": 4,
         "fields_extracted": [
           "bid_number",
           "title",
           "company_name",
-          "contact_info",
           "bid_summary"
-        ]
+        ],
+        "chunks_evaluated": 4
       },
       "events": []
     },
     {
-      "span_id": "span_logistics_02",
-      "parent_id": "root_orch",
+      "span_id": "c58eb831",
+      "parent_id": null,
       "name": "LogisticsSpecialistAgent",
-      "agent_type": "Specialist",
       "status": "success",
-      "latency_ms": 139.35,
-      "tokens": {
-        "prompt_tokens": 810,
-        "completion_tokens": 142,
-        "total_tokens": 952
-      },
-      "tool_calls": [
-        {
-          "tool": "hybrid_search",
-          "query": "proposal due date submission deadline pre-bid meeting delivery schedule",
-          "top_k": 5,
-          "retrieved_chunks": [
-            {
-              "chunk_id": "bid1_rfp_c002",
-              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
-              "page": 2,
-              "score": 0.961
-            },
-            {
-              "chunk_id": "bid1_addendum2_c001",
-              "file_name": "Bid_1_Addendum_2.pdf",
-              "page": 1,
-              "score": 0.954
-            }
-          ]
-        }
-      ],
+      "latency_ms": 13161.23,
       "attributes": {
-        "evidence_source": "hybrid_search_tool",
-        "chunks_evaluated": 5,
         "fields_extracted": [
           "due_date",
           "bid_submission_type",
           "term_of_bid",
           "pre_bid_meeting",
-          "delivery_date"
-        ]
+          "installation",
+          "delivery_date",
+          "payment_terms",
+          "contact_info"
+        ],
+        "chunks_evaluated": 5
       },
       "events": []
     },
     {
-      "span_id": "span_product_03",
-      "parent_id": "root_orch",
+      "span_id": "719100ba",
+      "parent_id": null,
       "name": "ProductSpecialistAgent",
-      "agent_type": "Specialist",
       "status": "success",
-      "latency_ms": 115.27,
-      "tokens": {
-        "prompt_tokens": 745,
-        "completion_tokens": 115,
-        "total_tokens": 860
-      },
-      "tool_calls": [
-        {
-          "tool": "hybrid_search",
-          "query": "student staff computing devices laptop hardware specifications model part no",
-          "top_k": 4,
-          "retrieved_chunks": [
-            {
-              "chunk_id": "bid1_rfp_c008",
-              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
-              "page": 8,
-              "score": 0.928
-            },
-            {
-              "chunk_id": "bid1_rfp_c009",
-              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
-              "page": 9,
-              "score": 0.891
-            }
-          ]
-        }
-      ],
+      "latency_ms": 8130.58,
       "attributes": {
-        "evidence_source": "hybrid_search_tool",
-        "chunks_evaluated": 4,
         "fields_extracted": [
-          "product",
+          "mfg_for_registration",
           "model_no",
           "part_no",
-          "product_specification",
-          "installation"
-        ]
+          "product",
+          "product_specification"
+        ],
+        "chunks_evaluated": 0
       },
       "events": []
     },
     {
-      "span_id": "span_legal_04",
-      "parent_id": "root_orch",
+      "span_id": "8b82b7c8",
+      "parent_id": null,
       "name": "LegalSpecialistAgent",
-      "agent_type": "Specialist",
       "status": "success",
-      "latency_ms": 78.0,
-      "tokens": {
-        "prompt_tokens": 590,
-        "completion_tokens": 65,
-        "total_tokens": 655
-      },
-      "tool_calls": [
-        {
-          "tool": "hybrid_search",
-          "query": "bid bond requirements required affidavits conflict of interest purchasing cooperative payment terms",
-          "top_k": 3,
-          "retrieved_chunks": [
-            {
-              "chunk_id": "bid1_rfp_c014",
-              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
-              "page": 14,
-              "score": 0.935
-            },
-            {
-              "chunk_id": "bid1_rfp_c017",
-              "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
-              "page": 17,
-              "score": 0.902
-            }
-          ]
-        }
-      ],
+      "latency_ms": 5323.92,
       "attributes": {
-        "evidence_source": "hybrid_search_tool",
-        "chunks_evaluated": 3,
         "fields_extracted": [
           "bid_bond_requirement",
           "additional_documentation",
-          "mfg_for_registration",
-          "contract_or_cooperative",
-          "payment_terms"
-        ]
+          "contract_or_cooperative"
+        ],
+        "chunks_evaluated": 1
       },
       "events": []
     },
     {
-      "span_id": "span_addendum_05",
-      "parent_id": "root_orch",
+      "span_id": "f9015e49",
+      "parent_id": null,
       "name": "AddendumReconciler",
-      "agent_type": "Reconciliation",
       "status": "success",
-      "latency_ms": 25.4,
-      "tokens": {
-        "prompt_tokens": 450,
-        "completion_tokens": 70,
-        "total_tokens": 520
-      },
-      "tool_calls": [],
+      "latency_ms": 1432.08,
       "attributes": {
-        "action": "chronological_diff",
-        "addendum_changes_count": 2,
-        "modified_fields": [
-          {
-            "field": "due_date",
-            "original_value": "June 25, 2024 at 2:00 PM CST",
-            "reconciled_value": "July 9, 2024 at 2:00 PM CST",
-            "source": "Bid_1_Addendum_2.pdf (Page 1)",
-            "reason": "Addendum 2 explicitly extends submission deadline."
-          },
-          {
-            "field": "product_specification",
-            "original_value": "Base specs",
-            "reconciled_value": "Base specs + Addendum 1 Q&A vendor clarifications on device imaging",
-            "source": "Bid_1_Addendum_1.pdf (Page 1-2)",
-            "reason": "Clarified device deployment timelines."
-          }
-        ]
+        "addendum_changes_count": 0,
+        "modified_fields": []
       },
       "events": []
     },
     {
-      "span_id": "span_validator_06",
-      "parent_id": "root_orch",
-      "name": "ValidatorCriticAgent",
-      "agent_type": "Critic",
+      "span_id": "eff7c52b",
+      "parent_id": null,
+      "name": "ValidatorAgent",
       "status": "success",
-      "latency_ms": 7.67,
-      "tokens": {
-        "prompt_tokens": 380,
-        "completion_tokens": 45,
-        "total_tokens": 425
-      },
-      "tool_calls": [],
+      "latency_ms": 11.84,
       "attributes": {
         "is_valid": true,
         "passed_fields_count": 20,
-        "rejected_fields_count": 0,
-        "checks": {
-          "provenance_check": "PASS (20/20 fields cited to valid chunk IDs)",
-          "hallucination_filter": "PASS (0 ungrounded claims detected)",
-          "format_normalization": "PASS (ISO-8601 dates & canonical types)"
-        }
+        "rejected_fields_count": 0
       },
       "events": []
     },
     {
-      "span_id": "span_serialize_07",
-      "parent_id": "root_orch",
+      "span_id": "1a121f7d",
+      "parent_id": null,
       "name": "SerializationNode",
-      "agent_type": "Output",
       "status": "success",
-      "latency_ms": 0.02,
-      "tokens": {
-        "prompt_tokens": 0,
-        "completion_tokens": 0,
-        "total_tokens": 0
-      },
+      "latency_ms": 0.05,
       "attributes": {
         "total_fields_serialized": 20,
-        "provenance_verified": true,
-        "output_format": "Canonical BidOutput JSON Schema"
+        "provenance_verified": true
       },
       "events": []
     }

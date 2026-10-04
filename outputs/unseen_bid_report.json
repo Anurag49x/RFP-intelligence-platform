@@ -5,20 +5,20 @@
     "status": "success",
     "bid_id": "UnseenBid_Metropolis",
     "folder_path": "C:\\Users\\Anurag\\Desktop\\Assignment\\data\\unseen_bid",
-    "files_new": 0,
-    "files_unchanged": 1,
-    "files_modified": 3,
+    "files_new": 4,
+    "files_unchanged": 0,
+    "files_modified": 0,
     "files_deleted": 0,
-    "chunks_added": 3,
-    "chunks_removed": 3,
-    "chunks_created": 3,
-    "embeddings_created": 3,
-    "embeddings_requested": 3,
-    "embedding_cache_hits": 0,
-    "embeddings_cached": 0,
-    "vectors_upserted": 3,
-    "bm25_indexed_chunks": 207,
-    "elapsed_seconds": 0.66,
+    "chunks_added": 4,
+    "chunks_removed": 0,
+    "chunks_created": 4,
+    "embeddings_created": 0,
+    "embeddings_requested": 0,
+    "embedding_cache_hits": 4,
+    "embeddings_cached": 4,
+    "vectors_upserted": 4,
+    "bm25_indexed_chunks": 252,
+    "elapsed_seconds": 0.62,
     "errors": []
   },
   "reconciled_changes": [
@@ -108,13 +108,13 @@
   "sample_qa": [
     {
       "question": "What is the final deadline for the bid?",
-      "answer": "Based on City_Infrastructure_RFP.pdf (Page 1): CITY OF METROPOLIS - REQUEST FOR PROPOSAL\nSolicitation Number: CIT-2024-9988\nTitle: Municipal Mobile Workstation Refresh 2024\nAgency: Metropolis Department of Information Technology\n1. PROPOSAL SUBMIS...",
-      "citations_count": 1
+      "answer": "CITY OF METROPOLIS - REQUEST FOR PROPOSAL\nSolicitation Number: CIT-2024-9988\nTitle: Municipal Mobile Workstation Refresh 2024\nAgency: Metropolis Department of Information Technology\n1. PROPOSAL SUBMISSION SCHEDULE:\nProposals are due on November 15, 2024 at 3:00 PM EST.\nSubmission Type: Electronic su",
+      "citations_count": 2
     },
     {
       "question": "What processor is required for the workstations?",
-      "answer": "The specified processor is Intel Core Ultra 5 125U (12 MB cache, 12 cores, 14 threads, up to 4.3 GHz Turbo).",
-      "citations_count": 1
+      "answer": "TECHNICAL SPECIFICATIONS - CIT-2024-9988\nProduct Name: Mobile Engineering Workstation\nProcessor: Intel Core i7-13850HX vPro Processor\nRAM: 32 GB DDR5 5600MHz\nStorage: 1 TB PCIe NVMe SSD\nGraphics: NVIDIA RTX 2000 Ada Generation 8GB GDDR6\nWarranty: 3-Year Premier Support Plus with Keep Your Hard Drive",
+      "citations_count": 2
     }
   ],
   "status": "PASSED"

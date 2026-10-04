@@ -151,15 +151,25 @@
     "question": "Is a bid bond required, and if so, how much?",
     "bid_id": "Bid1",
     "intent": "LEGAL_REQUIREMENT",
-    "answer": "A bid bond is not required for this procurement. The mandatory submittal requirements listed in the solicitation include Form 1295 (Certificate of Interested Parties) and agreement to General Terms, with no bid bond or security mandated.",
+    "answer": "No specific bid bond percentage or surety submittal is required for this computing hardware solicitation. The RFP reserves that insurance and bond requirements apply only as enumerated elsewhere in District contract documents, with mandatory submittals limited to Form 1295, W-9, and M/WBE compliance documentation.",
     "citations": [
       {
         "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
-        "page_number": 14,
-        "chunk_id": "chk_Bid1_p14_0028_ab8f36bd1b29",
-        "text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 14 of 40\nREFERENCES\nType\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nProvide your answer below\nPROPOSAL REQUIREMENT - The following\nattributes require a response\nGENERAL TERMS AND CONDITIONS\nThe offeror agrees to the General Terms and Conditions and any Special Terms and Conditions (if\napplicable) of this solicitation and in case of conflict with other documents provided by the Offeror, these\nGeneral and/or Special Terms and Conditions take precedence and prevail unless Offeror specifically\nrequests a variance and the District agree to such changes in writing. General Terms and Conditions are\nposted on the Dallas ISD website at https://www.dallasisd.org/Page/81178.\nDoes the Vendor agree?\n-----------------------------------------------------------------------------------------------------------------------------------------------\nType\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nCircle one from the response values below:\nYes - I agree\nNo - I Do not agree . The District shall consider a NO response a basis for non-award and/or cancellation\nand/or termination of any award\nFORM 1295 - CERTIFICATE OF INTERESTED PARTIES\nPursuant HB 1295 (2015), the addition of section 2252.908 of the Government Code, all awarded vendors\nmust fill out electronically, with the Texas Ethics Commission's online filing application\nhttps://www.ethics.state.tx.us/whatsnew/elf_info_form1295.htm. The law states that a governmental entity or\nstate may not enter into certain contracts with a business entity unless the business entity submits a\ndisclosure of interested parties (Form 1295) to the governmental entity or state agency at the time the\nbusiness entity submits the signed contract to the governmental entity or state agency. The Texas Ethics\nCommission has adopted rules requiring the business to file Form 1295 electronically with the Commission.\nThis form must then be signed and attached to the Response Attachments, prior to any business\ntransaction. If your company is publicly traded you do not need to complete this form.\nPlease note the following helpful hints and instructions in completing the form:\nBox 1: Please enter the business entity filing form, city, state, and country of the business entity's place of\nbusiness\nBox 2: Please enter Dallas ISD\nBox 3: Please use Dallas ISD's. solicitation (bid) number as the identification number being requested and\nthe contract name as a description of goods or services.\nBox 6: Please complete and sign, then attach the completed 1295 form with the bid response.\nPlease acknowledge that you have read and understood that the district can not do business with your\ncompany without the submittal of this form. If your company is \"Publicly Traded\" you do not need to\ncomplete this form.\nDoes the Vendor agree?\n-----------------------------------------------------------------------------------------------------------------------------------------------\nType\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026..\nCircle one from the response values below:\nYes - I agree\nNo - I Do not agree . The District shall consider a NO response a basis for non-award and/or cancellation\nand/or termination of any award\nPublicly Traded",
+        "page_number": 9,
+        "chunk_id": "chk_Bid1_p9_0018_4bd6c8cb7891",
+        "text": "The Offeror must comply with any insurance, bid bond, or liability requirements of the District as noted elsewhere in this solicitation document. The Offeror must include pertinent literature/documentation for the proposed products/goods or services.",
         "bid_id": "Bid1",
-        "section": null,
+        "section": "INSTRUCTION AND REQUIREMENTS FOR OFFER SUBMITTAL",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page_number": 17,
+        "chunk_id": "chk_Bid1_p17_0041_07ad0a0e1bfe",
+        "text": "INSURANCE AND/OR BONDS\nInsurance and/or bond requirements are enumerated elsewhere in Contract documents. Submission of a certificate of insurance/bond by the undersigned (or an agent/broker on behalf of the undersigned) represents that the coverages and perils covered by the insurance/bond meet or exceed the requirements of the solicitation document and/or subsequent contract.",
+        "bid_id": "Bid1",
+        "section": "PROPOSAL REQUIREMENT",
         "document_type": "rfp",
         "addendum_number": null
       }
@@ -285,25 +295,25 @@
     "question": "What delivery time is required for Bid2?",
     "bid_id": "Bid2",
     "intent": "SINGLE_BID",
-    "answer": "The required line item delivery due date is 06/10/2024 to the MD State Treasurer's Office (80 Calvert Street, Annapolis, MD), with warranty deliverables beginning on the Date of Delivery.",
+    "answer": "Delivery of equipment is required within 45 days of contract award to the MD State Treasurer's Office (80 Calvert Street, Annapolis, MD 21401). In addition, warranty deliverables commence upon the Date of Delivery.",
     "citations": [
       {
         "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
-        "page_number": 3,
-        "chunk_id": "chk_Bid2_p3_0006_3ac1a46d0459",
-        "text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | FA II - Printers and Associated Peripherals |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  | (Provide product specifications below. If some or all specifications are unknown, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  | Master Contractors may propose products based on a detailed description in the |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  | Business Need / Required Functionality field*) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| *Business Need / Required Functionality | *Business Need / |  |  | Office is in need of a refresh of laptops and must acquire enough laptops to accommodate MD529 employees who have been included in our staff as of June 1, 2023. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  | Required Functionality |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n| Product Name |  | Product Description |  |  |  |  | Model # |  |  |  |  |  | Qty |  |  |  |  | Due Date |  |\n|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | mm/dd/yyyy |  |\n| 1. SI# CC7802 Dell Latitude 5550 |  | SI# CC7802 Dell Latitude 5550 *Laptops must be Microsoft Copilot ready* |  |  |  |  | SI# CC7802 |  |  |  |  | 30 |  |  |  |  | 06/10/2024 |  |  |\n| 2. Dell Thunderbolt 4 Dock \u2013 WD22TB4 |  | Dell Thunderbolt 4 Dock \u2013 WD22TB4 |  |  |  |  | WD22TB4 |  |  |  |  | 30 |  |  |  |  | 06/10/2024 |  |  |",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0003_b515705bf4d3",
+        "text": "| Security Requirements (if applicable): |  | 1. The Department reserves the right to purchase more or less than the specified quantity to the extent limited by funding... 9. Delivery within 45 days of Award. |  |",
         "bid_id": "Bid2",
-        "section": "\u2013 Agency Point of Contact (POC) Information",
+        "section": "Section 2 - Security Requirements",
         "document_type": "rfp",
         "addendum_number": null
       },
       {
         "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
-        "page_number": 3,
-        "chunk_id": "chk_Bid2_p3_0007_94ae7041e4e1",
-        "text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | FA V - Manufacturer\u2019s Extended Warranty |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  | (Provide a detailed description of warranty requirements and deliverables) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  |  |  |  |  |  | Deliverables |  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  | Warranty Requirements |  |  |  |  |  |  |  |  |  | Start Date |  |  |  |  | End Date |  |  |  |\n|  |  |  |  |  |  |  |  |  |  |  | mm/dd/yyyy |  |  |  |  | mm/dd/yyyy |  |  |  |\n| 1. Dell Limited Hardware Warranty Extended for all machines purchased - 3 Years |  |  |  |  |  | Warranty certificate or Affidavit to be presented upon award |  |  |  | Date of Delivery |  |  |  |  | 3 years following the date of delivery |  |  |  |  |\n|  | Section 5 \u2013 Evaluation Criteria \u2013 Technical Proposal |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n|  | (Provide a list of evaluation criteria in descending order of importance) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0001_cca549114327",
+        "text": "| Place of Performance: | Place of Performance: |  | MD State Treasurer's Office 80 Clavert Street Annapolis MD 21401 |  |",
         "bid_id": "Bid2",
-        "section": "\u2013 Agency Point of Contact (POC) Information",
+        "section": "Section 1 - General Information",
         "document_type": "rfp",
         "addendum_number": null
       }

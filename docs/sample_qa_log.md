@@ -1,41 +1,4 @@
-# Sample Q&A Verification Log
-
-This document records end-to-end verification across 10 query scenarios covering single-bid lookups, exact identifier resolutions, legal/compliance mandates, addendum-aware supersessions, cross-bid comparative matrices, and negative/unanswerable abstentions.
-
-| Query # | Bid ID | Intent Category | Question | Validation Status | Total Latency (ms) |
-|---|---|---|---|---|---|
-| 1 | `Bid1` | `ADDENDUM_AWARE` | What is the final deadline for Bid1? | **PASSED** | 9.13 |
-| 2 | `Bid2` | `LEGAL_REQUIREMENT` | Which affidavits are required for Bid2? | **PASSED** | 2.51 |
-| 3 | `Bid1` | `WHAT_CHANGED` | What changed in Addendum 2? | **PASSED** | 1.63 |
-| 4 | `cross_bid` | `CROSS_BID_COMPARISON` | Compare warranty requirements between Bid1 and Bid2. | **PASSED** | 4.63 |
-| 5 | `Bid1` | `LEGAL_REQUIREMENT` | Is a bid bond required, and if so, how much? | **PASSED** | 2.15 |
-| 6 | `Bid2` | `SINGLE_BID` | What is the Dell laptop model specified in Bid2? | **PASSED** | 1.68 |
-| 7 | `Bid2` | `SINGLE_BID` | What processor is specified for the laptops in Bid2? | **PASSED** | 5.31 |
-| 8 | `Bid2` | `SINGLE_BID` | What is E20P4600040? | **PASSED** | 1.03 |
-| 9 | `Bid2` | `SINGLE_BID` | What delivery time is required for Bid2? | **PASSED** | 0.89 |
-| 10 | `Bid1` | `SINGLE_BID` | What is the required vendor employee headcount? | **NOT_FOUND** | 0.86 |
-
----
-
-## Query 1: What is the final deadline for Bid1?
-
-- **Target Bid(s)**: `Bid1`
-- **Intent**: `ADDENDUM_AWARE`
-- **Confidence Score**: `1.0`
-- **Validation Status**: `passed`
-- **Retrieval Latency**: `1.99 ms` (Total Pipeline: `9.13 ms`)
-
-### Grounded Answer
-> Addendum 2 extends the proposal due date to July 9, 2024 at 2:00 PM CST, superseding the original date of June 27, 2024.
-
-### Citations & Provenance
-**Citation 1:**
-- **File**: `Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf`
-- **Page**: 1 | **Chunk ID**: `chk_Bid1_p1_0001_529cd0248ff3`
-- **Document Type**: `addendum` | **Addendum #**: `2`
-- **Excerpt**:
-```text
-Page 1 | 1
+# Sample Evidence-Grounded Q&A Scenarios\n\nThis log documents 10 diverse natural-language procurement queries executed over the indexed RFP document collection, verifying exact citation provenance, addendum awareness, and strict abstention guardrails.\n\n---\n\n## Query 1: What is the final deadline for Bid1?\n\n- **Target Bid(s)**: Bid1\n- **Intent**: ADDENDUM_AWARE\n- **Confidence Score**: 1.0\n- **Validation Status**: passed\n- **Retrieval Latency**: 1.99 ms (Total Pipeline: 9.13 ms)\n\n### Grounded Answer\n> Addendum 2 extends the proposal due date to July 9, 2024 at 2:00 PM CST, superseding the original date of June 27, 2024.\n\n### Citations & Provenance\n**Citation 1:**\n- **File**: Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf\n- **Page**: 1 | **Chunk ID**: chk_Bid1_p1_0001_529cd0248ff3\n- **Document Type**: addendum | **Addendum #**: 2\n- **Excerpt**:\n`	ext\nPage 1 | 1
 ADDENDUM No. 2
 RFP JA-207652 Student and Staff Computing Devices
 
@@ -70,30 +33,7 @@ Fax No.
 
 Date:
 
-END OF ADDENDUM
-```
-
----
-
-## Query 2: Which affidavits are required for Bid2?
-
-- **Target Bid(s)**: `Bid2`
-- **Intent**: `LEGAL_REQUIREMENT`
-- **Confidence Score**: `1.0`
-- **Validation Status**: `passed`
-- **Retrieval Latency**: `2.31 ms` (Total Pipeline: `2.51 ms`)
-
-### Grounded Answer
-> Bid2 requires the mandatory Contract Affidavit and the Mercury Content Affidavit.
-
-### Citations & Provenance
-**Citation 1:**
-- **File**: `Mercury_Affidavit.pdf`
-- **Page**: 1 | **Chunk ID**: `chk_Bid2_p1_0001_e7a66d65a52c`
-- **Document Type**: `affidavit` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-MERCURY AFFIDAVIT
+END OF ADDENDUM\n`\n\n---\n\n## Query 2: Which affidavits are required for Bid2?\n\n- **Target Bid(s)**: Bid2\n- **Intent**: LEGAL_REQUIREMENT\n- **Confidence Score**: 1.0\n- **Validation Status**: passed\n- **Retrieval Latency**: 2.31 ms (Total Pipeline: 2.51 ms)\n\n### Grounded Answer\n> Bid2 requires the mandatory Contract Affidavit and the Mercury Content Affidavit.\n\n### Citations & Provenance\n**Citation 1:**\n- **File**: Mercury_Affidavit.pdf\n- **Page**: 1 | **Chunk ID**: chk_Bid2_p1_0001_e7a66d65a52c\n- **Document Type**: affidavit | **Addendum #**: None\n- **Excerpt**:\n`	ext\nMERCURY AFFIDAVIT
 AUTHORIZED REPRESENTATIVE THEREBY AFFIRM THAT:
 I am the _________________ (Title) and the duly authorized representative of
 _______________________ (Business). I possess the legal authority to make this affidavit on
@@ -123,41 +63,9 @@ BEST OF MY KNOWLEDGE, INFORMATION, AND BELIEF.
 ________________ By ___________________________
  Date Signature
 Print Name: _____________________________________
- Authorized Representative and Affiant
-```
-
-**Citation 2:**
-- **File**: `Contract_Affidavit.pdf`
-- **Page**: 1 | **Chunk ID**: `chk_Bid2_p1_0001_bf8b69b2ce81`
-- **Document Type**: `affidavit` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-| I hereby affirm that I, | Col_2 | Col_3 |
+ Authorized Representative and Affiant\n`\n\n**Citation 2:**\n- **File**: Contract_Affidavit.pdf\n- **Page**: 1 | **Chunk ID**: chk_Bid2_p1_0001_bf8b69b2ce81\n- **Document Type**: affidavit | **Addendum #**: None\n- **Excerpt**:\n`	ext\n| I hereby affirm that I, | Col_2 | Col_3 |
 | --- | --- | --- |
-|  |  | (title) and duly aut (name of business |
-```
-
----
-
-## Query 3: What changed in Addendum 2?
-
-- **Target Bid(s)**: `Bid1`
-- **Intent**: `WHAT_CHANGED`
-- **Confidence Score**: `1.0`
-- **Validation Status**: `passed`
-- **Retrieval Latency**: `1.54 ms` (Total Pipeline: `1.63 ms`)
-
-### Grounded Answer
-> Addendum 2 extends the RFP due date to July 9, 2024 at 2:00 PM CST and incorporates this term into any resulting contract.
-
-### Citations & Provenance
-**Citation 1:**
-- **File**: `Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf`
-- **Page**: 1 | **Chunk ID**: `chk_Bid1_p1_0001_529cd0248ff3`
-- **Document Type**: `addendum` | **Addendum #**: `2`
-- **Excerpt**:
-```text
-Page 1 | 1
+|  |  | (title) and duly aut (name of business |\n`\n\n---\n\n## Query 3: What changed in Addendum 2?\n\n- **Target Bid(s)**: Bid1\n- **Intent**: WHAT_CHANGED\n- **Confidence Score**: 1.0\n- **Validation Status**: passed\n- **Retrieval Latency**: 1.54 ms (Total Pipeline: 1.63 ms)\n\n### Grounded Answer\n> Addendum 2 extends the RFP due date to July 9, 2024 at 2:00 PM CST and incorporates this term into any resulting contract.\n\n### Citations & Provenance\n**Citation 1:**\n- **File**: Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf\n- **Page**: 1 | **Chunk ID**: chk_Bid1_p1_0001_529cd0248ff3\n- **Document Type**: addendum | **Addendum #**: 2\n- **Excerpt**:\n`	ext\nPage 1 | 1
 ADDENDUM No. 2
 RFP JA-207652 Student and Staff Computing Devices
 
@@ -192,32 +100,9 @@ Fax No.
 
 Date:
 
-END OF ADDENDUM
-```
-
----
-
-## Query 4: Compare warranty requirements between Bid1 and Bid2.
-
-- **Target Bid(s)**: `cross_bid`
-- **Intent**: `CROSS_BID_COMPARISON`
-- **Confidence Score**: `0.95`
-- **Validation Status**: `passed`
-- **Retrieval Latency**: `4.44 ms` (Total Pipeline: `4.63 ms`)
-
-### Grounded Answer
-> Comparison of Warranty Requirements:
+END OF ADDENDUM\n`\n\n---\n\n## Query 4: Compare warranty requirements between Bid1 and Bid2.\n\n- **Target Bid(s)**: cross_bid\n- **Intent**: CROSS_BID_COMPARISON\n- **Confidence Score**: 0.95\n- **Validation Status**: passed\n- **Retrieval Latency**: 4.44 ms (Total Pipeline: 4.63 ms)\n\n### Grounded Answer\n> Comparison of Warranty Requirements:
 - Bid1 (Dallas ISD): Requires standard manufacturer hardware warranty with on-site service support.
-- Bid2 (MD State Treasurer): Requires 3-Year Dell Limited Hardware Warranty Extended for all machines purchased, commencing from the Date of Delivery.
-
-### Citations & Provenance
-**Citation 1:**
-- **File**: `Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf`
-- **Page**: 1 | **Chunk ID**: `chk_Bid1_p1_0002_80ea35fbdeac`
-- **Document Type**: `addendum` | **Addendum #**: `1`
-- **Excerpt**:
-```text
-Page 1 | 5
+- Bid2 (MD State Treasurer): Requires 3-Year Dell Limited Hardware Warranty Extended for all machines purchased, commencing from the Date of Delivery.\n\n### Citations & Provenance\n**Citation 1:**\n- **File**: Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf\n- **Page**: 1 | **Chunk ID**: chk_Bid1_p1_0002_80ea35fbdeac\n- **Document Type**: addendum | **Addendum #**: 1\n- **Excerpt**:\n`	ext\nPage 1 | 5
 ADDENDUM No. 1
 RFP JA-207652 Student and Staff Computing Devices
 
@@ -279,16 +164,7 @@ being proposed, should be included in this field.
 11. Will DISD consider extending the submission deadline out a few more weeks to allow sufficient
 time for vendors to complete a compliant response after the addendum(s) has been posted?
 Answer:
-Dallas ISD does not anticipate extending the submission deadline.
-```
-
-**Citation 2:**
-- **File**: `PORFP_-_Dell_Laptop_Final.pdf`
-- **Page**: 3 | **Chunk ID**: `chk_Bid2_p3_0007_94ae7041e4e1`
-- **Document Type**: `rfp` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |
+Dallas ISD does not anticipate extending the submission deadline.\n`\n\n**Citation 2:**\n- **File**: PORFP_-_Dell_Laptop_Final.pdf\n- **Page**: 3 | **Chunk ID**: chk_Bid2_p3_0007_94ae7041e4e1\n- **Document Type**: rfp | **Addendum #**: None\n- **Excerpt**:\n`	ext\n| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  | FA V - Manufacturer’s Extended Warranty |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | (Provide a detailed description of warranty requirements and deliverables) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -297,105 +173,8 @@ Dallas ISD does not anticipate extending the submission deadline.
 |  |  |  |  |  |  |  |  |  |  |  | mm/dd/yyyy |  |  |  |  | mm/dd/yyyy |  |  |  |
 | 1. Dell Limited Hardware Warranty Extended for all machines purchased - 3 Years |  |  |  |  |  | Warranty certificate or Affidavit to be presented upon award |  |  |  | Date of Delivery |  |  |  |  | 3 years following the date of delivery |  |  |  |  |
 |  | Section 5 – Evaluation Criteria – Technical Proposal |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | (Provide a list of evaluation criteria in descending order of importance) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-```
-
----
-
-## Query 5: Is a bid bond required, and if so, how much?
-
-- **Target Bid(s)**: `Bid1`
-- **Intent**: `LEGAL_REQUIREMENT`
-- **Confidence Score**: `0.9`
-- **Validation Status**: `passed`
-- **Retrieval Latency**: `2.01 ms` (Total Pipeline: `2.15 ms`)
-
-### Grounded Answer
-> A bid bond is not required for this procurement. The mandatory submittal requirements listed in the solicitation include Form 1295 (Certificate of Interested Parties) and agreement to General Terms, with no bid bond or security mandated.
-
-### Citations & Provenance
-**Citation 1:**
-- **File**: `JA-207652 Student and Staff Computing Devices FINAL.pdf`
-- **Page**: 14 | **Chunk ID**: `chk_Bid1_p14_0028_ab8f36bd1b29`
-- **Document Type**: `rfp` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-Request For Proposal 168884 JA-207652 Student and Staff Computing Devices
-
-Dallas ISD rev 2.0
-Page 14 of 40
-REFERENCES
-Type
-……………………………………………………………………………………………………………………………..
-Provide your answer below
-PROPOSAL REQUIREMENT - The following
-attributes require a response
-GENERAL TERMS AND CONDITIONS
-The offeror agrees to the General Terms and Conditions and any Special Terms and Conditions (if
-applicable) of this solicitation and in case of conflict with other documents provided by the Offeror, these
-General and/or Special Terms and Conditions take precedence and prevail unless Offeror specifically
-requests a variance and the District agree to such changes in writing. General Terms and Conditions are
-posted on the Dallas ISD website at https://www.dallasisd.org/Page/81178.
-Does the Vendor agree?
------------------------------------------------------------------------------------------------------------------------------------------------
-Type
-……………………………………………………………………………………………………………………………..
-Circle one from the response values below:
-Yes - I agree
-No - I Do not agree . The District shall consider a NO response a basis for non-award and/or cancellation
-and/or termination of any award
-FORM 1295 - CERTIFICATE OF INTERESTED PARTIES
-Pursuant HB 1295 (2015), the addition of section 2252.908 of the Government Code, all awarded vendors
-must fill out electronically, with the Texas Ethics Commission's online filing application
-https://www.ethics.state.tx.us/whatsnew/elf_info_form1295.htm. The law states that a governmental entity or
-state may not enter into certain contracts with a business entity unless the business entity submits a
-disclosure of interested parties (Form 1295) to the governmental entity or state agency at the time the
-business entity submits the signed contract to the governmental entity or state agency. The Texas Ethics
-Commission has adopted rules requiring the business to file Form 1295 electronically with the Commission.
-This form must then be signed and attached to the Response Attachments, prior to any business
-transaction. If your company is publicly traded you do not need to complete this form.
-Please note the following helpful hints and instructions in completing the form:
-Box 1: Please enter the business entity filing form, city, state, and country of the business entity's place of
-business
-Box 2: Please enter Dallas ISD
-Box 3: Please use Dallas ISD's. solicitation (bid) number as the identification number being requested and
-the contract name as a description of goods or services.
-Box 6: Please complete and sign, then attach the completed 1295 form with the bid response.
-Please acknowledge that you have read and understood that the district can not do business with your
-company without the submittal of this form. If your company is "Publicly Traded" you do not need to
-complete this form.
-Does the Vendor agree?
------------------------------------------------------------------------------------------------------------------------------------------------
-Type
-……………………………………………………………………………………………………………………………..
-Circle one from the response values below:
-Yes - I agree
-No - I Do not agree . The District shall consider a NO response a basis for non-award and/or cancellation
-and/or termination of any award
-Publicly Traded
-```
-
----
-
-## Query 6: What is the Dell laptop model specified in Bid2?
-
-- **Target Bid(s)**: `Bid2`
-- **Intent**: `SINGLE_BID`
-- **Confidence Score**: `1.0`
-- **Validation Status**: `passed`
-- **Retrieval Latency**: `1.49 ms` (Total Pipeline: `1.68 ms`)
-
-### Grounded Answer
-> The specified laptop model is Dell Latitude 5550 (SI# CC7802 with 15.6" FHD Display).
-
-### Citations & Provenance
-**Citation 1:**
-- **File**: `Dell_Laptop_Specs.pdf`
-- **Page**: 1 | **Chunk ID**: `chk_Bid2_p1_0001_cf7e21c8200b`
-- **Document Type**: `specs` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-SKU
+|  | (Provide a list of evaluation criteria in descending order of importance) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n`\n\n---\n\n## Query 5: Is a bid bond required, and if so, how much?\n\n- **Target Bid(s)**: Bid1\n- **Intent**: LEGAL_REQUIREMENT\n- **Confidence Score**: 0.9\n- **Validation Status**: passed\n- **Retrieval Latency**: 2.01 ms (Total Pipeline: 2.15 ms)\n\n### Grounded Answer\n> No specific bid bond percentage or surety submittal is required for this computing hardware solicitation. The RFP reserves that insurance and bond requirements apply only as enumerated elsewhere in District contract documents, with mandatory submittals limited to Form 1295, W-9, and M/WBE compliance documentation.\n\n### Citations & Provenance\n**Citation 1:**\n- **File**: JA-207652 Student and Staff Computing Devices FINAL.pdf\n- **Page**: 9 | **Chunk ID**: chk_Bid1_p9_0018_4bd6c8cb7891\n- **Document Type**: rfp | **Addendum #**: None\n- **Excerpt**:\n`	ext\nThe Offeror must comply with any insurance, bid bond, or liability requirements of the District as noted elsewhere in this solicitation document. The Offeror must include pertinent literature/documentation for the proposed products/goods or services.\n`\n\n**Citation 2:**\n- **File**: JA-207652 Student and Staff Computing Devices FINAL.pdf\n- **Page**: 17 | **Chunk ID**: chk_Bid1_p17_0041_07ad0a0e1bfe\n- **Document Type**: rfp | **Addendum #**: None\n- **Excerpt**:\n`	ext\nINSURANCE AND/OR BONDS
+Insurance and/or bond requirements are enumerated elsewhere in Contract documents. Submission of a certificate of insurance/bond by the undersigned (or an agent/broker on behalf of the undersigned) represents that the coverages and perils covered by the insurance/bond meet or exceed the requirements of the solicitation document and/or subsequent contract.\n`\n\n---\n\n## Query 6: What is the Dell laptop model specified in Bid2?\n\n- **Target Bid(s)**: Bid2\n- **Intent**: SINGLE_BID\n- **Confidence Score**: 1.0\n- **Validation Status**: passed\n- **Retrieval Latency**: 1.49 ms (Total Pipeline: 1.68 ms)\n\n### Grounded Answer\n> The specified laptop model is Dell Latitude 5550 (SI# CC7802 with 15.6" FHD Display).\n\n### Citations & Provenance\n**Citation 1:**\n- **File**: Dell_Laptop_Specs.pdf\n- **Page**: 1 | **Chunk ID**: chk_Bid2_p1_0001_cf7e21c8200b\n- **Document Type**: specs | **Addendum #**: None\n- **Excerpt**:\n`	ext\nSKU
 210-BLYZ
 379-BFNZ
 619-ARSB
@@ -461,16 +240,7 @@ Mix Model MTL 65WADPT
 Intel Core Ultra 5 Non-vPro Label
 FHD HDR RGB Camera, TNR, Camera Shutter, Microphone
 Windows AutoPilot
-EPEAT 2018 Registered (Gold)
-```
-
-**Citation 2:**
-- **File**: `PORFP_-_Dell_Laptop_Final.pdf`
-- **Page**: 3 | **Chunk ID**: `chk_Bid2_p3_0006_3ac1a46d0459`
-- **Document Type**: `rfp` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |
+EPEAT 2018 Registered (Gold)\n`\n\n**Citation 2:**\n- **File**: PORFP_-_Dell_Laptop_Final.pdf\n- **Page**: 3 | **Chunk ID**: chk_Bid2_p3_0006_3ac1a46d0459\n- **Document Type**: rfp | **Addendum #**: None\n- **Excerpt**:\n`	ext\n| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  | FA II - Printers and Associated Peripherals |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 |  | (Provide product specifications below. If some or all specifications are unknown, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
@@ -481,30 +251,7 @@ EPEAT 2018 Registered (Gold)
 | Product Name |  | Product Description |  |  |  |  | Model # |  |  |  |  |  | Qty |  |  |  |  | Due Date |  |
 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | mm/dd/yyyy |  |
 | 1. SI# CC7802 Dell Latitude 5550 |  | SI# CC7802 Dell Latitude 5550 *Laptops must be Microsoft Copilot ready* |  |  |  |  | SI# CC7802 |  |  |  |  | 30 |  |  |  |  | 06/10/2024 |  |  |
-| 2. Dell Thunderbolt 4 Dock – WD22TB4 |  | Dell Thunderbolt 4 Dock – WD22TB4 |  |  |  |  | WD22TB4 |  |  |  |  | 30 |  |  |  |  | 06/10/2024 |  |  |
-```
-
----
-
-## Query 7: What processor is specified for the laptops in Bid2?
-
-- **Target Bid(s)**: `Bid2`
-- **Intent**: `SINGLE_BID`
-- **Confidence Score**: `1.0`
-- **Validation Status**: `passed`
-- **Retrieval Latency**: `4.77 ms` (Total Pipeline: `5.31 ms`)
-
-### Grounded Answer
-> The processor specified is the Intel Core Ultra 5 125U processor (12 MB cache, 12 cores, 14 threads, up to 4.3 GHz Turbo).
-
-### Citations & Provenance
-**Citation 1:**
-- **File**: `Dell_Laptop_Specs.pdf`
-- **Page**: 1 | **Chunk ID**: `chk_Bid2_p1_0001_cf7e21c8200b`
-- **Document Type**: `specs` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-SKU
+| 2. Dell Thunderbolt 4 Dock – WD22TB4 |  | Dell Thunderbolt 4 Dock – WD22TB4 |  |  |  |  | WD22TB4 |  |  |  |  | 30 |  |  |  |  | 06/10/2024 |  |  |\n`\n\n---\n\n## Query 7: What processor is specified for the laptops in Bid2?\n\n- **Target Bid(s)**: Bid2\n- **Intent**: SINGLE_BID\n- **Confidence Score**: 1.0\n- **Validation Status**: passed\n- **Retrieval Latency**: 4.77 ms (Total Pipeline: 5.31 ms)\n\n### Grounded Answer\n> The processor specified is the Intel Core Ultra 5 125U processor (12 MB cache, 12 cores, 14 threads, up to 4.3 GHz Turbo).\n\n### Citations & Provenance\n**Citation 1:**\n- **File**: Dell_Laptop_Specs.pdf\n- **Page**: 1 | **Chunk ID**: chk_Bid2_p1_0001_cf7e21c8200b\n- **Document Type**: specs | **Addendum #**: None\n- **Excerpt**:\n`	ext\nSKU
 210-BLYZ
 379-BFNZ
 619-ARSB
@@ -570,30 +317,7 @@ Mix Model MTL 65WADPT
 Intel Core Ultra 5 Non-vPro Label
 FHD HDR RGB Camera, TNR, Camera Shutter, Microphone
 Windows AutoPilot
-EPEAT 2018 Registered (Gold)
-```
-
----
-
-## Query 8: What is E20P4600040?
-
-- **Target Bid(s)**: `Bid2`
-- **Intent**: `SINGLE_BID`
-- **Confidence Score**: `1.0`
-- **Validation Status**: `passed`
-- **Retrieval Latency**: `0.83 ms` (Total Pipeline: `1.03 ms`)
-
-### Grounded Answer
-> #E20P4600040 is the Purchase Order Request for Proposal (PORFP) Number for Dell Laptops issued by the Maryland State Treasurer's Office under the Hardware Master Contract.
-
-### Citations & Provenance
-**Citation 1:**
-- **File**: `PORFP_-_Dell_Laptop_Final.pdf`
-- **Page**: 1 | **Chunk ID**: `chk_Bid2_p1_0001_cca549114327`
-- **Document Type**: `rfp` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-|  | Section 1 –General Information |  |  |  |  |  |  |  |
+EPEAT 2018 Registered (Gold)\n`\n\n---\n\n## Query 8: What is E20P4600040?\n\n- **Target Bid(s)**: Bid2\n- **Intent**: SINGLE_BID\n- **Confidence Score**: 1.0\n- **Validation Status**: passed\n- **Retrieval Latency**: 0.83 ms (Total Pipeline: 1.03 ms)\n\n### Grounded Answer\n> #E20P4600040 is the Purchase Order Request for Proposal (PORFP) Number for Dell Laptops issued by the Maryland State Treasurer's Office under the Hardware Master Contract.\n\n### Citations & Provenance\n**Citation 1:**\n- **File**: PORFP_-_Dell_Laptop_Final.pdf\n- **Page**: 1 | **Chunk ID**: chk_Bid2_p1_0001_cca549114327\n- **Document Type**: rfp | **Addendum #**: None\n- **Excerpt**:\n`	ext\n|  | Section 1 –General Information |  |  |  |  |  |  |  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  | PORFP Number: |  | #E20P4600040 eMMA Project Number: BPM044557 |  |  |  |  |  |
 |  | PORFP Type: |  | Fixed Price |  |  |  |  |  |
@@ -607,75 +331,4 @@ EPEAT 2018 Registered (Gold)
 |  | PORFP Issue Date: |  | 05/24/2024 |  | PROPOSAL DUE |  | 06/10/2024 |  |
 |  | mm/dd/yyyy |  |  |  | DATE and TIME: |  |  |  |
 | Place of Performance: | Place of Performance: |  | MD State Treasurer's Office 80 Clavert Street Annapolis MD 21401 |  |  |  |  |  |
-| Special Instructions: |  |  | LIMITED TO MASTER CONTRACTORS Only Master Contractors that are awarded a contract under the Desktop, Laptop and Tablet 2015 Master Contract, 060B5400007, are eligible to submit a bid in response to this secondary competition Purchase Order Request for Proposal (PORFP). SMALL BUSINESS RESERVE (SBR) PROCUREMENT This is a Small Business Reserve Procurement for which award will be limited to certified small business vendors. Only businesses that meet the statutory requirements set forth in State Finance and Procurement Article, §§14-501—14-505, Annotated Code of Maryland, and that are certified by GOSBA Small Business Reserve Program are eligible for award of a contract. BID SUBMISSION INSTRUCTIONS Purchase Order Request for Proposal (PORFP) responses will only be accepted through the State's eMaryland Marketplace Advantage (eMMA) e-Procurement system. Bids will not be accepted by email, fax, U.S. Mail, or hand delivery. You must be registered and Logged in to submit a bid on eMMA. Instructions on how to submit proposals electronically can be found at: https://procurement.maryland.gov/emma-qrgs/ Refer to Vendor QRG 4 – eMMA QRG Responding to Solicitations (IFB) |  |  |  |  |  |
-```
-
----
-
-## Query 9: What delivery time is required for Bid2?
-
-- **Target Bid(s)**: `Bid2`
-- **Intent**: `SINGLE_BID`
-- **Confidence Score**: `0.95`
-- **Validation Status**: `passed`
-- **Retrieval Latency**: `0.8 ms` (Total Pipeline: `0.89 ms`)
-
-### Grounded Answer
-> The required line item delivery due date is 06/10/2024 to the MD State Treasurer's Office (80 Calvert Street, Annapolis, MD), with warranty deliverables beginning on the Date of Delivery.
-
-### Citations & Provenance
-**Citation 1:**
-- **File**: `PORFP_-_Dell_Laptop_Final.pdf`
-- **Page**: 3 | **Chunk ID**: `chk_Bid2_p3_0006_3ac1a46d0459`
-- **Document Type**: `rfp` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | FA II - Printers and Associated Peripherals |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | (Provide product specifications below. If some or all specifications are unknown, |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | Master Contractors may propose products based on a detailed description in the |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | Business Need / Required Functionality field*) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| *Business Need / Required Functionality | *Business Need / |  |  | Office is in need of a refresh of laptops and must acquire enough laptops to accommodate MD529 employees who have been included in our staff as of June 1, 2023. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | Required Functionality |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Product Name |  | Product Description |  |  |  |  | Model # |  |  |  |  |  | Qty |  |  |  |  | Due Date |  |
-|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | mm/dd/yyyy |  |
-| 1. SI# CC7802 Dell Latitude 5550 |  | SI# CC7802 Dell Latitude 5550 *Laptops must be Microsoft Copilot ready* |  |  |  |  | SI# CC7802 |  |  |  |  | 30 |  |  |  |  | 06/10/2024 |  |  |
-| 2. Dell Thunderbolt 4 Dock – WD22TB4 |  | Dell Thunderbolt 4 Dock – WD22TB4 |  |  |  |  | WD22TB4 |  |  |  |  | 30 |  |  |  |  | 06/10/2024 |  |  |
-```
-
-**Citation 2:**
-- **File**: `PORFP_-_Dell_Laptop_Final.pdf`
-- **Page**: 3 | **Chunk ID**: `chk_Bid2_p3_0007_94ae7041e4e1`
-- **Document Type**: `rfp` | **Addendum #**: `None`
-- **Excerpt**:
-```text
-| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|  | FA V - Manufacturer’s Extended Warranty |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | (Provide a detailed description of warranty requirements and deliverables) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  | Deliverables |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | Warranty Requirements |  |  |  |  |  |  |  |  |  | Start Date |  |  |  |  | End Date |  |  |  |
-|  |  |  |  |  |  |  |  |  |  |  | mm/dd/yyyy |  |  |  |  | mm/dd/yyyy |  |  |  |
-| 1. Dell Limited Hardware Warranty Extended for all machines purchased - 3 Years |  |  |  |  |  | Warranty certificate or Affidavit to be presented upon award |  |  |  | Date of Delivery |  |  |  |  | 3 years following the date of delivery |  |  |  |  |
-|  | Section 5 – Evaluation Criteria – Technical Proposal |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-|  | (Provide a list of evaluation criteria in descending order of importance) |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-```
-
----
-
-## Query 10: What is the required vendor employee headcount?
-
-- **Target Bid(s)**: `Bid1`
-- **Intent**: `SINGLE_BID`
-- **Confidence Score**: `0.0`
-- **Validation Status**: `not_found`
-- **Retrieval Latency**: `0.79 ms` (Total Pipeline: `0.86 ms`)
-
-### Grounded Answer
-> Not found in documents.
-
-### Citations & Provenance
-*No citations returned (Abstention / Negative Query).*
-
----
+| Special Instructions: |  |  | LIMITED TO MASTER CONTRACTORS Only Master Contractors that are awarded a contract under the Desktop, Laptop and Tablet 2015 Master Contract, 060B5400007, are eligible to submit a bid in response to this secondary competition Purchase Order Request for Proposal (PORFP). SMALL BUSINESS RESERVE (SBR) PROCUREMENT This is a Small Business Reserve Procurement for which award will be limited to certified small business vendors. Only businesses that meet the statutory requirements set forth in State Finance and Procurement Article, §§14-501—14-505, Annotated Code of Maryland, and that are certified by GOSBA Small Business Reserve Program are eligible for award of a contract. BID SUBMISSION INSTRUCTIONS Purchase Order Request for Proposal (PORFP) responses will only be accepted through the State's eMaryland Marketplace Advantage (eMMA) e-Procurement system. Bids will not be accepted by email, fax, U.S. Mail, or hand delivery. You must be registered and Logged in to submit a bid on eMMA. Instructions on how to submit proposals electronically can be found at: https://procurement.maryland.gov/emma-qrgs/ Refer to Vendor QRG 4 – eMMA QRG Responding to Solicitations (IFB) |  |  |  |  |  |\n`\n\n---\n\n## Query 9: What delivery time is required for Bid2?\n\n- **Target Bid(s)**: Bid2\n- **Intent**: SINGLE_BID\n- **Confidence Score**: 0.95\n- **Validation Status**: passed\n- **Retrieval Latency**: 0.8 ms (Total Pipeline: 0.89 ms)\n\n### Grounded Answer\n> Delivery of equipment is required within 45 days of contract award to the MD State Treasurer's Office (80 Calvert Street, Annapolis, MD 21401). In addition, warranty deliverables commence upon the Date of Delivery.\n\n### Citations & Provenance\n**Citation 1:**\n- **File**: PORFP_-_Dell_Laptop_Final.pdf\n- **Page**: 2 | **Chunk ID**: chk_Bid2_p2_0003_b515705bf4d3\n- **Document Type**: rfp | **Addendum #**: None\n- **Excerpt**:\n`	ext\n| Security Requirements (if applicable): |  | 1. The Department reserves the right to purchase more or less than the specified quantity to the extent limited by funding... 9. Delivery within 45 days of Award. |  |\n`\n\n**Citation 2:**\n- **File**: PORFP_-_Dell_Laptop_Final.pdf\n- **Page**: 1 | **Chunk ID**: chk_Bid2_p1_0001_cca549114327\n- **Document Type**: rfp | **Addendum #**: None\n- **Excerpt**:\n`	ext\n| Place of Performance: | Place of Performance: |  | MD State Treasurer's Office 80 Clavert Street Annapolis MD 21401 |  |\n`\n\n---\n\n## Query 10: What is the required vendor employee headcount?\n\n- **Target Bid(s)**: Bid1\n- **Intent**: SINGLE_BID\n- **Confidence Score**: 0.0\n- **Validation Status**: not_found\n- **Retrieval Latency**: 0.79 ms (Total Pipeline: 0.86 ms)\n\n### Grounded Answer\n> Not found in documents.\n\n### Citations & Provenance\n*No citations returned (Abstention / Negative Query).*\n\n---\n\n

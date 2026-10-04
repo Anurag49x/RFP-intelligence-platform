@@ -146,18 +146,26 @@ class DocumentClassifier:
                 document_date=cls.extract_document_date(content_preview),
             )
 
-        # 3. Affidavit / Legal Certification
-        if any(kw in filename_lower for kw in cls.AFFIDAVIT_KEYWORDS) or any(
-            kw in content_lower for kw in ["affidavit", "affiant", "sworn to and subscribed"]
-        ):
+        # 3. Dedicated Affidavit / Legal Certification (filename matches)
+        if any(kw in filename_lower for kw in cls.AFFIDAVIT_KEYWORDS):
             return ClassificationResult(
                 doc_type="affidavit",
                 confidence=0.95,
-                reason="Document contains legal affidavit / certification markers",
+                reason="Document filename contains legal affidavit / certification markers",
                 document_date=cls.extract_document_date(content_preview),
             )
 
-        # 4. Specification Sheet / Technical Docs
+        # 4. Main RFP / Solicitation (matches filename or combined RFP structure)
+        rfp_score = sum(1 for kw in cls.RFP_KEYWORDS if kw in combined_text)
+        if rfp_score > 0 and not any(kw in filename_lower for kw in ["specs", "specifications", "datasheet"]):
+            return ClassificationResult(
+                doc_type="rfp",
+                confidence=0.90,
+                reason=f"Document contains primary procurement RFP/solicitation markers ({rfp_score} markers)",
+                document_date=cls.extract_document_date(content_preview),
+            )
+
+        # 5. Specification Sheet / Technical Docs
         if any(kw in filename_lower for kw in ["specs", "specifications", "datasheet"]) or (
             any(kw in content_lower for kw in cls.SPECS_KEYWORDS) and "request for proposal" not in content_lower
         ):
@@ -168,13 +176,12 @@ class DocumentClassifier:
                 document_date=cls.extract_document_date(content_preview),
             )
 
-        # 5. Main RFP / Solicitation
-        rfp_score = sum(1 for kw in cls.RFP_KEYWORDS if kw in combined_text)
-        if rfp_score > 0:
+        # 6. Secondary Affidavit / Legal Certification (body content only, without RFP header)
+        if any(kw in content_lower for kw in ["affidavit", "affiant", "sworn to and subscribed"]):
             return ClassificationResult(
-                doc_type="rfp",
-                confidence=0.90,
-                reason=f"Document contains primary procurement RFP/solicitation markers ({rfp_score} markers)",
+                doc_type="affidavit",
+                confidence=0.85,
+                reason="Document contains legal affidavit / certification body markers",
                 document_date=cls.extract_document_date(content_preview),
             )
 
