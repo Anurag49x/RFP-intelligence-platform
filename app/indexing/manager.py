@@ -45,6 +45,10 @@ class IndexingReport(BaseModel):
     elapsed_seconds: float = 0.0
     errors: List[str] = Field(default_factory=list)
 
+    @property
+    def latency_seconds(self) -> float:
+        return self.elapsed_seconds
+
 
 
 class IndexManager:

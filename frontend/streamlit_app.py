@@ -965,8 +965,8 @@ elif screen == "📥 Document Indexing":
                     try:
                         from app.indexing.service import IndexingService
                         service = IndexingService()
-                        report = service.index_folder(folder_path=target_path, bid_id=target_bid)
-                        st.success(f"Indexing completed for **{report.bid_id}** in **{report.latency_seconds:.3f}s**")
+                        lat = getattr(report, "elapsed_seconds", getattr(report, "latency_seconds", 0.0))
+                        st.success(f"Indexing completed for **{report.bid_id}** in **{lat:.3f}s**")
                         c1, c2, c3, c4 = st.columns(4)
                         with c1:
                             st.metric("New Files", report.files_new)
@@ -1024,8 +1024,17 @@ elif screen == "📥 Document Indexing":
                             from app.indexing.service import IndexingService
                             service = IndexingService()
                             report = service.index_folder(folder_path=str(target_dir), bid_id=upload_bid_id)
-                            st.success(f"🎉 Successfully indexed **{upload_bid_id}** in **{report.latency_seconds:.2f}s**!")
+                            lat = getattr(report, "elapsed_seconds", getattr(report, "latency_seconds", 0.0))
+                            st.success(f"🎉 Successfully indexed **{upload_bid_id}** in **{lat:.2f}s**!")
+                            uc1, uc2, uc3 = st.columns(3)
+                            with uc1:
+                                st.metric("New Files Processed", getattr(report, "files_new", len(uploaded_files)))
+                            with uc2:
+                                st.metric("Chunks Indexed", getattr(report, "chunks_added", 0))
+                            with uc3:
+                                st.metric("Total Indexed Chunks (BM25)", getattr(report, "bm25_indexed_chunks", 0))
                             st.balloons()
+                            st.info(f"💡 You can now search or extract from **{upload_bid_id}** in Hybrid Search, Evidence Q&A, and 20-Field Extraction!")
                         except Exception as ex:
                             st.error(f"Indexing failed: {ex}")
 
