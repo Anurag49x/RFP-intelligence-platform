@@ -6,7 +6,8 @@ An evidence-first, citation-grounded enterprise AI system engineered to process 
 
 ## 🌐 Live Application & Demo Video
 - **Live Platform**: [**https://rfp-intelligence-platform.onrender.com/**](https://rfp-intelligence-platform.onrender.com/)
-- **Watch Demo**: [**Google Drive Demonstration Video**](https://drive.google.com/file/d/1EhDkgWStciDn09bj8D-I0wVlPMWSmtYm/view?usp=sharing)
+- **Demo Video (YouTube)**: [**https://youtu.be/XdXU4CibKhU**](https://youtu.be/XdXU4CibKhU)
+- **Demo Video (Google Drive)**: [**Google Drive Demonstration Video**](https://drive.google.com/file/d/1EhDkgWStciDn09bj8D-I0wVlPMWSmtYm/view?usp=sharing)
 
 > The platform and video demonstration walk through the end-to-end system: system architecture, dual-branch hybrid retrieval with listwise reranking, grounded Q&A with verifiable chunk-level citations, multi-agent 20-field extraction, chronological addendum reconciliation (handling superseded deadlines), negative/unanswerable query abstention, agent execution traces & observability, unseen-bid dynamic ingestion, and incremental SHA-256 indexing.
 
@@ -312,7 +313,8 @@ pytest -v
 
 ## 🎬 Submission Verification Summary
 
-- **Demo Video**: [**Google Drive Demonstration Link**](https://drive.google.com/file/d/1EhDkgWStciDn09bj8D-I0wVlPMWSmtYm/view?usp=sharing)
+- **Demo Video (YouTube)**: [**https://youtu.be/XdXU4CibKhU**](https://youtu.be/XdXU4CibKhU)
+- **Demo Video (Google Drive)**: [**Google Drive Demonstration Link**](https://drive.google.com/file/d/1EhDkgWStciDn09bj8D-I0wVlPMWSmtYm/view?usp=sharing)
 - **Evaluation Report**: [`docs/retrieval_evaluation.md`](docs/retrieval_evaluation.md)
 - **Sample Q&A Log**: [`docs/sample_qa_log.md`](docs/sample_qa_log.md)
 - **Unseen-Bid Verification**: [`outputs/unseen_bid_report.json`](outputs/unseen_bid_report.json)
