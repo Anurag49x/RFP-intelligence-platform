@@ -22,7 +22,7 @@ An evidence-first, citation-grounded enterprise AI system engineered to process 
 | **Retrieval Pipeline Diagram** | [`docs/retrieval_pipeline.svg`](docs/retrieval_pipeline.svg) | Dual-branch Dense + BM25, RRF fusion, and Jina listwise reranker |
 | **Multi-Agent Workflow Diagram** | [`docs/multi_agent_workflow.svg`](docs/multi_agent_workflow.svg) | LangGraph StateGraph, parallel specialists, critic, and retry repair loop |
 | **Incremental Indexing Diagram** | [`docs/incremental_indexing.svg`](docs/incremental_indexing.svg) | Content-addressed SHA-256 discovery, branch execution, and store synchronization |
-| **Canonical JSON Extractions** | [`outputs/Bid1_extracted.json`](outputs/Bid1_extracted.json)<br>[`outputs/Bid2_extracted.json`](outputs/Bid2_extracted.json)<br>[`outputs/Bid4_extracted.json`](outputs/Bid4_extracted.json)<br>[`outputs/Bid5_extracted.json`](outputs/Bid5_extracted.json)<br>[`outputs/Bid6_extracted.json`](outputs/Bid6_extracted.json) | Validated 20-field structured JSON records with chunk provenance |
+| **Canonical JSON Extractions** | [`outputs/Bid1_extracted.json`](outputs/Bid1_extracted.json)<br>[`outputs/Bid2_extracted.json`](outputs/Bid2_extracted.json)<br>[`outputs/Bid4_extracted.json`](outputs/Bid4_extracted.json)<br>[`outputs/Bid5_extracted.json`](outputs/Bid5_extracted.json) | Validated 20-field structured JSON records with chunk provenance |
 | **Retrieval Evaluation Report** | [`docs/retrieval_evaluation.md`](docs/retrieval_evaluation.md) | Dedicated benchmark report across 4 retrieval configurations |
 | **Gold Question Set** | [`eval/gold_questions.json`](eval/gold_questions.json) | 28 gold-standard procurement queries with target passages |
 | **Evaluation Benchmark Results** | [`eval/results/latest.csv`](eval/results/latest.csv)<br>[`eval/results/latest.json`](eval/results/latest.json) | Quantitative evaluation metrics (`Recall@k`, `MRR`, `nDCG@k`) |
@@ -52,7 +52,7 @@ An evidence-first, citation-grounded enterprise AI system engineered to process 
 │   ├── validation/        # Deterministic provenance validator & citation auditor
 │   └── vectorstore/       # Qdrant client with payload filtering & collection management
 ├── data/
-│   ├── raw/               # Raw bid packages (Bid1, Bid2, Bid4, Bid5, Bid6)
+│   ├── raw/               # Raw bid packages (Bid1, Bid2, Bid4, Bid5)
 │   └── bm25/              # Persisted BM25 token corpus
 ├── docs/
 │   ├── architecture.svg          # Primary system architecture SVG
@@ -72,7 +72,6 @@ An evidence-first, citation-grounded enterprise AI system engineered to process 
 │   ├── Bid2_extracted.json       # MD State Treasurer extraction output
 │   ├── Bid4_extracted.json       # Unseen Bid4 extraction output
 │   ├── Bid5_extracted.json       # Unseen Bid5 extraction output
-│   ├── Bid6_extracted.json       # Unseen Bid6 extraction output
 │   ├── qa_log.json               # Raw Q&A execution records
 │   ├── unseen_bid_report.json    # Zero-code-change generalization report
 │   └── traces/                   # Serialized multi-agent execution traces
@@ -172,14 +171,13 @@ The extraction pipeline produces one canonical JSON output per processed bid fol
 - [`outputs/Bid2_extracted.json`](outputs/Bid2_extracted.json) — MD State Treasurer (PORFP `#E20P4600040`, `Dell Latitude 5550`, `WD22TB4`, Contract & Mercury Affidavits)
 - [`outputs/Bid4_extracted.json`](outputs/Bid4_extracted.json) — Municipal Network Equipment Refresh (Zero-shot extraction on unseen bid)
 - [`outputs/Bid5_extracted.json`](outputs/Bid5_extracted.json) — Fleet EV Charging Infrastructure (Zero-shot extraction on unseen bid)
-- [`outputs/Bid6_extracted.json`](outputs/Bid6_extracted.json) — Municipal IT Procurement Package (Zero-shot extraction on unseen bid)
 
 ---
 
 ## 🧪 Unseen-Bid Generalization
 
 The platform was evaluated against previously unseen bid packages to verify that no bid-specific logic or rules were hardcoded.
-- Generalization Artifacts: [`outputs/Bid4_extracted.json`](outputs/Bid4_extracted.json), [`outputs/Bid5_extracted.json`](outputs/Bid5_extracted.json), [`outputs/Bid6_extracted.json`](outputs/Bid6_extracted.json)
+- Generalization Artifacts: [`outputs/Bid4_extracted.json`](outputs/Bid4_extracted.json), [`outputs/Bid5_extracted.json`](outputs/Bid5_extracted.json)
 - Validation Report: [`outputs/unseen_bid_report.json`](outputs/unseen_bid_report.json)
 
 As documented in `unseen_bid_report.json`, **`application_code_changed: false`** across all unseen bid processing runs. The system dynamically discovered files, parsed tables, resolved addenda, and populated all 20 canonical fields using generic multi-agent coordination.
