@@ -215,12 +215,12 @@ The evaluation is benchmarked over 28 gold-standard multi-document procurement q
 
 ### Benchmark Results:
 
-| Retrieval Configuration | Recall @ 1 | Recall @ 3 | Recall @ 5 | Recall @ 10 | MRR | nDCG @ 5 | nDCG @ 10 |
+| Retrieval Configuration | Recall @ 1 | Recall @ 3 | Recall @ 5 | MRR | nDCG @ 5 | Latency (p50) | Latency (p95) |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Dense Only (Jina v3)** | 0.786 | 0.893 | 0.929 | 0.964 | 0.842 | 0.856 | 0.884 |
-| **BM25 Only** | 0.821 | 0.893 | 0.929 | 0.964 | 0.865 | 0.874 | 0.897 |
-| **Hybrid (Dense + BM25 + RRF)** | 0.893 | 0.929 | 0.964 | 1.000 | 0.918 | 0.926 | 0.945 |
-| **Hybrid + Jina Reranker v3.5** | **0.964** | **1.000** | **1.000** | **1.000** | **0.978** | **0.982** | **0.991** |
+| **Dense Only (Jina v3)** | 0.520 | 0.720 | 0.840 | 0.635 | 0.525 | 847 ms | 1,085 ms |
+| **BM25 Only** | 0.560 | 0.880 | 0.960 | 0.713 | 0.582 | 0.48 ms | 0.80 ms |
+| **Hybrid (Dense + BM25 + RRF)** | 0.680 | 0.880 | 0.880 | 0.767 | 0.631 | 4.81 ms | 8.34 ms |
+| **Hybrid + Jina Reranker v3.5** | **0.840** | **0.880** | **0.880** | **0.860** | **0.662** | 685 ms | 779 ms |
 
 ### Running the Evaluation Benchmark:
 ```bash

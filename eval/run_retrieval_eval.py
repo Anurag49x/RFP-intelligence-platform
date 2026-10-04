@@ -14,6 +14,7 @@ from app.lexical.bm25 import BM25Index
 from app.logging import logger
 from app.rerankers.jina import JinaRerankerProvider
 from app.retrieval.hybrid import HybridSearchEngine
+from app.retrieval.rrf import reciprocal_rank_fusion
 from app.schemas.canonical import SearchFilters, SearchResult
 from app.vectorstore.qdrant import QdrantVectorStore
 
@@ -55,6 +56,23 @@ def run_evaluation(
     qdrant = QdrantVectorStore()
     embedding_provider = JinaEmbeddingProvider()
     reranker = JinaRerankerProvider()
+
+    # Ensure rfp_chunks collection is populated in evaluation vectorstore
+    if not qdrant.collection_exists("rfp_chunks") or (hasattr(qdrant.client, "count") and qdrant.client.count(collection_name="rfp_chunks").count == 0):
+        logger.info("Populating rfp_chunks into Qdrant evaluation instance from data/chunks/...")
+        import glob
+        from app.schemas.canonical import Chunk
+        all_eval_chunks: List[Chunk] = []
+        for chunk_file in sorted(glob.glob("data/chunks/*.jsonl")):
+            with open(chunk_file, "r", encoding="utf-8") as cf:
+                for line in cf:
+                    if line.strip():
+                        all_eval_chunks.append(Chunk(**json.loads(line)))
+        if all_eval_chunks:
+            texts = [c.text for c in all_eval_chunks]
+            vectors = embedding_provider.embed_documents(texts)
+            qdrant.upsert_chunks("rfp_chunks", all_eval_chunks, vectors)
+
     engine = HybridSearchEngine(
         embedding_provider=embedding_provider,
         vector_store=qdrant,
@@ -146,9 +164,10 @@ def run_evaluation(
                     qvec = query_vector_cache[qid]
                     dense_hits = qdrant.search("rfp_chunks", qvec, top_k=10, filters=filters)
                     bm25_hits = bm25.search(query=query, top_k=10, filters=filters)
-                    hybrid_hits = engine.rrf_fuse([dense_hits, bm25_hits], top_k=5)
+                    candidate_lists = [l for l in [dense_hits, bm25_hits] if l]
+                    hybrid_hits = reciprocal_rank_fusion(candidate_lists, rrf_k=60, top_k=5)
                     retrieved_results = hybrid_hits
-                    hybrid_candidates_cache[qid] = hybrid_hits
+                    hybrid_candidates_cache[qid] = reciprocal_rank_fusion(candidate_lists, rrf_k=60, top_k=15)
                 except Exception as e:
                     logger.warning(f"Hybrid error for '{query}': {e}")
                     retrieved_results = []
@@ -166,7 +185,8 @@ def run_evaluation(
                         qvec = query_vector_cache[qid]
                         dense_hits = qdrant.search("rfp_chunks", qvec, top_k=10, filters=filters)
                         bm25_hits = bm25.search(query=query, top_k=10, filters=filters)
-                        hybrid_candidates = engine.rrf_fuse([dense_hits, bm25_hits], top_k=8)
+                        candidate_lists = [l for l in [dense_hits, bm25_hits] if l]
+                        hybrid_candidates = reciprocal_rank_fusion(candidate_lists, rrf_k=60, top_k=15)
 
                     print(f"  [JINA RERANK] query {idx}/{total_q}")
                     retrieved_results = reranker.rerank(query=query, candidates=hybrid_candidates, top_k=5)

@@ -10,12 +10,12 @@ We evaluated four retrieval configurations against a 28-question gold-standard b
 
 ### Quantitative Benchmark Comparison
 
-| Strategy | Recall @ 1 | Recall @ 3 | Recall @ 5 | Recall @ 10 | MRR | nDCG @ 5 | nDCG @ 10 | Latency (p50) |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Dense Only (Jina v3)** | 0.786 | 0.893 | 0.929 | 0.964 | 0.842 | 0.856 | 0.884 | 919 ms |
-| **BM25 Only** | 0.821 | 0.893 | 0.929 | 0.964 | 0.865 | 0.874 | 0.897 | 0.87 ms |
-| **Hybrid (Dense + BM25 + RRF)** | 0.893 | 0.929 | 0.964 | 1.000 | 0.918 | 0.926 | 0.945 | 921 ms |
-| **Hybrid + Jina Reranker v3.5** | **0.964** | **1.000** | **1.000** | **1.000** | **0.978** | **0.982** | **0.991** | 1,746 ms |
+| Strategy | Recall @ 1 | Recall @ 3 | Recall @ 5 | MRR | nDCG @ 5 | Latency (p50) | Latency (p95) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Dense Only (Jina v3)** | 0.520 | 0.720 | 0.840 | 0.635 | 0.525 | 847 ms | 1,085 ms |
+| **BM25 Only** | 0.560 | 0.880 | 0.960 | 0.713 | 0.582 | 0.48 ms | 0.80 ms |
+| **Hybrid (Dense + BM25 + RRF)** | 0.680 | 0.880 | 0.880 | 0.767 | 0.631 | 4.81 ms | 8.34 ms |
+| **Hybrid + Jina Reranker v3.5** | **0.840** | **0.880** | **0.880** | **0.860** | **0.662** | 685 ms | 779 ms |
 
 ---
 
@@ -78,9 +78,9 @@ The benchmark queries represent realistic procurement workflows across Bid1 (Dal
 2. **Why Dense Retrieval Excels at Intent & Paraphrasing**:
    - Queries phrased conversationally (*"when do vendors need to deliver the computers after getting contract"*) benefit from dense embedding semantics that bridge terminology gaps.
 3. **Why Reciprocal Rank Fusion (RRF) Provides the Best Baseline**:
-   - RRF combines the rank distributions of Dense and Sparse retrieval without requiring manual score weight calibration, boosting Recall@1 to **0.893**.
-4. **Why Jina Listwise Reranking Achieves 0.964 Recall@1**:
-   - Cross-attention listwise reranking evaluates inter-chunk relevance directly in the context of the query, effectively filtering out distractors (such as base RFP closing dates superseded by Addenda).
+   - RRF combines the rank distributions of Dense and Sparse retrieval without requiring manual score weight calibration, boosting Recall@1 to **0.680** (compared to 0.520 for Dense and 0.560 for BM25).
+4. **Why Jina Listwise Reranking Achieves 0.840 Recall@1**:
+   - Cross-attention listwise reranking evaluates inter-chunk relevance directly in the context of the query, effectively filtering out distractors (such as base RFP closing dates superseded by Addenda) and achieving **0.860 MRR**.
 5. **Zero Hallucinations on Negative Queries**:
    - On the 3 negative/unanswerable queries (q026–q028), the confidence calibration and thresholding return `0.0` confidence and `"Not found in documents."`, completely eliminating ungrounded hallucinations.
 
