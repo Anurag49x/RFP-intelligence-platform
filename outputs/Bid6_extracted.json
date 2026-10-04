@@ -1,0 +1,442 @@
+{
+  "bid_id": "Bid6",
+  "fields": {
+    "Bid Number": {
+      "value": "LC-ENV-2026-031",
+      "sources": [
+        {
+          "file_name": "Lakeview_Fleet_Charging_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_195e1906eb18",
+          "text": "Lakeview County \u2014 Fleet Charging Infrastructure RFP\nBid Number: LC-ENV-2026-031\nTitle: Fleet Charging Infrastructure\nIssuing Organization: Lakeview County Department of Public Works\nContract term: two years from notice to proceed, with two optional one-year renewals.\nBid bond: 10% of the total propo",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Vendor_Compliance_and_Safety.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_76d79cd9ba26",
+          "text": "Vendor Compliance, Safety and Documentation\nRequirements\nBid Number: LC-ENV-2026-031\nThe proposal must include a signed bid form, W-9, manufacturer authorization letter, site-specific electrical safety\nplan, and non-collusion affidavit.\nThe bidder must identify a qualified project manager and provid",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Addendum_1.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_5b2e25be6da9",
+          "text": "Addendum No. 1 \u2014 Bid LC-ENV-2026-031\nAddendum No. 1 modifies the original solicitation.\nDEADLINE CHANGE: The electronic bid submission deadline is extended from December 10, 2026 at 3:00 PM\nEST to December 17, 2026 at 3:00 PM EST.\nINSTALLATION CHANGE: The required completion period is changed from 1",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "addendum",
+          "addendum_number": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Explicitly stated in multiple documents including the RFP, Compliance document, and Addendum.",
+      "reason": null
+    },
+    "Title": {
+      "value": "Fleet Charging Infrastructure",
+      "sources": [
+        {
+          "file_name": "Lakeview_Fleet_Charging_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_195e1906eb18",
+          "text": "Lakeview County \u2014 Fleet Charging Infrastructure RFP\nBid Number: LC-ENV-2026-031\nTitle: Fleet Charging Infrastructure\nIssuing Organization: Lakeview County Department of Public Works\nContract term: two years from notice to proceed, with two optional one-year renewals.\nBid bond: 10% of the total propo",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Explicitly stated in the RFP document.",
+      "reason": null
+    },
+    "Due Date": {
+      "value": "December 17, 2026 at 3:00 PM EST",
+      "sources": [
+        {
+          "file_name": "Addendum_1.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_5b2e25be6da9",
+          "text": "Addendum No. 1 \u2014 Bid LC-ENV-2026-031\nAddendum No. 1 modifies the original solicitation.\nDEADLINE CHANGE: The electronic bid submission deadline is extended from December 10, 2026 at 3:00 PM\nEST to December 17, 2026 at 3:00 PM EST.\nINSTALLATION CHANGE: The required completion period is changed from 1",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "addendum",
+          "addendum_number": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Addendum No. 1 extends the electronic bid submission deadline from December 10, 2026 to December 17, 2026 at 3:00 PM EST.",
+      "reason": null
+    },
+    "Bid Submission Type": {
+      "value": "Electronic bid submission",
+      "sources": [
+        {
+          "file_name": "Procurement_Portal_Notice.html",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_90fa5aed9591",
+          "text": "Issuing Organization: Lakeview County Department of Public Works\nElectronic bid submission deadline: December 10, 2026 at 3:00 PM EST.\nSubmission platform: Lakeview Vendor Exchange.\nPre-bid conference: November 18, 2026 at 10:00 AM EST, virtual.\nQuestions are due November 23, 2026 at 4:00 PM EST.",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "bid_page",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Addendum_1.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_5b2e25be6da9",
+          "text": "Addendum No. 1 \u2014 Bid LC-ENV-2026-031\nAddendum No. 1 modifies the original solicitation.\nDEADLINE CHANGE: The electronic bid submission deadline is extended from December 10, 2026 at 3:00 PM\nEST to December 17, 2026 at 3:00 PM EST.\nINSTALLATION CHANGE: The required completion period is changed from 1",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "addendum",
+          "addendum_number": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The original notice and Addendum No. 1 both specify 'Electronic bid submission'.",
+      "reason": null
+    },
+    "Term of Bid": {
+      "value": "Two years from notice to proceed, with two optional one-year renewals",
+      "sources": [
+        {
+          "file_name": "Lakeview_Fleet_Charging_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_195e1906eb18",
+          "text": "Lakeview County \u2014 Fleet Charging Infrastructure RFP\nBid Number: LC-ENV-2026-031\nTitle: Fleet Charging Infrastructure\nIssuing Organization: Lakeview County Department of Public Works\nContract term: two years from notice to proceed, with two optional one-year renewals.\nBid bond: 10% of the total propo",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Stated in the Fleet Charging Infrastructure RFP.",
+      "reason": null
+    },
+    "Pre Bid Meeting": {
+      "value": "November 18, 2026 at 10:00 AM EST, virtual",
+      "sources": [
+        {
+          "file_name": "Procurement_Portal_Notice.html",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_90fa5aed9591",
+          "text": "Issuing Organization: Lakeview County Department of Public Works\nElectronic bid submission deadline: December 10, 2026 at 3:00 PM EST.\nSubmission platform: Lakeview Vendor Exchange.\nPre-bid conference: November 18, 2026 at 10:00 AM EST, virtual.\nQuestions are due November 23, 2026 at 4:00 PM EST.",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "bid_page",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Pre-bid conference details provided in the Procurement Portal Notice.",
+      "reason": null
+    },
+    "Installation": {
+      "value": "150 calendar days after notice to proceed",
+      "sources": [
+        {
+          "file_name": "Addendum_1.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_5b2e25be6da9",
+          "text": "Addendum No. 1 \u2014 Bid LC-ENV-2026-031\nAddendum No. 1 modifies the original solicitation.\nDEADLINE CHANGE: The electronic bid submission deadline is extended from December 10, 2026 at 3:00 PM\nEST to December 17, 2026 at 3:00 PM EST.\nINSTALLATION CHANGE: The required completion period is changed from 1",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "addendum",
+          "addendum_number": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Addendum No. 1 changes the required completion period from 120 to 150 calendar days.",
+      "reason": null
+    },
+    "Bid Bond Requirement": {
+      "value": "10% of the total proposal price is required",
+      "sources": [
+        {
+          "file_name": "Lakeview_Fleet_Charging_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_195e1906eb18",
+          "text": "Lakeview County \u2014 Fleet Charging Infrastructure RFP\nBid Number: LC-ENV-2026-031\nTitle: Fleet Charging Infrastructure\nIssuing Organization: Lakeview County Department of Public Works\nContract term: two years from notice to proceed, with two optional one-year renewals.\nBid bond: 10% of the total propo",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Explicitly stated in the RFP document.",
+      "reason": null
+    },
+    "Delivery Date": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "Payment Terms": {
+      "value": "Net 45 days after receipt and acceptance of a proper invoice",
+      "sources": [
+        {
+          "file_name": "Lakeview_Fleet_Charging_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_195e1906eb18",
+          "text": "Lakeview County \u2014 Fleet Charging Infrastructure RFP\nBid Number: LC-ENV-2026-031\nTitle: Fleet Charging Infrastructure\nIssuing Organization: Lakeview County Department of Public Works\nContract term: two years from notice to proceed, with two optional one-year renewals.\nBid bond: 10% of the total propo",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Stated in the Fleet Charging Infrastructure RFP.",
+      "reason": null
+    },
+    "Any Additional Documentation Required": {
+      "value": "signed bid form, W-9, manufacturer authorization letter, site-specific electrical safety plan, and non-collusion affidavit",
+      "sources": [
+        {
+          "file_name": "Lakeview_Fleet_Charging_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_195e1906eb18",
+          "text": "Lakeview County \u2014 Fleet Charging Infrastructure RFP\nBid Number: LC-ENV-2026-031\nTitle: Fleet Charging Infrastructure\nIssuing Organization: Lakeview County Department of Public Works\nContract term: two years from notice to proceed, with two optional one-year renewals.\nBid bond: 10% of the total propo",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Vendor_Compliance_and_Safety.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_76d79cd9ba26",
+          "text": "Vendor Compliance, Safety and Documentation\nRequirements\nBid Number: LC-ENV-2026-031\nThe proposal must include a signed bid form, W-9, manufacturer authorization letter, site-specific electrical safety\nplan, and non-collusion affidavit.\nThe bidder must identify a qualified project manager and provid",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Listed in both the main RFP and the Vendor Compliance document. The compliance document adds specificity regarding the 'site-specific' nature of the safety plan.",
+      "reason": null
+    },
+    "MFG for Registration": {
+      "value": "VoltEdge Energy",
+      "sources": [
+        {
+          "file_name": "Charging_Equipment_Specifications.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_9866c5a287de",
+          "text": "Fleet Charging Equipment \u2014 Technical Specifications\nMinimum technical specifications for all proposed equipment.\nDC Fast Charger: minimum 150 kW output, CCS1 connector, OCPP 1.6J support, payment terminal capability, and\noutdoor-rated enclosure.\nLevel 2 Charger: minimum 19.2 kW output, J1772 connect",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "specs",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Explicitly stated as 'Proposed manufacturer: VoltEdge Energy' in the technical specifications.",
+      "reason": null
+    },
+    "Contract or Cooperative to use": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "Model_no": {
+      "value": "VE-FC150, VE-L219, VE-GW300",
+      "sources": [
+        {
+          "file_name": "Charging_Equipment_Specifications.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_9866c5a287de",
+          "text": "Fleet Charging Equipment \u2014 Technical Specifications\nMinimum technical specifications for all proposed equipment.\nDC Fast Charger: minimum 150 kW output, CCS1 connector, OCPP 1.6J support, payment terminal capability, and\noutdoor-rated enclosure.\nLevel 2 Charger: minimum 19.2 kW output, J1772 connect",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "specs",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Charging_Equipment_Specifications.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_7abe37ed57de",
+          "text": "| Product | Model No. | Part No. | Warranty |\n| --- | --- | --- | --- |\n| DC Fast Charger | VE-FC150 | VE-150-CCS1 | 5-year equipment warranty |\n| Level 2 Charger | VE-L219 | VE-L2-19-2 | 5-year equipment warranty |\n| Charging Gateway | VE-GW300 | VE-GW-300 | 3-year hardware warranty |",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "specs",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Model numbers for DC Fast Charger, Level 2 Charger, and Charging Gateway respectively.",
+      "reason": null
+    },
+    "Part_no": {
+      "value": "VE-150-CCS1, VE-L2-19-2, VE-GW-300",
+      "sources": [
+        {
+          "file_name": "Charging_Equipment_Specifications.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_9866c5a287de",
+          "text": "Fleet Charging Equipment \u2014 Technical Specifications\nMinimum technical specifications for all proposed equipment.\nDC Fast Charger: minimum 150 kW output, CCS1 connector, OCPP 1.6J support, payment terminal capability, and\noutdoor-rated enclosure.\nLevel 2 Charger: minimum 19.2 kW output, J1772 connect",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "specs",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Charging_Equipment_Specifications.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_7abe37ed57de",
+          "text": "| Product | Model No. | Part No. | Warranty |\n| --- | --- | --- | --- |\n| DC Fast Charger | VE-FC150 | VE-150-CCS1 | 5-year equipment warranty |\n| Level 2 Charger | VE-L219 | VE-L2-19-2 | 5-year equipment warranty |\n| Charging Gateway | VE-GW300 | VE-GW-300 | 3-year hardware warranty |",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "specs",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Part numbers for DC Fast Charger, Level 2 Charger, and Charging Gateway respectively.",
+      "reason": null
+    },
+    "Product": {
+      "value": "DC Fast Charger, Level 2 Charger, Charging Management Gateway",
+      "sources": [
+        {
+          "file_name": "Charging_Equipment_Specifications.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_9866c5a287de",
+          "text": "Fleet Charging Equipment \u2014 Technical Specifications\nMinimum technical specifications for all proposed equipment.\nDC Fast Charger: minimum 150 kW output, CCS1 connector, OCPP 1.6J support, payment terminal capability, and\noutdoor-rated enclosure.\nLevel 2 Charger: minimum 19.2 kW output, J1772 connect",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "specs",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Charging_Equipment_Specifications.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_7abe37ed57de",
+          "text": "| Product | Model No. | Part No. | Warranty |\n| --- | --- | --- | --- |\n| DC Fast Charger | VE-FC150 | VE-150-CCS1 | 5-year equipment warranty |\n| Level 2 Charger | VE-L219 | VE-L2-19-2 | 5-year equipment warranty |\n| Charging Gateway | VE-GW300 | VE-GW-300 | 3-year hardware warranty |",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "specs",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Lakeview_Fleet_Charging_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_195e1906eb18",
+          "text": "Lakeview County \u2014 Fleet Charging Infrastructure RFP\nBid Number: LC-ENV-2026-031\nTitle: Fleet Charging Infrastructure\nIssuing Organization: Lakeview County Department of Public Works\nContract term: two years from notice to proceed, with two optional one-year renewals.\nBid bond: 10% of the total propo",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Listed as the required items in the RFP and specifications.",
+      "reason": null
+    },
+    "contact_info": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "company_name": {
+      "value": "Lakeview County Department of Public Works",
+      "sources": [
+        {
+          "file_name": "Lakeview_Fleet_Charging_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_195e1906eb18",
+          "text": "Lakeview County \u2014 Fleet Charging Infrastructure RFP\nBid Number: LC-ENV-2026-031\nTitle: Fleet Charging Infrastructure\nIssuing Organization: Lakeview County Department of Public Works\nContract term: two years from notice to proceed, with two optional one-year renewals.\nBid bond: 10% of the total propo",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Procurement_Portal_Notice.html",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_90fa5aed9591",
+          "text": "Issuing Organization: Lakeview County Department of Public Works\nElectronic bid submission deadline: December 10, 2026 at 3:00 PM EST.\nSubmission platform: Lakeview Vendor Exchange.\nPre-bid conference: November 18, 2026 at 10:00 AM EST, virtual.\nQuestions are due November 23, 2026 at 4:00 PM EST.",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "bid_page",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Identified as the Issuing Organization in the RFP and Procurement Portal Notice.",
+      "reason": null
+    },
+    "Bid Summary": {
+      "value": "Lakeview County Department of Public Works is soliciting bids for Fleet Charging Infrastructure. The contract term is two years from notice to proceed, with two optional one-year renewals. The project requires the installation of 12 DC Fast Chargers (150 kW minimum) and 36 Level 2 Chargers (19.2 kW minimum). Installation must be completed within 150 calendar days after notice to proceed (as modified by Addendum No. 1). Bidders must provide a minimum six-year manufacturer's warranty (as modified by Addendum No. 1). The electronic bid submission deadline is December 17, 2026 at 3:00 PM EST (as modified by Addendum No. 1).",
+      "sources": [
+        {
+          "file_name": "Lakeview_Fleet_Charging_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_195e1906eb18",
+          "text": "Lakeview County \u2014 Fleet Charging Infrastructure RFP\nBid Number: LC-ENV-2026-031\nTitle: Fleet Charging Infrastructure\nIssuing Organization: Lakeview County Department of Public Works\nContract term: two years from notice to proceed, with two optional one-year renewals.\nBid bond: 10% of the total propo",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Procurement_Portal_Notice.html",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_90fa5aed9591",
+          "text": "Issuing Organization: Lakeview County Department of Public Works\nElectronic bid submission deadline: December 10, 2026 at 3:00 PM EST.\nSubmission platform: Lakeview Vendor Exchange.\nPre-bid conference: November 18, 2026 at 10:00 AM EST, virtual.\nQuestions are due November 23, 2026 at 4:00 PM EST.",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "bid_page",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Addendum_1.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0001_5b2e25be6da9",
+          "text": "Addendum No. 1 \u2014 Bid LC-ENV-2026-031\nAddendum No. 1 modifies the original solicitation.\nDEADLINE CHANGE: The electronic bid submission deadline is extended from December 10, 2026 at 3:00 PM\nEST to December 17, 2026 at 3:00 PM EST.\nINSTALLATION CHANGE: The required completion period is changed from 1",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "addendum",
+          "addendum_number": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Summary synthesized from the RFP, Procurement Portal Notice, and Addendum No. 1, incorporating original requirements and modifications.",
+      "reason": null
+    },
+    "Product Specification": {
+      "value": "DC Fast Charger: minimum 150 kW output, CCS1 connector, OCPP 1.6J support, payment terminal capability, and outdoor-rated enclosure. Level 2 Charger: minimum 19.2 kW output, J1772 connector, OCPP 1.6J support, Wi-Fi/Ethernet connectivity, and load balancing. Charging Management Gateway: minimum 3 Ethernet interfaces, centralized monitoring, remote firmware management, and role-based access control.",
+      "sources": [
+        {
+          "file_name": "Charging_Equipment_Specifications.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid6_p1_0002_9866c5a287de",
+          "text": "Fleet Charging Equipment \u2014 Technical Specifications\nMinimum technical specifications for all proposed equipment.\nDC Fast Charger: minimum 150 kW output, CCS1 connector, OCPP 1.6J support, payment terminal capability, and\noutdoor-rated enclosure.\nLevel 2 Charger: minimum 19.2 kW output, J1772 connect",
+          "bid_id": "Bid6",
+          "section": null,
+          "document_type": "specs",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Detailed technical specifications provided in the Charging Equipment Specifications document.",
+      "reason": null
+    }
+  }
+}
