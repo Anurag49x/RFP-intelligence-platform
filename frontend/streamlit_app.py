@@ -965,6 +965,7 @@ elif screen == "📥 Document Indexing":
                     try:
                         from app.indexing.service import IndexingService
                         service = IndexingService()
+                        report = service.index_folder(folder_path=target_path, bid_id=target_bid)
                         lat = getattr(report, "elapsed_seconds", getattr(report, "latency_seconds", 0.0))
                         st.success(f"Indexing completed for **{report.bid_id}** in **{lat:.3f}s**")
                         c1, c2, c3, c4 = st.columns(4)
@@ -976,6 +977,9 @@ elif screen == "📥 Document Indexing":
                             st.metric("Unchanged (Skipped)", report.files_unchanged)
                         with c4:
                             st.metric("Chunks Added", report.chunks_added)
+                        
+                        if report.files_unchanged > 0 and report.chunks_added == 0:
+                            st.success("✅ **Incremental Verification Passed**: All existing files matched SHA-256 hashes. Re-indexing skipped redundant embedding generation.")
                     except Exception as ex:
                         st.error(f"Indexing failed: {ex}")
 
