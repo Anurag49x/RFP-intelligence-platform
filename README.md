@@ -4,11 +4,11 @@ An evidence-first, citation-grounded enterprise AI system engineered to process 
 
 ---
 
-## 📽️ Demo Video
+## 🌐 Live Application & Demo Video
+- **Live Platform**: [**https://rfp-intelligence-platform.onrender.com/**](https://rfp-intelligence-platform.onrender.com/)
 - **Watch Demo**: [**Google Drive Demonstration Video**](https://drive.google.com/file/d/1EhDkgWStciDn09bj8D-I0wVlPMWSmtYm/view?usp=sharing)
-- **Demo Script**: [`docs/demo_script.md`](docs/demo_script.md)
 
-> The video demonstration walks through the end-to-end platform: system architecture, dual-branch hybrid retrieval with listwise reranking, grounded Q&A with verifiable chunk-level citations, multi-agent 20-field extraction, chronological addendum reconciliation (handling superseded deadlines), negative/unanswerable query abstention, agent execution traces & observability, unseen-bid dynamic ingestion, and incremental SHA-256 indexing.
+> The platform and video demonstration walk through the end-to-end system: system architecture, dual-branch hybrid retrieval with listwise reranking, grounded Q&A with verifiable chunk-level citations, multi-agent 20-field extraction, chronological addendum reconciliation (handling superseded deadlines), negative/unanswerable query abstention, agent execution traces & observability, unseen-bid dynamic ingestion, and incremental SHA-256 indexing.
 
 ---
 
@@ -59,8 +59,7 @@ An evidence-first, citation-grounded enterprise AI system engineered to process 
 │   ├── multi_agent_workflow.svg  # Supporting multi-agent workflow SVG
 │   ├── incremental_indexing.svg  # Supporting incremental indexing SVG
 │   ├── retrieval_evaluation.md   # Comprehensive retrieval benchmark report
-│   ├── sample_qa_log.md          # 10-question verified Q&A audit log
-│   └── demo_script.md            # Step-by-step 5-10 minute presentation guide
+│   └── sample_qa_log.md          # 10-question verified Q&A audit log
 ├── eval/
 │   ├── gold_questions.json       # 28 gold retrieval benchmark questions
 │   ├── run_retrieval_eval.py     # Canonical evaluation benchmark runner
