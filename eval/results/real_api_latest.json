@@ -1,0 +1,1311 @@
+{
+  "Dense Only": {
+    "recall_at_1": 0.04,
+    "recall_at_3": 0.08,
+    "recall_at_5": 0.08,
+    "mrr": 0.0533,
+    "ndcg_at_5": 0.0339,
+    "latency_p50_ms": 919.17,
+    "latency_p95_ms": 1026.59,
+    "failed_queries_count": 23,
+    "failed_queries": [
+      {
+        "id": "q001",
+        "query": "What is the PORFP number and solicitation ID for Maryland State Treasurer laptop procurement?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0011_4896c3db396a",
+          "chk_Bid2_p1_0012_d8ff9111e8ba",
+          "chk_Bid2_p1_0005_a296355006e4"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p3_0008_4551e60d8beb"
+        ],
+        "top_result_text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writin"
+      },
+      {
+        "id": "q002",
+        "query": "What is the Dell laptop model specified in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_019803fd6e3c",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0001_cf7e21c8200b",
+          "chk_Bid2_p3_0003_8ad7af122039",
+          "chk_Bid2_p3_0006_3ac1a46d0459"
+        ],
+        "top_result_text": "BPM044557 - Dell Laptops w/Extended Warranty\nAre you sure you want to delete this note?\n This solicitation is CLOSED\n\nMa"
+      },
+      {
+        "id": "q003",
+        "query": "What is the docking station part number or model required with the Dell laptops?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_cf7e21c8200b",
+          "chk_Bid2_p3_0003_8ad7af122039",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p1_0001_019803fd6e3c"
+        ],
+        "top_result_text": "SKU\n210-BLYZ\n379-BFNZ\n619-ARSB\n658-BCSB\n338-CNRG\n338-CNRK\n321-BKTQ\n409-BCXY\n631-BBSQ\n370-BBTL\n400-BRFT\n391-BJHB\n583-BLNH"
+      },
+      {
+        "id": "q004",
+        "query": "What is the Dallas ISD RFP number for Student and Staff Computing Devices?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p1_0008_1ea3c2dfd529",
+          "chk_Bid1_p2_0010_7478dce78bd9",
+          "chk_Bid1_p1_0184_b71af81e6801"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p37_0114_c63d24715299",
+          "chk_Bid1_p39_0126_9c73b42700b3",
+          "chk_Bid1_p36_0108_83db545a79c5",
+          "chk_Bid1_p40_0132_f314e7d05a5f",
+          "chk_Bid1_p13_0026_38b657c2ea31"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 37 of 40\nNote\nAll min"
+      },
+      {
+        "id": "q005",
+        "query": "What is Sourcing ID 168884 in Bid1?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p1_0184_b71af81e6801",
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p61_0182_432fae54d285",
+          "chk_Bid1_p10_0020_4f4e69bebab4",
+          "chk_Bid1_p41_0133_9c8de2fe03ac",
+          "chk_Bid1_p5_0006_5e2f24ce95ff",
+          "chk_Bid1_p60_0181_cc76a63395b9"
+        ],
+        "top_result_text": "| Col_1 | Supplier Details | Col_3 | Col_4 | Col_5 | Col_6 | Col_7 | Col_8 | Col_9 |\n| --- | --- | --- | --- | --- | ---"
+      },
+      {
+        "id": "q006",
+        "query": "What changes were made to the deadline in Addendum 2 for JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p1_0007_970cc2df5457"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p1_0001_529cd0248ff3",
+          "chk_Bid1_p1_0001_d64b49a6e27e",
+          "chk_Bid1_p5_0006_5e2f24ce95ff",
+          "chk_Bid1_p1_0002_80ea35fbdeac",
+          "chk_Bid1_p3_0004_ecd41b2ec348"
+        ],
+        "top_result_text": "Page 1 | 1\nADDENDUM No. 2\nRFP JA-207652 Student and Staff Computing Devices\n\nThe Purpose of this Addendum is to extend t"
+      },
+      {
+        "id": "q007",
+        "query": "What is the questions due closing date and time for Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p2_0013_5a5e266c7b52",
+          "chk_Bid2_p2_0014_8fedf541329d"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0003_8ad7af122039",
+          "chk_Bid2_p1_0001_cca549114327"
+        ],
+        "top_result_text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writin"
+      },
+      {
+        "id": "q008",
+        "query": "Who is the Agency Point of Contact (POC) for Bid2 and what is their phone number?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0005_82ae0d447dfb",
+          "chk_Bid2_p4_0009_628dd7b7ff93",
+          "chk_Bid2_p2_0002_f6467103f75b",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0004_a5b1d06e25b6"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q009",
+        "query": "Who is the on-site delivery contact for the State Treasurer office in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0005_82ae0d447dfb",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p1_0001_cca549114327"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q010",
+        "query": "What extended warranty duration is required for the Dell laptops in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0007_94ae7041e4e1",
+          "chk_Bid2_p1_0001_019803fd6e3c",
+          "chk_Bid2_p3_0003_8ad7af122039",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p1_0001_cca549114327"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q011",
+        "query": "What is the purpose of the Mercury Affidavit in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0010_4b307d1a1123"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_e7a66d65a52c",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0002_7bc2c75b4246",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p1_0002_748fcca27186"
+        ],
+        "top_result_text": "MERCURY AFFIDAVIT\nAUTHORIZED REPRESENTATIVE THEREBY AFFIRM THAT:\nI am the _________________ (Title) and the duly authori"
+      },
+      {
+        "id": "q013",
+        "query": "What is the pre-bid meeting schedule and location for JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p1_0001_529cd0248ff3",
+          "chk_Bid1_p1_0001_b17454a4a192",
+          "chk_Bid1_p5_0006_5e2f24ce95ff",
+          "chk_Bid1_p1_0001_d64b49a6e27e",
+          "chk_Bid1_p21_0054_a3b413bcd8c9"
+        ],
+        "top_result_text": "Page 1 | 1\nADDENDUM No. 2\nRFP JA-207652 Student and Staff Computing Devices\n\nThe Purpose of this Addendum is to extend t"
+      },
+      {
+        "id": "q014",
+        "query": "What is the term length or duration of the contract in Dallas ISD JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0009_a646c19ebfe0",
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p2_0002_c158c30e8fde",
+          "chk_Bid1_p2_0003_f8fb310e42f2",
+          "chk_Bid1_p31_0091_f5627f2cf1a3",
+          "chk_Bid1_p27_0078_07a6bee138ae",
+          "chk_Bid1_p32_0096_2025f7dceedd"
+        ],
+        "top_result_text": "| LENGTH OF CONTRACT | Col_2 |\n| --- | --- |\n| The term of this proposal shall be for a three (3) year agreement with tw"
+      },
+      {
+        "id": "q015",
+        "query": "Who is the buyer contact name for Dallas ISD RFP JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p1_0001_002aa4b94af4",
+          "chk_Bid1_p14_0027_751f4c5fbcd3",
+          "chk_Bid1_p14_0028_ab8f36bd1b29",
+          "chk_Bid1_p2_0003_f8fb310e42f2",
+          "chk_Bid1_p31_0091_f5627f2cf1a3"
+        ],
+        "top_result_text": "Dallas ISD rev 1.0\nPage 1 of 40\nPURCHASING DEPARTMENT\n9400 North Central Expressway, Suite 1510, Dallas, TX 75231\n(972)9"
+      },
+      {
+        "id": "q016",
+        "query": "What are the line items for Tier 1 and Tier 2 Staff Laptops in Dallas ISD RFP?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p34_0107_38858e226aee",
+          "chk_Bid1_p34_0108_b0c38cf705dc",
+          "chk_Bid1_p35_0109_5de70e1d4cdd",
+          "chk_Bid1_p37_0121_4ff446ab7c4f",
+          "chk_Bid1_p39_0133_7d026f6f17d6"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p34_0101_c24589e4a71b",
+          "chk_Bid1_p35_0103_a9a77938e85d",
+          "chk_Bid1_p36_0108_83db545a79c5",
+          "chk_Bid1_p39_0126_9c73b42700b3",
+          "chk_Bid1_p37_0114_c63d24715299"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 34 of 40\n2 Price Sche"
+      },
+      {
+        "id": "q017",
+        "query": "What are the minimum specifications for Tier 2 Large Student Chromebook Laptop?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p4_0014_2e2fba18f01f",
+          "chk_Bid1_p4_0015_673294cfaa4c",
+          "chk_Bid1_p34_0107_38858e226aee",
+          "chk_Bid1_p35_0109_5de70e1d4cdd",
+          "chk_Bid1_p36_0115_3529e9ef93ef",
+          "chk_Bid1_p39_0133_7d026f6f17d6"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p6_0011_e992a7514548",
+          "chk_Bid1_p4_0007_875306dbe49f",
+          "chk_Bid1_p5_0009_068a30954b20",
+          "chk_Bid1_p34_0101_c24589e4a71b",
+          "chk_Bid1_p4_0008_9430350ca765"
+        ],
+        "top_result_text": "| SCOPE AND SPECIFICATIONS OF THE PROPOSAL | Col_2 |\n| --- | --- |\n| \u2022 4 GB Video card \u2022 Touchscreen optional \u2022 Warranty"
+      },
+      {
+        "id": "q018",
+        "query": "How many points are allocated to M/WBE Joint Venture Partner under evaluation criteria in Bid1?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p53_0177_ebe9143f9c63",
+          "chk_Bid1_p53_0178_865983b5b13b"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p30_0086_bbf868a66059",
+          "chk_Bid1_p30_0088_330402c340b6",
+          "chk_Bid1_p43_0143_c86d861abd2d",
+          "chk_Bid1_p49_0161_2cb1450fdfa0",
+          "chk_Bid1_p49_0163_b3358c80e29a"
+        ],
+        "top_result_text": "| EVALUATION PROCESS |  |\n| --- | --- |\n| FINAL EVALUATION STATEMENT - POINTS In addition to the evaluation criteria not"
+      },
+      {
+        "id": "q019",
+        "query": "What are the standard payment terms and billing processes in Dallas ISD RFP?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p23_0066_049847201a6b",
+          "chk_Bid1_p23_0068_a19e2ff9711e",
+          "chk_Bid1_p30_0093_9cb8b0a07193",
+          "chk_Bid1_p51_0173_dcfaa2dcb28b"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p31_0091_f5627f2cf1a3",
+          "chk_Bid1_p14_0027_751f4c5fbcd3",
+          "chk_Bid1_p2_0002_c158c30e8fde",
+          "chk_Bid1_p4_0005_1897d314f7b3",
+          "chk_Bid1_p2_0003_f8fb310e42f2"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 31 of 40\nEVALUATION P"
+      },
+      {
+        "id": "q020",
+        "query": "What commercial general liability insurance limits are required in Dallas ISD RFP?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p1_0002_80ea35fbdeac",
+          "chk_Bid1_p9_0024_a77d8beedf83",
+          "chk_Bid1_p9_0025_2d90bb4b7b68",
+          "chk_Bid1_p17_0045_960ebf8f6418",
+          "chk_Bid1_p17_0048_9b079033c772"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p31_0092_607b4f0ff673",
+          "chk_Bid1_p17_0041_07ad0a0e1bfe",
+          "chk_Bid1_p17_0038_cbf637a4e3a3",
+          "chk_Bid1_p31_0090_d872297b7278",
+          "chk_Bid1_p14_0027_751f4c5fbcd3"
+        ],
+        "top_result_text": "Dallas ISD\ncomprises 384 square miles and encompasses the cities of Dallas, Cockrell Hill, Seagoville, Addison,\nWilmer, "
+      },
+      {
+        "id": "q021",
+        "query": "How many Dell laptops and docking stations are requested for the MD529 employee refresh?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q023",
+        "query": "What SKU numbers and processor options are listed in Dell Laptop Specs document?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0006_bd30976c42cd"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_cf7e21c8200b",
+          "chk_Bid2_p1_0001_019803fd6e3c",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p3_0003_8ad7af122039",
+          "chk_Bid2_p3_0006_3ac1a46d0459"
+        ],
+        "top_result_text": "SKU\n210-BLYZ\n379-BFNZ\n619-ARSB\n658-BCSB\n338-CNRG\n338-CNRK\n321-BKTQ\n409-BCXY\n631-BBSQ\n370-BBTL\n400-BRFT\n391-BJHB\n583-BLNH"
+      },
+      {
+        "id": "q024",
+        "query": "What are the hardware warranty certificates or affidavit deliverables upon award in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p3_0003_8ad7af122039",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p4_0010_1d007933672d"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPh"
+      },
+      {
+        "id": "q028",
+        "query": "What warranty requirements are stated across the computing hardware solicitations?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658",
+          "chk_Bid1_p2_0003_0ef36cb31d5e"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p4_0008_9430350ca765",
+          "chk_Bid1_p4_0007_875306dbe49f",
+          "chk_Bid1_p3_0006_d273a1cc75da",
+          "chk_Bid2_p3_0007_94ae7041e4e1",
+          "chk_Bid1_p3_0004_ecd41b2ec348"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 4 of 40\nSCOPE AND SPE"
+      }
+    ]
+  },
+  "BM25 Only": {
+    "recall_at_1": 0.12,
+    "recall_at_3": 0.28,
+    "recall_at_5": 0.48,
+    "mrr": 0.224,
+    "ndcg_at_5": 0.1894,
+    "latency_p50_ms": 0.87,
+    "latency_p95_ms": 1.32,
+    "failed_queries_count": 13,
+    "failed_queries": [
+      {
+        "id": "q001",
+        "query": "What is the PORFP number and solicitation ID for Maryland State Treasurer laptop procurement?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0011_4896c3db396a",
+          "chk_Bid2_p1_0012_d8ff9111e8ba",
+          "chk_Bid2_p1_0005_a296355006e4"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p1_0002_7bc2c75b4246"
+        ],
+        "top_result_text": "|  | Section 1 \u2013General Information |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | "
+      },
+      {
+        "id": "q002",
+        "query": "What is the Dell laptop model specified in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0004_dd4958d82f35",
+          "chk_Bid2_p3_0008_4551e60d8beb"
+        ],
+        "top_result_text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writin"
+      },
+      {
+        "id": "q003",
+        "query": "What is the docking station part number or model required with the Dell laptops?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p3_0004_dd4958d82f35"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q004",
+        "query": "What is the Dallas ISD RFP number for Student and Staff Computing Devices?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p1_0008_1ea3c2dfd529",
+          "chk_Bid1_p2_0010_7478dce78bd9",
+          "chk_Bid1_p1_0184_b71af81e6801"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p3_0004_ecd41b2ec348",
+          "chk_Bid1_p4_0005_1897d314f7b3",
+          "chk_Bid1_p2_0003_0ef36cb31d5e",
+          "chk_Bid1_p1_0002_80ea35fbdeac",
+          "chk_Bid1_p3_0013_e7f14f5550d6"
+        ],
+        "top_result_text": "Page 3 | 5\nADDENDUM No. 1\nRFP JA-207652 Student and Staff Computing Devices\n\n25. In RFP Section 2.1 Line Information (pr"
+      },
+      {
+        "id": "q007",
+        "query": "What is the questions due closing date and time for Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p2_0013_5a5e266c7b52",
+          "chk_Bid2_p2_0014_8fedf541329d"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p3_0004_dd4958d82f35"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n2\nQuestions\nDue\n(Closing)\nDate\nand\nTime:\n06/01/20"
+      },
+      {
+        "id": "q008",
+        "query": "Who is the Agency Point of Contact (POC) for Bid2 and what is their phone number?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p3_0005_82ae0d447dfb",
+          "chk_Bid2_p4_0009_628dd7b7ff93"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPh"
+      },
+      {
+        "id": "q009",
+        "query": "Who is the on-site delivery contact for the State Treasurer office in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p3_0005_82ae0d447dfb",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p1_0001_cca549114327"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPh"
+      },
+      {
+        "id": "q010",
+        "query": "What extended warranty duration is required for the Dell laptops in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p3_0007_94ae7041e4e1",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p1_0001_019803fd6e3c",
+          "chk_Bid2_p1_0001_cca549114327"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPh"
+      },
+      {
+        "id": "q011",
+        "query": "What is the purpose of the Mercury Affidavit in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0010_4b307d1a1123"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_e7a66d65a52c",
+          "chk_Bid2_p3_0004_a5b1d06e25b6",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p1_0002_7bc2c75b4246"
+        ],
+        "top_result_text": "MERCURY AFFIDAVIT\nAUTHORIZED REPRESENTATIVE THEREBY AFFIRM THAT:\nI am the _________________ (Title) and the duly authori"
+      },
+      {
+        "id": "q015",
+        "query": "Who is the buyer contact name for Dallas ISD RFP JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p3_0004_ecd41b2ec348",
+          "chk_Bid1_p3_0013_e7f14f5550d6",
+          "chk_Bid1_p3_0006_d273a1cc75da",
+          "chk_Bid1_p16_0044_ded1bb3b67a3",
+          "chk_Bid1_p16_0037_7de03a1e6353"
+        ],
+        "top_result_text": "Page 3 | 5\nADDENDUM No. 1\nRFP JA-207652 Student and Staff Computing Devices\n\n25. In RFP Section 2.1 Line Information (pr"
+      },
+      {
+        "id": "q021",
+        "query": "How many Dell laptops and docking stations are requested for the MD529 employee refresh?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p1_0001_019803fd6e3c",
+          "chk_Bid2_p3_0004_dd4958d82f35",
+          "chk_Bid2_p1_0001_cca549114327"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q023",
+        "query": "What SKU numbers and processor options are listed in Dell Laptop Specs document?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0006_bd30976c42cd"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p1_0001_cf7e21c8200b",
+          "chk_Bid2_p3_0004_dd4958d82f35",
+          "chk_Bid2_p2_0002_f6467103f75b"
+        ],
+        "top_result_text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writin"
+      },
+      {
+        "id": "q024",
+        "query": "What are the hardware warranty certificates or affidavit deliverables upon award in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0007_94ae7041e4e1",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p3_0004_a5b1d06e25b6",
+          "chk_Bid2_p1_0001_e7a66d65a52c",
+          "chk_Bid2_p2_0004_7d8b1f323c37"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      }
+    ]
+  },
+  "Hybrid (Dense+BM25+RRF)": {
+    "recall_at_1": 0.04,
+    "recall_at_3": 0.12,
+    "recall_at_5": 0.16,
+    "mrr": 0.09,
+    "ndcg_at_5": 0.0661,
+    "latency_p50_ms": 921.17,
+    "latency_p95_ms": 1125.4,
+    "failed_queries_count": 21,
+    "failed_queries": [
+      {
+        "id": "q001",
+        "query": "What is the PORFP number and solicitation ID for Maryland State Treasurer laptop procurement?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0011_4896c3db396a",
+          "chk_Bid2_p1_0012_d8ff9111e8ba",
+          "chk_Bid2_p1_0005_a296355006e4"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p1_0002_7bc2c75b4246"
+        ],
+        "top_result_text": "|  | Section 1 \u2013General Information |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | "
+      },
+      {
+        "id": "q002",
+        "query": "What is the Dell laptop model specified in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p3_0008_4551e60d8beb"
+        ],
+        "top_result_text": "|  | Section 1 \u2013General Information |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | "
+      },
+      {
+        "id": "q003",
+        "query": "What is the docking station part number or model required with the Dell laptops?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p3_0003_8ad7af122039",
+          "chk_Bid2_p1_0001_019803fd6e3c",
+          "chk_Bid2_p2_0003_b515705bf4d3"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q004",
+        "query": "What is the Dallas ISD RFP number for Student and Staff Computing Devices?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p1_0008_1ea3c2dfd529",
+          "chk_Bid1_p2_0010_7478dce78bd9",
+          "chk_Bid1_p1_0184_b71af81e6801"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p37_0114_c63d24715299",
+          "chk_Bid1_p40_0132_f314e7d05a5f",
+          "chk_Bid1_p39_0126_9c73b42700b3",
+          "chk_Bid1_p4_0005_1897d314f7b3",
+          "chk_Bid1_p3_0004_ecd41b2ec348"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 37 of 40\nNote\nAll min"
+      },
+      {
+        "id": "q006",
+        "query": "What changes were made to the deadline in Addendum 2 for JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p1_0007_970cc2df5457"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p1_0001_529cd0248ff3",
+          "chk_Bid1_p1_0002_80ea35fbdeac",
+          "chk_Bid1_p2_0003_0ef36cb31d5e",
+          "chk_Bid1_p5_0006_5e2f24ce95ff",
+          "chk_Bid1_p1_0001_d64b49a6e27e"
+        ],
+        "top_result_text": "Page 1 | 1\nADDENDUM No. 2\nRFP JA-207652 Student and Staff Computing Devices\n\nThe Purpose of this Addendum is to extend t"
+      },
+      {
+        "id": "q007",
+        "query": "What is the questions due closing date and time for Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p2_0013_5a5e266c7b52",
+          "chk_Bid2_p2_0014_8fedf541329d"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p1_0002_748fcca27186"
+        ],
+        "top_result_text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writin"
+      },
+      {
+        "id": "q008",
+        "query": "Who is the Agency Point of Contact (POC) for Bid2 and what is their phone number?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0005_82ae0d447dfb",
+          "chk_Bid2_p4_0009_628dd7b7ff93",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p4_0010_1d007933672d"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q009",
+        "query": "Who is the on-site delivery contact for the State Treasurer office in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0005_82ae0d447dfb",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p1_0001_cca549114327"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q010",
+        "query": "What extended warranty duration is required for the Dell laptops in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0007_94ae7041e4e1",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p1_0001_019803fd6e3c",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p1_0001_cca549114327"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q011",
+        "query": "What is the purpose of the Mercury Affidavit in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0010_4b307d1a1123"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_e7a66d65a52c",
+          "chk_Bid2_p1_0002_7bc2c75b4246",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p3_0004_a5b1d06e25b6"
+        ],
+        "top_result_text": "MERCURY AFFIDAVIT\nAUTHORIZED REPRESENTATIVE THEREBY AFFIRM THAT:\nI am the _________________ (Title) and the duly authori"
+      },
+      {
+        "id": "q013",
+        "query": "What is the pre-bid meeting schedule and location for JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p2_0003_f8fb310e42f2",
+          "chk_Bid1_p1_0001_529cd0248ff3",
+          "chk_Bid1_p2_0003_0ef36cb31d5e",
+          "chk_Bid1_p1_0001_b17454a4a192",
+          "chk_Bid1_p1_0002_80ea35fbdeac"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 2 of 40\nBuyer\nALZATE,"
+      },
+      {
+        "id": "q014",
+        "query": "What is the term length or duration of the contract in Dallas ISD JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0009_a646c19ebfe0",
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p2_0002_c158c30e8fde",
+          "chk_Bid1_p2_0003_f8fb310e42f2",
+          "chk_Bid1_p17_0041_07ad0a0e1bfe",
+          "chk_Bid1_p20_0051_062e3cbb4b88",
+          "chk_Bid1_p53_0177_ebe9143f9c63"
+        ],
+        "top_result_text": "| LENGTH OF CONTRACT | Col_2 |\n| --- | --- |\n| The term of this proposal shall be for a three (3) year agreement with tw"
+      },
+      {
+        "id": "q015",
+        "query": "Who is the buyer contact name for Dallas ISD RFP JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p2_0003_f8fb310e42f2",
+          "chk_Bid1_p31_0092_607b4f0ff673",
+          "chk_Bid1_p31_0090_d872297b7278",
+          "chk_Bid1_p1_0001_002aa4b94af4",
+          "chk_Bid1_p3_0004_ecd41b2ec348"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 2 of 40\nBuyer\nALZATE,"
+      },
+      {
+        "id": "q016",
+        "query": "What are the line items for Tier 1 and Tier 2 Staff Laptops in Dallas ISD RFP?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p34_0107_38858e226aee",
+          "chk_Bid1_p34_0108_b0c38cf705dc",
+          "chk_Bid1_p35_0109_5de70e1d4cdd",
+          "chk_Bid1_p37_0121_4ff446ab7c4f",
+          "chk_Bid1_p39_0133_7d026f6f17d6"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p36_0108_83db545a79c5",
+          "chk_Bid1_p3_0004_ecd41b2ec348",
+          "chk_Bid1_p39_0126_9c73b42700b3",
+          "chk_Bid1_p37_0114_c63d24715299",
+          "chk_Bid1_p35_0103_a9a77938e85d"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 36 of 40\n2.2 Line Det"
+      },
+      {
+        "id": "q017",
+        "query": "What are the minimum specifications for Tier 2 Large Student Chromebook Laptop?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p4_0014_2e2fba18f01f",
+          "chk_Bid1_p4_0015_673294cfaa4c",
+          "chk_Bid1_p34_0107_38858e226aee",
+          "chk_Bid1_p35_0109_5de70e1d4cdd",
+          "chk_Bid1_p36_0115_3529e9ef93ef",
+          "chk_Bid1_p39_0133_7d026f6f17d6"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p34_0101_c24589e4a71b",
+          "chk_Bid1_p36_0108_83db545a79c5",
+          "chk_Bid1_p34_0100_aeeef41b441c",
+          "chk_Bid1_p39_0126_9c73b42700b3",
+          "chk_Bid1_p4_0007_875306dbe49f"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 34 of 40\n2 Price Sche"
+      },
+      {
+        "id": "q018",
+        "query": "How many points are allocated to M/WBE Joint Venture Partner under evaluation criteria in Bid1?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p53_0177_ebe9143f9c63",
+          "chk_Bid1_p53_0178_865983b5b13b"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p30_0086_bbf868a66059",
+          "chk_Bid1_p52_0168_bf25e45cba7c",
+          "chk_Bid1_p30_0088_330402c340b6",
+          "chk_Bid1_p43_0144_630be443dfd1",
+          "chk_Bid1_p43_0143_c86d861abd2d"
+        ],
+        "top_result_text": "| EVALUATION PROCESS |  |\n| --- | --- |\n| FINAL EVALUATION STATEMENT - POINTS In addition to the evaluation criteria not"
+      },
+      {
+        "id": "q019",
+        "query": "What are the standard payment terms and billing processes in Dallas ISD RFP?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p23_0066_049847201a6b",
+          "chk_Bid1_p23_0068_a19e2ff9711e",
+          "chk_Bid1_p30_0093_9cb8b0a07193",
+          "chk_Bid1_p51_0173_dcfaa2dcb28b"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p4_0005_1897d314f7b3",
+          "chk_Bid1_p31_0091_f5627f2cf1a3",
+          "chk_Bid1_p31_0089_1f6886b46202",
+          "chk_Bid1_p2_0003_0ef36cb31d5e",
+          "chk_Bid1_p3_0004_ecd41b2ec348"
+        ],
+        "top_result_text": "Page 4 | 5\nADDENDUM No. 1\nRFP JA-207652 Student and Staff Computing Devices\n\n31. FORM 1295 - CERTIFICATE OF INTERESTED P"
+      },
+      {
+        "id": "q021",
+        "query": "How many Dell laptops and docking stations are requested for the MD529 employee refresh?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0001_019803fd6e3c",
+          "chk_Bid2_p2_0003_b515705bf4d3"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q023",
+        "query": "What SKU numbers and processor options are listed in Dell Laptop Specs document?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0006_bd30976c42cd"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_cf7e21c8200b",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p3_0003_8ad7af122039"
+        ],
+        "top_result_text": "SKU\n210-BLYZ\n379-BFNZ\n619-ARSB\n658-BCSB\n338-CNRG\n338-CNRK\n321-BKTQ\n409-BCXY\n631-BBSQ\n370-BBTL\n400-BRFT\n391-BJHB\n583-BLNH"
+      },
+      {
+        "id": "q024",
+        "query": "What are the hardware warranty certificates or affidavit deliverables upon award in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p3_0007_94ae7041e4e1",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p3_0003_8ad7af122039"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPh"
+      },
+      {
+        "id": "q028",
+        "query": "What warranty requirements are stated across the computing hardware solicitations?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658",
+          "chk_Bid1_p2_0003_0ef36cb31d5e"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0007_94ae7041e4e1",
+          "chk_Bid1_p3_0006_d273a1cc75da",
+          "chk_Bid1_p3_0004_ecd41b2ec348",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid1_p1_0002_80ea35fbdeac"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      }
+    ]
+  },
+  "Hybrid + Jina Reranker": {
+    "recall_at_1": 0.08,
+    "recall_at_3": 0.12,
+    "recall_at_5": 0.16,
+    "mrr": 0.108,
+    "ndcg_at_5": 0.0993,
+    "latency_p50_ms": 1746.43,
+    "latency_p95_ms": 2038.35,
+    "failed_queries_count": 21,
+    "failed_queries": [
+      {
+        "id": "q001",
+        "query": "What is the PORFP number and solicitation ID for Maryland State Treasurer laptop procurement?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0011_4896c3db396a",
+          "chk_Bid2_p1_0012_d8ff9111e8ba",
+          "chk_Bid2_p1_0005_a296355006e4"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p3_0008_4551e60d8beb"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n1\n\nSection 1 \u2013General Information\n\nPORFP Number:\n"
+      },
+      {
+        "id": "q002",
+        "query": "What is the Dell laptop model specified in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p1_0001_cf7e21c8200b",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0002_748fcca27186"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n2\nQuestions\nDue\n(Closing)\nDate\nand\nTime:\n06/01/20"
+      },
+      {
+        "id": "q003",
+        "query": "What is the docking station part number or model required with the Dell laptops?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0001_cf7e21c8200b",
+          "chk_Bid2_p3_0003_8ad7af122039"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n2\nQuestions\nDue\n(Closing)\nDate\nand\nTime:\n06/01/20"
+      },
+      {
+        "id": "q004",
+        "query": "What is the Dallas ISD RFP number for Student and Staff Computing Devices?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p1_0008_1ea3c2dfd529",
+          "chk_Bid1_p2_0010_7478dce78bd9",
+          "chk_Bid1_p1_0184_b71af81e6801"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p3_0006_d273a1cc75da",
+          "chk_Bid1_p37_0114_c63d24715299",
+          "chk_Bid1_p40_0132_f314e7d05a5f",
+          "chk_Bid1_p39_0126_9c73b42700b3",
+          "chk_Bid1_p36_0108_83db545a79c5"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 3 of 40\nSCOPE AND SPE"
+      },
+      {
+        "id": "q007",
+        "query": "What is the questions due closing date and time for Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p2_0013_5a5e266c7b52",
+          "chk_Bid2_p2_0014_8fedf541329d"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p3_0006_3ac1a46d0459"
+        ],
+        "top_result_text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n2\nQuestions\nDue\n(Closing)\nDate\nand\nTime:\n06/01/20"
+      },
+      {
+        "id": "q008",
+        "query": "Who is the Agency Point of Contact (POC) for Bid2 and what is their phone number?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0005_82ae0d447dfb",
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p4_0009_628dd7b7ff93",
+          "chk_Bid2_p4_0010_1d007933672d"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q009",
+        "query": "Who is the on-site delivery contact for the State Treasurer office in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0005_82ae0d447dfb",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p3_0006_3ac1a46d0459"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q010",
+        "query": "What extended warranty duration is required for the Dell laptops in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0007_94ae7041e4e1",
+          "chk_Bid2_p1_0001_019803fd6e3c",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p2_0003_b515705bf4d3"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q011",
+        "query": "What is the purpose of the Mercury Affidavit in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0010_4b307d1a1123"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_e7a66d65a52c",
+          "chk_Bid2_p1_0002_7bc2c75b4246",
+          "chk_Bid2_p4_0009_628dd7b7ff93",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p1_0001_cca549114327"
+        ],
+        "top_result_text": "MERCURY AFFIDAVIT\nAUTHORIZED REPRESENTATIVE THEREBY AFFIRM THAT:\nI am the _________________ (Title) and the duly authori"
+      },
+      {
+        "id": "q012",
+        "query": "What affirmations are required in the Contract Affidavit for Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0001_81fa79fe5a3b",
+          "chk_Bid2_p2_0003_23d6a2542a2e",
+          "chk_Bid2_p3_0004_a5b1d06e25b6"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0002_7bc2c75b4246",
+          "chk_Bid2_p1_0001_e7a66d65a52c",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p4_0009_628dd7b7ff93"
+        ],
+        "top_result_text": "A.\nAUTHORITY\nI hereby affirm that I,\n\n(name of affiant) am the\n(title) and duly authorized representative of\n(name of bu"
+      },
+      {
+        "id": "q013",
+        "query": "What is the pre-bid meeting schedule and location for JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p2_0003_f8fb310e42f2",
+          "chk_Bid1_p21_0054_a3b413bcd8c9",
+          "chk_Bid1_p1_0002_80ea35fbdeac",
+          "chk_Bid1_p1_0001_b17454a4a192",
+          "chk_Bid1_p1_0001_d64b49a6e27e"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 2 of 40\nBuyer\nALZATE,"
+      },
+      {
+        "id": "q014",
+        "query": "What is the term length or duration of the contract in Dallas ISD JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0009_a646c19ebfe0",
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p2_0009_0be8249ec2a6",
+          "chk_Bid1_p2_0002_c158c30e8fde",
+          "chk_Bid1_p2_0003_f8fb310e42f2",
+          "chk_Bid1_p20_0051_062e3cbb4b88",
+          "chk_Bid1_p32_0096_2025f7dceedd"
+        ],
+        "top_result_text": "| LENGTH OF CONTRACT | Col_2 |\n| --- | --- |\n| The term of this proposal shall be for a three (3) year agreement with tw"
+      },
+      {
+        "id": "q015",
+        "query": "Who is the buyer contact name for Dallas ISD RFP JA-207652?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p2_0010_7478dce78bd9"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p2_0003_f8fb310e42f2",
+          "chk_Bid1_p1_0001_002aa4b94af4",
+          "chk_Bid1_p3_0013_e7f14f5550d6",
+          "chk_Bid1_p3_0006_d273a1cc75da",
+          "chk_Bid1_p16_0044_ded1bb3b67a3"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 2 of 40\nBuyer\nALZATE,"
+      },
+      {
+        "id": "q016",
+        "query": "What are the line items for Tier 1 and Tier 2 Staff Laptops in Dallas ISD RFP?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p34_0107_38858e226aee",
+          "chk_Bid1_p34_0108_b0c38cf705dc",
+          "chk_Bid1_p35_0109_5de70e1d4cdd",
+          "chk_Bid1_p37_0121_4ff446ab7c4f",
+          "chk_Bid1_p39_0133_7d026f6f17d6"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p37_0114_c63d24715299",
+          "chk_Bid1_p34_0101_c24589e4a71b",
+          "chk_Bid1_p35_0103_a9a77938e85d",
+          "chk_Bid1_p39_0126_9c73b42700b3",
+          "chk_Bid1_p36_0108_83db545a79c5"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 37 of 40\nNote\nAll min"
+      },
+      {
+        "id": "q017",
+        "query": "What are the minimum specifications for Tier 2 Large Student Chromebook Laptop?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p4_0014_2e2fba18f01f",
+          "chk_Bid1_p4_0015_673294cfaa4c",
+          "chk_Bid1_p34_0107_38858e226aee",
+          "chk_Bid1_p35_0109_5de70e1d4cdd",
+          "chk_Bid1_p36_0115_3529e9ef93ef",
+          "chk_Bid1_p39_0133_7d026f6f17d6"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p36_0108_83db545a79c5",
+          "chk_Bid1_p39_0126_9c73b42700b3",
+          "chk_Bid1_p34_0101_c24589e4a71b",
+          "chk_Bid1_p34_0100_aeeef41b441c",
+          "chk_Bid1_p37_0114_c63d24715299"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 36 of 40\n2.2 Line Det"
+      },
+      {
+        "id": "q018",
+        "query": "How many points are allocated to M/WBE Joint Venture Partner under evaluation criteria in Bid1?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p53_0177_ebe9143f9c63",
+          "chk_Bid1_p53_0178_865983b5b13b"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p53_0171_6141004e7fc2",
+          "chk_Bid1_p30_0086_bbf868a66059",
+          "chk_Bid1_p49_0161_2cb1450fdfa0",
+          "chk_Bid1_p53_0170_0f3af14b7f8f",
+          "chk_Bid1_p30_0088_330402c340b6"
+        ],
+        "top_result_text": "Last update 8.7.2020 Dallas ISD M/WBE Compliance Guidelines and Forms for Goods and Services #3002 Page | 13\n\nSection 18"
+      },
+      {
+        "id": "q019",
+        "query": "What are the standard payment terms and billing processes in Dallas ISD RFP?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p23_0066_049847201a6b",
+          "chk_Bid1_p23_0068_a19e2ff9711e",
+          "chk_Bid1_p30_0093_9cb8b0a07193",
+          "chk_Bid1_p51_0173_dcfaa2dcb28b"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p14_0027_751f4c5fbcd3",
+          "chk_Bid1_p31_0091_f5627f2cf1a3",
+          "chk_Bid1_p2_0002_c158c30e8fde",
+          "chk_Bid1_p3_0013_e7f14f5550d6",
+          "chk_Bid1_p3_0011_a4fa778555d5"
+        ],
+        "top_result_text": "| REFERENCES | Col_2 |\n| --- | --- |\n| Type \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. Provide your answer below "
+      },
+      {
+        "id": "q020",
+        "query": "What commercial general liability insurance limits are required in Dallas ISD RFP?",
+        "expected_chunk_ids": [
+          "chk_Bid1_p1_0002_80ea35fbdeac",
+          "chk_Bid1_p9_0024_a77d8beedf83",
+          "chk_Bid1_p9_0025_2d90bb4b7b68",
+          "chk_Bid1_p17_0045_960ebf8f6418",
+          "chk_Bid1_p17_0048_9b079033c772"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid1_p17_0041_07ad0a0e1bfe",
+          "chk_Bid1_p17_0038_cbf637a4e3a3",
+          "chk_Bid1_p38_0120_c763aac1bbc7",
+          "chk_Bid1_p2_0003_0ef36cb31d5e",
+          "chk_Bid1_p31_0092_607b4f0ff673"
+        ],
+        "top_result_text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 17 of 40\nPROPOSAL REQ"
+      },
+      {
+        "id": "q021",
+        "query": "How many Dell laptops and docking stations are requested for the MD529 employee refresh?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0016_b82e01f73129",
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0006_3ac1a46d0459",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p3_0008_4551e60d8beb"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      },
+      {
+        "id": "q023",
+        "query": "What SKU numbers and processor options are listed in Dell Laptop Specs document?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p1_0006_bd30976c42cd"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p1_0001_cf7e21c8200b",
+          "chk_Bid2_p2_0002_f6467103f75b",
+          "chk_Bid2_p2_0003_b515705bf4d3",
+          "chk_Bid2_p2_0004_7d8b1f323c37",
+          "chk_Bid2_p3_0003_8ad7af122039"
+        ],
+        "top_result_text": "SKU\n210-BLYZ\n379-BFNZ\n619-ARSB\n658-BCSB\n338-CNRG\n338-CNRK\n321-BKTQ\n409-BCXY\n631-BBSQ\n370-BBTL\n400-BRFT\n391-BJHB\n583-BLNH"
+      },
+      {
+        "id": "q024",
+        "query": "What are the hardware warranty certificates or affidavit deliverables upon award in Bid2?",
+        "expected_chunk_ids": [
+          "chk_Bid2_p3_0018_139a1000e658"
+        ],
+        "retrieved_chunk_ids": [
+          "chk_Bid2_p3_0007_94ae7041e4e1",
+          "chk_Bid2_p1_0002_748fcca27186",
+          "chk_Bid2_p1_0001_cca549114327",
+          "chk_Bid2_p3_0008_4551e60d8beb",
+          "chk_Bid2_p1_0001_e7a66d65a52c"
+        ],
+        "top_result_text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| ---"
+      }
+    ]
+  }
+}

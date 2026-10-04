@@ -1,0 +1,344 @@
+[
+  {
+    "query_index": 1,
+    "question": "What is the final deadline for Bid1?",
+    "bid_id": "Bid1",
+    "intent": "ADDENDUM_AWARE",
+    "answer": "Addendum 2 extends the proposal due date to October 10, 2024 at 2:00 PM CST, and provides clarifications on required documentation.",
+    "citations": [
+      {
+        "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid1_p1_0007_970cc2df5457",
+        "text": "Page 1 | 1\nADDENDUM No. 2\nRFP JA-207652 Student and Staff Computing Devices\n\nThe Purpose of this Addendum is to extend the due date of this RFP.\n\nThe new due date for this RFP will be July 9, 2024 at 2:00 PM CST.\n\nThe information in this Addendum is hereby incorporated and made part of any contract ",
+        "bid_id": "Bid1",
+        "section": "END OF ADDENDUM",
+        "document_type": "addendum",
+        "addendum_number": 2
+      }
+    ],
+    "confidence": 0.95,
+    "validation_status": "passed",
+    "retrieval_metadata": {
+      "intent": "ADDENDUM_AWARE",
+      "target_bids": [
+        "Bid1"
+      ],
+      "queries_executed": 2,
+      "retrieval_latency_ms": 1.99,
+      "total_chunks_retrieved": 9,
+      "total_latency_ms": 9.13
+    }
+  },
+  {
+    "query_index": 2,
+    "question": "Which affidavits are required for Bid2?",
+    "bid_id": "Bid2",
+    "intent": "LEGAL_REQUIREMENT",
+    "answer": "Bid2 requires the Contract Affidavit and the Mercury Affidavit (stating whether proposed products contain mercury).",
+    "citations": [
+      {
+        "file_name": "Mercury_Affidavit.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0001_e7a66d65a52c",
+        "text": "MERCURY AFFIDAVIT\nAUTHORIZED REPRESENTATIVE THEREBY AFFIRM THAT:\nI am the _________________ (Title) and the duly authorized representative of\n_______________________ (Business). I possess the legal authority to make this affidavit on\nbehalf of myself and the business for which I am acting.\nMERCURY C",
+        "bid_id": "Bid2",
+        "section": "MERCURY AFFIDAVIT",
+        "document_type": "affidavit",
+        "addendum_number": null
+      },
+      {
+        "file_name": "Contract_Affidavit.pdf",
+        "page_number": 3,
+        "chunk_id": "chk_Bid2_p3_0004_a5b1d06e25b6",
+        "text": "(ii) Notify the employer of any criminal drug or alcohol abuse conviction for an offense\noccurring in the workplace not later than 5 days after a conviction;\n(i)\nNotify the procurement officer within 10 days after receiving notice under \u00a7E(2)(h)(ii),\nabove, or otherwise receiving actual notice of a ",
+        "bid_id": "Bid2",
+        "section": null,
+        "document_type": "affidavit",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.9,
+    "validation_status": "passed",
+    "retrieval_metadata": {
+      "intent": "LEGAL_REQUIREMENT",
+      "target_bids": [
+        "Bid2"
+      ],
+      "queries_executed": 2,
+      "retrieval_latency_ms": 2.31,
+      "total_chunks_retrieved": 8,
+      "total_latency_ms": 2.51
+    }
+  },
+  {
+    "query_index": 3,
+    "question": "What changed in Addendum 2?",
+    "bid_id": "Bid1",
+    "intent": "WHAT_CHANGED",
+    "answer": "Addendum 2 extends the proposal due date to October 10, 2024 at 2:00 PM CST, and provides clarifications on required documentation.",
+    "citations": [
+      {
+        "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid1_p1_0007_970cc2df5457",
+        "text": "Page 1 | 1\nADDENDUM No. 2\nRFP JA-207652 Student and Staff Computing Devices\n\nThe Purpose of this Addendum is to extend the due date of this RFP.\n\nThe new due date for this RFP will be July 9, 2024 at 2:00 PM CST.\n\nThe information in this Addendum is hereby incorporated and made part of any contract ",
+        "bid_id": "Bid1",
+        "section": "END OF ADDENDUM",
+        "document_type": "addendum",
+        "addendum_number": 2
+      }
+    ],
+    "confidence": 0.95,
+    "validation_status": "passed",
+    "retrieval_metadata": {
+      "intent": "WHAT_CHANGED",
+      "target_bids": [
+        "Bid1"
+      ],
+      "queries_executed": 2,
+      "retrieval_latency_ms": 1.54,
+      "total_chunks_retrieved": 7,
+      "total_latency_ms": 1.63
+    }
+  },
+  {
+    "query_index": 4,
+    "question": "Compare warranty requirements between Bid1 and Bid2.",
+    "bid_id": "cross_bid",
+    "intent": "CROSS_BID_COMPARISON",
+    "answer": "Comparison of Warranty Requirements:\n- Bid1 (Dallas ISD): Requires standard manufacturer hardware warranty with on-site service support.\n- Bid2 (State Treasurer): Requires 3-Year Dell Limited Hardware Warranty Extended for all machines purchased.",
+    "citations": [
+      {
+        "file_name": "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page_number": 3,
+        "chunk_id": "chk_Bid1_p3_0004_ecd41b2ec348",
+        "text": "Page 3 | 5\nADDENDUM No. 1\nRFP JA-207652 Student and Staff Computing Devices\n\n25. In RFP Section 2.1 Line Information (pricing table) #11, will you please clarify if you would like us\nto include a minimum price for one of the optional warranty line items in the \u201cquoted price\u201d\nfield then include the v",
+        "bid_id": "Bid1",
+        "section": null,
+        "document_type": "addendum",
+        "addendum_number": 1
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 3,
+        "chunk_id": "chk_Bid2_p3_0007_94ae7041e4e1",
+        "text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | FA V - Manufacturer\u2019s Extended Warranty |  |  |  |  |  |  ",
+        "bid_id": "Bid2",
+        "section": "\u2013 Agency Point of Contact (POC) Information",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.91,
+    "validation_status": "passed",
+    "retrieval_metadata": {
+      "intent": "CROSS_BID_COMPARISON",
+      "target_bids": [
+        "Bid1",
+        "Bid2"
+      ],
+      "queries_executed": 2,
+      "bid1_chunks": 10,
+      "bid2_chunks": 7,
+      "retrieval_latency_ms": 4.44,
+      "total_chunks_retrieved": 17,
+      "total_latency_ms": 4.63
+    }
+  },
+  {
+    "query_index": 5,
+    "question": "Is a bid bond required, and if so, how much?",
+    "bid_id": "Bid1",
+    "intent": "LEGAL_REQUIREMENT",
+    "answer": "Bid bond details: Specified in JA-207652 Student and Staff Computing Devices FINAL.pdf (Page 52).",
+    "citations": [
+      {
+        "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page_number": 52,
+        "chunk_id": "chk_Bid1_p52_0175_64f5cccf2f89",
+        "text": "Last update 8.7.2020 Dallas ISD M/WBE Compliance Guidelines and Forms for Goods and Services #3002 Page | 12\n\nTeaming Agreement Scoring Analysis\nLocated\non Page\nAvailable\nPoints\nA. The teaming agreement provides the certified M/WBE firm(s) with prime management,\ncontrol and supervision of a clear an",
+        "bid_id": "Bid1",
+        "section": "| Joint Venture Program Information",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "validation_status": "passed",
+    "retrieval_metadata": {
+      "intent": "LEGAL_REQUIREMENT",
+      "target_bids": [
+        "Bid1"
+      ],
+      "queries_executed": 2,
+      "retrieval_latency_ms": 2.01,
+      "total_chunks_retrieved": 10,
+      "total_latency_ms": 2.15
+    }
+  },
+  {
+    "query_index": 6,
+    "question": "What is the Dell laptop model specified in Bid2?",
+    "bid_id": "Bid2",
+    "intent": "SINGLE_BID",
+    "answer": "The specified laptop model is Dell Latitude 5550 (with Intel Core Ultra 5 125U processor, 16 GB DDR5 RAM, and 256 GB SSD).",
+    "citations": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0003_b515705bf4d3",
+        "text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be submitted in writing via e-mail to the Procurement Officer no later than ",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0004_7d8b1f323c37",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n2\nQuestions\nDue\n(Closing)\nDate\nand\nTime:\n06/01/2024 at 2:00 PM EDT\nQuestions\nmust\nbe\nsubmitted\nin\nwriting\nto\nthawkins@treasurer.state.md.us\nwith\nthe\nsubject\nline,\n\u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be\nsubmitted in writi",
+        "bid_id": "Bid2",
+        "section": "\u2013 Agency Point of Contact (POC) Information",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.92,
+    "validation_status": "passed",
+    "retrieval_metadata": {
+      "intent": "SINGLE_BID",
+      "target_bids": [
+        "Bid2"
+      ],
+      "queries_executed": 2,
+      "retrieval_latency_ms": 1.49,
+      "total_chunks_retrieved": 8,
+      "total_latency_ms": 1.68
+    }
+  },
+  {
+    "query_index": 7,
+    "question": "What processor is specified for the laptops in Bid2?",
+    "bid_id": "Bid2",
+    "intent": "SINGLE_BID",
+    "answer": "The specified laptop model is Dell Latitude 5550 (with Intel Core Ultra 5 125U processor, 16 GB DDR5 RAM, and 256 GB SSD).",
+    "citations": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0004_7d8b1f323c37",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n2\nQuestions\nDue\n(Closing)\nDate\nand\nTime:\n06/01/2024 at 2:00 PM EDT\nQuestions\nmust\nbe\nsubmitted\nin\nwriting\nto\nthawkins@treasurer.state.md.us\nwith\nthe\nsubject\nline,\n\u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be\nsubmitted in writi",
+        "bid_id": "Bid2",
+        "section": "\u2013 Agency Point of Contact (POC) Information",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0003_b515705bf4d3",
+        "text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be submitted in writing via e-mail to the Procurement Officer no later than ",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.92,
+    "validation_status": "passed",
+    "retrieval_metadata": {
+      "intent": "SINGLE_BID",
+      "target_bids": [
+        "Bid2"
+      ],
+      "queries_executed": 2,
+      "retrieval_latency_ms": 4.77,
+      "total_chunks_retrieved": 8,
+      "total_latency_ms": 5.31
+    }
+  },
+  {
+    "query_index": 8,
+    "question": "What is E20P4600040?",
+    "bid_id": "Bid2",
+    "intent": "SINGLE_BID",
+    "answer": "#E20P4600040 is the Purchase Order Request for Proposal (PORFP) Number for Dell Laptops issued by the MD State Treasurer's Office.",
+    "citations": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0001_cca549114327",
+        "text": "|  | Section 1 \u2013General Information |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | PORFP Number: |  | #E20P4600040 eMMA Project Number: BPM044557 |  |  |  |  |  |\n|  | PORFP Type: |  | Fixed Price |  |  |  |  |  |\n| Functional Area/s (FA) for this PORFP: | Functi",
+        "bid_id": "Bid2",
+        "section": null,
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.95,
+    "validation_status": "passed",
+    "retrieval_metadata": {
+      "intent": "SINGLE_BID",
+      "target_bids": [
+        "Bid2"
+      ],
+      "queries_executed": 1,
+      "retrieval_latency_ms": 0.83,
+      "total_chunks_retrieved": 5,
+      "total_latency_ms": 1.03
+    }
+  },
+  {
+    "query_index": 9,
+    "question": "What delivery time is required for Bid2?",
+    "bid_id": "Bid2",
+    "intent": "SINGLE_BID",
+    "answer": "Delivery requirement: Within 45 days of contract award to MD State Treasurer's Office.",
+    "citations": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0004_7d8b1f323c37",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n2\nQuestions\nDue\n(Closing)\nDate\nand\nTime:\n06/01/2024 at 2:00 PM EDT\nQuestions\nmust\nbe\nsubmitted\nin\nwriting\nto\nthawkins@treasurer.state.md.us\nwith\nthe\nsubject\nline,\n\u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be\nsubmitted in writi",
+        "bid_id": "Bid2",
+        "section": "\u2013 Agency Point of Contact (POC) Information",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.9,
+    "validation_status": "passed",
+    "retrieval_metadata": {
+      "intent": "SINGLE_BID",
+      "target_bids": [
+        "Bid2"
+      ],
+      "queries_executed": 1,
+      "retrieval_latency_ms": 0.8,
+      "total_chunks_retrieved": 5,
+      "total_latency_ms": 0.89
+    }
+  },
+  {
+    "query_index": 10,
+    "question": "What is the required vendor employee headcount?",
+    "bid_id": "Bid1",
+    "intent": "SINGLE_BID",
+    "answer": "Not found in documents.",
+    "citations": [],
+    "confidence": 0.0,
+    "validation_status": "not_found",
+    "retrieval_metadata": {
+      "intent": "SINGLE_BID",
+      "target_bids": [
+        "Bid1"
+      ],
+      "queries_executed": 1,
+      "retrieval_latency_ms": 0.79,
+      "total_chunks_retrieved": 5,
+      "total_latency_ms": 0.86
+    }
+  }
+]

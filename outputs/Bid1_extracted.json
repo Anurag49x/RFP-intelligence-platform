@@ -1,0 +1,219 @@
+{
+  "Bid Number": {
+    "value": "JA-207652",
+    "sources": [
+      {
+        "file_name": "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+        "page_number": 1,
+        "chunk_id": "chk_Bid1_p1_0184_b71af81e6801",
+        "text": "JA-207652 - Student and Staff Computing Devices **SOURCING #168884**\nAre you sure you want to delete this note?\n This solicitation is CLOSED\n\nMailEmail\n\nFacebook\n\nLinkedIn\n\nTwitter\n\nDisclaimer\n Please note that Statewide content is provided by our research team. Any bid responses, questions to the b",
+        "bid_id": "Bid1",
+        "section": null,
+        "document_type": "bid_page",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Bid number from Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html",
+    "reason": null
+  },
+  "Title": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Due Date": {
+    "value": "July 9, 2024",
+    "sources": [
+      {
+        "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid1_p1_0007_970cc2df5457",
+        "text": "Page 1 | 1\nADDENDUM No. 2\nRFP JA-207652 Student and Staff Computing Devices\n\nThe Purpose of this Addendum is to extend the due date of this RFP.\n\nThe new due date for this RFP will be July 9, 2024 at 2:00 PM CST.\n\nThe information in this Addendum is hereby incorporated and made part of any contract ",
+        "bid_id": "Bid1",
+        "section": "END OF ADDENDUM",
+        "document_type": "addendum",
+        "addendum_number": 2
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Extracted from Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf (Page 1)",
+    "reason": null
+  },
+  "Bid Submission Type": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Term of Bid": {
+    "value": "5 years",
+    "sources": [
+      {
+        "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid1_p2_0010_7478dce78bd9",
+        "text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 2 of 40\nBuyer\nALZATE, JASMINE\nEmail\nJALZATE@dallasisd.org\n1 Header Information\n1.1 General Information\nFirst Advertisement Date/Issue Date\n26-MAY-2024 08:00:00\nSecond Advertisement Date\n02-JUN-2024 08:",
+        "bid_id": "Bid1",
+        "section": null,
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Term identified in JA-207652 Student and Staff Computing Devices FINAL.pdf",
+    "reason": null
+  },
+  "Pre Bid Meeting": {
+    "value": "Specified in JA-207652 Student and Staff Computing Devices FINAL.pdf (Page 9)",
+    "sources": [
+      {
+        "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page_number": 9,
+        "chunk_id": "chk_Bid1_p9_0024_a77d8beedf83",
+        "text": "| SCOPE AND SPECIFICATIONS OF THE PROPOSAL | Col_2 |\n| --- | --- |\n| Type \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. Provide your answer below |  |\n| 11. Describe your company's process for maintaining an inventory of temporary replacement or \"hot swap\" devices for use by Dallas ISD while our",
+        "bid_id": "Bid1",
+        "section": null,
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": null,
+    "reason": null
+  },
+  "Installation": {
+    "value": "Specified in JA-207652 Student and Staff Computing Devices FINAL.pdf (Page 9)",
+    "sources": [
+      {
+        "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page_number": 9,
+        "chunk_id": "chk_Bid1_p9_0024_a77d8beedf83",
+        "text": "| SCOPE AND SPECIFICATIONS OF THE PROPOSAL | Col_2 |\n| --- | --- |\n| Type \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.. Provide your answer below |  |\n| 11. Describe your company's process for maintaining an inventory of temporary replacement or \"hot swap\" devices for use by Dallas ISD while our",
+        "bid_id": "Bid1",
+        "section": null,
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": null,
+    "reason": null
+  },
+  "Bid Bond Requirement": {
+    "value": "Specified in JA-207652 Student and Staff Computing Devices FINAL.pdf (Page 52)",
+    "sources": [
+      {
+        "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page_number": 52,
+        "chunk_id": "chk_Bid1_p52_0175_64f5cccf2f89",
+        "text": "Last update 8.7.2020 Dallas ISD M/WBE Compliance Guidelines and Forms for Goods and Services #3002 Page | 12\n\nTeaming Agreement Scoring Analysis\nLocated\non Page\nAvailable\nPoints\nA. The teaming agreement provides the certified M/WBE firm(s) with prime management,\ncontrol and supervision of a clear an",
+        "bid_id": "Bid1",
+        "section": "| Joint Venture Program Information",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": null,
+    "reason": null
+  },
+  "Delivery Date": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Payment Terms": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Any Additional Documentation Required": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "MFG for Registration": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Contract or Cooperative to use": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Model_no": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Part_no": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Product": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "contact_info": {
+    "value": "JALZATE@dallasisd.org",
+    "sources": [
+      {
+        "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid1_p2_0010_7478dce78bd9",
+        "text": "Request For Proposal 168884 JA-207652 Student and Staff Computing Devices\n\nDallas ISD rev 2.0\nPage 2 of 40\nBuyer\nALZATE, JASMINE\nEmail\nJALZATE@dallasisd.org\n1 Header Information\n1.1 General Information\nFirst Advertisement Date/Issue Date\n26-MAY-2024 08:00:00\nSecond Advertisement Date\n02-JUN-2024 08:",
+        "bid_id": "Bid1",
+        "section": null,
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Contact info found in JA-207652 Student and Staff Computing Devices FINAL.pdf",
+    "reason": null
+  },
+  "company_name": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Bid Summary": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Product Specification": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  }
+}

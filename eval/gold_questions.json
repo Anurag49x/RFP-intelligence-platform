@@ -1,0 +1,364 @@
+[
+  {
+    "id": "q001",
+    "query": "What is the PORFP number and solicitation ID for Maryland State Treasurer laptop procurement?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p1_0011_4896c3db396a",
+      "chk_Bid2_p1_0012_d8ff9111e8ba",
+      "chk_Bid2_p1_0005_a296355006e4"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf", "Dell Laptops w_Extended Warranty - Bid Information - {3} _ BidNet Direct.html"],
+    "expected_pages": [1],
+    "type": "exact_identifier"
+  },
+  {
+    "id": "q002",
+    "query": "What is the Dell laptop model specified in Bid2?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p3_0016_b82e01f73129",
+      "chk_Bid2_p3_0018_139a1000e658"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf"],
+    "expected_pages": [3],
+    "type": "model_number"
+  },
+  {
+    "id": "q003",
+    "query": "What is the docking station part number or model required with the Dell laptops?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p3_0016_b82e01f73129",
+      "chk_Bid2_p3_0018_139a1000e658"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf"],
+    "expected_pages": [3],
+    "type": "part_number"
+  },
+  {
+    "id": "q004",
+    "query": "What is the Dallas ISD RFP number for Student and Staff Computing Devices?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p1_0008_1ea3c2dfd529",
+      "chk_Bid1_p2_0010_7478dce78bd9",
+      "chk_Bid1_p1_0184_b71af81e6801"
+    ],
+    "expected_files": ["JA-207652 Student and Staff Computing Devices FINAL.pdf", "Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html"],
+    "expected_pages": [1, 2],
+    "type": "bid_number"
+  },
+  {
+    "id": "q005",
+    "query": "What is Sourcing ID 168884 in Bid1?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p1_0184_b71af81e6801",
+      "chk_Bid1_p2_0010_7478dce78bd9"
+    ],
+    "expected_files": ["Student and Staff Computing Devices __SOURCING #168884__ - Bid Information - {3} _ BidNet Direct.html", "JA-207652 Student and Staff Computing Devices FINAL.pdf"],
+    "expected_pages": [1, 2],
+    "type": "project_identifier"
+  },
+  {
+    "id": "q006",
+    "query": "What changes were made to the deadline in Addendum 2 for JA-207652?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1", "document_type": "addendum"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p1_0007_970cc2df5457"
+    ],
+    "expected_files": ["Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf"],
+    "expected_pages": [1],
+    "type": "addendum_change"
+  },
+  {
+    "id": "q007",
+    "query": "What is the questions due closing date and time for Bid2?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p2_0013_5a5e266c7b52",
+      "chk_Bid2_p2_0014_8fedf541329d"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf"],
+    "expected_pages": [2],
+    "type": "due_date"
+  },
+  {
+    "id": "q008",
+    "query": "Who is the Agency Point of Contact (POC) for Bid2 and what is their phone number?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p3_0016_b82e01f73129",
+      "chk_Bid2_p3_0018_139a1000e658"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf"],
+    "expected_pages": [3],
+    "type": "compliance"
+  },
+  {
+    "id": "q009",
+    "query": "Who is the on-site delivery contact for the State Treasurer office in Bid2?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p3_0018_139a1000e658"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf"],
+    "expected_pages": [3],
+    "type": "delivery"
+  },
+  {
+    "id": "q010",
+    "query": "What extended warranty duration is required for the Dell laptops in Bid2?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p3_0018_139a1000e658"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf"],
+    "expected_pages": [3],
+    "type": "warranty"
+  },
+  {
+    "id": "q011",
+    "query": "What is the purpose of the Mercury Affidavit in Bid2?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p1_0010_4b307d1a1123"
+    ],
+    "expected_files": ["Mercury_Affidavit.pdf"],
+    "expected_pages": [1],
+    "type": "affidavit"
+  },
+  {
+    "id": "q012",
+    "query": "What affirmations are required in the Contract Affidavit for Bid2?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p1_0001_81fa79fe5a3b",
+      "chk_Bid2_p2_0003_23d6a2542a2e",
+      "chk_Bid2_p3_0004_a5b1d06e25b6"
+    ],
+    "expected_files": ["Contract_Affidavit.pdf"],
+    "expected_pages": [1, 2, 3],
+    "type": "affidavit"
+  },
+  {
+    "id": "q013",
+    "query": "What is the pre-bid meeting schedule and location for JA-207652?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p2_0010_7478dce78bd9"
+    ],
+    "expected_files": ["JA-207652 Student and Staff Computing Devices FINAL.pdf"],
+    "expected_pages": [2],
+    "type": "due_date"
+  },
+  {
+    "id": "q014",
+    "query": "What is the term length or duration of the contract in Dallas ISD JA-207652?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p2_0009_a646c19ebfe0",
+      "chk_Bid1_p2_0010_7478dce78bd9"
+    ],
+    "expected_files": ["JA-207652 Student and Staff Computing Devices FINAL.pdf"],
+    "expected_pages": [2],
+    "type": "compliance"
+  },
+  {
+    "id": "q015",
+    "query": "Who is the buyer contact name for Dallas ISD RFP JA-207652?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p2_0010_7478dce78bd9"
+    ],
+    "expected_files": ["JA-207652 Student and Staff Computing Devices FINAL.pdf"],
+    "expected_pages": [2],
+    "type": "compliance"
+  },
+  {
+    "id": "q016",
+    "query": "What are the line items for Tier 1 and Tier 2 Staff Laptops in Dallas ISD RFP?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p34_0107_38858e226aee",
+      "chk_Bid1_p34_0108_b0c38cf705dc",
+      "chk_Bid1_p35_0109_5de70e1d4cdd",
+      "chk_Bid1_p37_0121_4ff446ab7c4f",
+      "chk_Bid1_p39_0133_7d026f6f17d6"
+    ],
+    "expected_files": ["JA-207652 Student and Staff Computing Devices FINAL.pdf"],
+    "expected_pages": [34, 35, 37, 39],
+    "type": "product_specification"
+  },
+  {
+    "id": "q017",
+    "query": "What are the minimum specifications for Tier 2 Large Student Chromebook Laptop?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p4_0014_2e2fba18f01f",
+      "chk_Bid1_p4_0015_673294cfaa4c",
+      "chk_Bid1_p34_0107_38858e226aee",
+      "chk_Bid1_p35_0109_5de70e1d4cdd",
+      "chk_Bid1_p36_0115_3529e9ef93ef",
+      "chk_Bid1_p39_0133_7d026f6f17d6"
+    ],
+    "expected_files": ["JA-207652 Student and Staff Computing Devices FINAL.pdf"],
+    "expected_pages": [4, 34, 35, 36, 39],
+    "type": "product_specification"
+  },
+  {
+    "id": "q018",
+    "query": "How many points are allocated to M/WBE Joint Venture Partner under evaluation criteria in Bid1?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p53_0177_ebe9143f9c63",
+      "chk_Bid1_p53_0178_865983b5b13b"
+    ],
+    "expected_files": ["JA-207652 Student and Staff Computing Devices FINAL.pdf"],
+    "expected_pages": [53],
+    "type": "evaluation_criteria"
+  },
+  {
+    "id": "q019",
+    "query": "What are the standard payment terms and billing processes in Dallas ISD RFP?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p23_0066_049847201a6b",
+      "chk_Bid1_p23_0068_a19e2ff9711e",
+      "chk_Bid1_p30_0093_9cb8b0a07193",
+      "chk_Bid1_p51_0173_dcfaa2dcb28b"
+    ],
+    "expected_files": ["JA-207652 Student and Staff Computing Devices FINAL.pdf"],
+    "expected_pages": [23, 30, 51],
+    "type": "payment_terms"
+  },
+  {
+    "id": "q020",
+    "query": "What commercial general liability insurance limits are required in Dallas ISD RFP?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p1_0002_80ea35fbdeac",
+      "chk_Bid1_p9_0024_a77d8beedf83",
+      "chk_Bid1_p9_0025_2d90bb4b7b68",
+      "chk_Bid1_p17_0045_960ebf8f6418",
+      "chk_Bid1_p17_0048_9b079033c772"
+    ],
+    "expected_files": ["Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf", "JA-207652 Student and Staff Computing Devices FINAL.pdf"],
+    "expected_pages": [1, 9, 17],
+    "type": "compliance"
+  },
+  {
+    "id": "q021",
+    "query": "How many Dell laptops and docking stations are requested for the MD529 employee refresh?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p3_0016_b82e01f73129",
+      "chk_Bid2_p3_0018_139a1000e658"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf"],
+    "expected_pages": [3],
+    "type": "product_specification"
+  },
+  {
+    "id": "q022",
+    "query": "What is the purpose of Addendum 1 in Dallas ISD RFP JA-207652?",
+    "bid_id": "Bid1",
+    "filters": {"bid_id": "Bid1", "document_type": "addendum"},
+    "expected_chunk_ids": [
+      "chk_Bid1_p1_0001_d64b49a6e27e",
+      "chk_Bid1_p1_0002_80ea35fbdeac"
+    ],
+    "expected_files": ["Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf"],
+    "expected_pages": [1],
+    "type": "addendum_change"
+  },
+  {
+    "id": "q023",
+    "query": "What SKU numbers and processor options are listed in Dell Laptop Specs document?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p1_0006_bd30976c42cd"
+    ],
+    "expected_files": ["Dell_Laptop_Specs.pdf"],
+    "expected_pages": [1],
+    "type": "part_number"
+  },
+  {
+    "id": "q024",
+    "query": "What are the hardware warranty certificates or affidavit deliverables upon award in Bid2?",
+    "bid_id": "Bid2",
+    "filters": {"bid_id": "Bid2"},
+    "expected_chunk_ids": [
+      "chk_Bid2_p3_0018_139a1000e658"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf"],
+    "expected_pages": [3],
+    "type": "warranty"
+  },
+  {
+    "id": "q025",
+    "query": "What is the mandatory minimum employee headcount required for bidding companies?",
+    "bid_id": null,
+    "filters": {},
+    "expected_chunk_ids": [],
+    "expected_files": [],
+    "expected_pages": [],
+    "type": "negative"
+  },
+  {
+    "id": "q026",
+    "query": "What are the mandatory submarine transportation requirements for equipment delivery?",
+    "bid_id": null,
+    "filters": {},
+    "expected_chunk_ids": [],
+    "expected_files": [],
+    "expected_pages": [],
+    "type": "negative"
+  },
+  {
+    "id": "q027",
+    "query": "What is the solar panel battery storage warranty coverage period?",
+    "bid_id": null,
+    "filters": {},
+    "expected_chunk_ids": [],
+    "expected_files": [],
+    "expected_pages": [],
+    "type": "negative"
+  },
+  {
+    "id": "q028",
+    "query": "What warranty requirements are stated across the computing hardware solicitations?",
+    "bid_id": null,
+    "filters": {},
+    "expected_chunk_ids": [
+      "chk_Bid2_p3_0018_139a1000e658",
+      "chk_Bid1_p2_0003_0ef36cb31d5e"
+    ],
+    "expected_files": ["PORFP_-_Dell_Laptop_Final.pdf", "Addendum 1 RFP JA-207652 Student and Staff Computing Devices.pdf"],
+    "expected_pages": [2, 3],
+    "type": "cross_bid"
+  }
+]

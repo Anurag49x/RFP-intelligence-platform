@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: bold; font-size: 24px; fill: #0f172a; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 14px; fill: #475569; }
+      .box-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 15px; fill: #1e293b; }
+      .box-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; fill: #64748b; }
+      .tag { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 11px; font-weight: bold; fill: #ffffff; }
+      .flow-line { stroke: #94a3b8; stroke-width: 2; fill: none; stroke-dasharray: 4,4; }
+      .flow-arrow { fill: #64748b; }
+      .box { rx: 8; ry: 8; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05)); }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <text x="50" y="45" class="title">RFP Intelligence Platform — System Architecture</text>
+  <text x="50" y="70" class="subtitle">Evidence-First RAG Search Engine &amp; Multi-Agent LangGraph System</text>
+
+  <!-- Layer 1: Document Ingestion -->
+  <rect x="50" y="100" width="1100" height="110" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="70" y="125" class="box-title" fill="#0f172a">1. Ingestion &amp; Canonical Document Engine</text>
+  
+  <rect x="70" y="140" width="220" height="55" class="box" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="85" y="162" class="box-title" font-size="13">Document Discovery</text>
+  <text x="85" y="180" class="box-desc">PDFs, Addendums, Specs, HTML</text>
+
+  <rect x="330" y="140" width="220" height="55" class="box" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="345" y="162" class="box-title" font-size="13">PyMuPDF / pdfplumber</text>
+  <text x="345" y="180" class="box-desc">Deterministic text &amp; table extraction</text>
+
+  <rect x="590" y="140" width="220" height="55" class="box" fill="#fef3c7" stroke="#fde68a"/>
+  <text x="605" y="162" class="box-title" font-size="13">Groq Vision OCR Fallback</text>
+  <text x="605" y="180" class="box-desc">Scanned page fallback + SHA256 cache</text>
+
+  <rect x="850" y="140" width="280" height="55" class="box" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="865" y="162" class="box-title" font-size="13">Canonical Chunking</text>
+  <text x="865" y="180" class="box-desc">Section/table aware (chk_{bid}_{p}_{id})</text>
+
+  <!-- Connectors Layer 1 -> Layer 2 -->
+  <line x1="990" y1="195" x2="990" y2="235" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Layer 2: Hybrid Retrieval & Storage -->
+  <rect x="50" y="235" width="1100" height="150" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="70" y="260" class="box-title">2. Dual-Branch Hybrid Retrieval &amp; Listwise Reranking</text>
+
+  <!-- Dense Branch -->
+  <rect x="70" y="280" width="240" height="85" class="box" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="85" y="305" class="box-title">Dense Retrieval Branch</text>
+  <text x="85" y="325" class="box-desc">Jina Embeddings v3 (1024d)</text>
+  <text x="85" y="345" class="box-desc">Qdrant Vector Store (Cosine)</text>
+
+  <!-- Lexical Branch -->
+  <rect x="350" y="280" width="240" height="85" class="box" fill="#f0fdf4" stroke="#bbf7d0"/>
+  <text x="365" y="305" class="box-title">Lexical Retrieval Branch</text>
+  <text x="365" y="325" class="box-desc">BM25Okapi Exact Match</text>
+  <text x="365" y="345" class="box-desc">Preserves RFPs, SKUs, Dates</text>
+
+  <!-- RRF -->
+  <rect x="630" y="280" width="220" height="85" class="box" fill="#fdf4ff" stroke="#f5d0fe"/>
+  <text x="645" y="305" class="box-title">Reciprocal Rank Fusion</text>
+  <text x="645" y="325" class="box-desc">RRF (k=60) Score Fusion</text>
+  <text x="645" y="345" class="box-desc">Generates top-K candidate pool</text>
+
+  <!-- Jina Reranker -->
+  <rect x="890" y="280" width="240" height="85" class="box" fill="#fef9c3" stroke="#fef08a"/>
+  <text x="905" y="305" class="box-title">Jina Reranker v3.5</text>
+  <text x="905" y="325" class="box-desc">Listwise Cross-Attention</text>
+  <text x="905" y="345" class="box-desc">Outputs Provenance Evidence</text>
+
+  <!-- Lines inside Layer 2 -->
+  <line x1="310" y1="322" x2="630" y2="322" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="590" y1="322" x2="630" y2="322" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="850" y1="322" x2="890" y2="322" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Connector Layer 2 -> Layer 3 -->
+  <line x1="1010" y1="365" x2="1010" y2="415" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Layer 3: LangGraph Multi-Agent System -->
+  <rect x="50" y="415" width="1100" height="230" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="70" y="440" class="box-title">3. LangGraph Multi-Agent Orchestration &amp; Evidence Grounding</text>
+
+  <!-- Specialists -->
+  <rect x="70" y="460" width="220" height="50" class="box" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="85" y="482" class="box-title" font-size="13">Entity Specialist</text>
+  <text x="85" y="498" class="box-desc">Bid #, Title, Agency, Summary</text>
+
+  <rect x="70" y="520" width="220" height="50" class="box" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="85" y="542" class="box-title" font-size="13">Logistics Specialist</text>
+  <text x="85" y="558" class="box-desc">Due dates, delivery, pre-bid</text>
+
+  <rect x="70" y="580" width="220" height="50" class="box" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="85" y="602" class="box-title" font-size="13">Product Specialist</text>
+  <text x="85" y="618" class="box-desc">Models, SKUs, Hardware Specs</text>
+
+  <rect x="310" y="460" width="200" height="170" class="box" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="325" y="485" class="box-title">Legal Specialist</text>
+  <text x="325" y="510" class="box-desc">Affidavits, Bonds, Master Contract</text>
+  <text x="325" y="540" class="box-title" font-size="12">Groq LLM Engine</text>
+  <text x="325" y="560" class="box-desc">Llama-3.3-70B Versatile</text>
+  <text x="325" y="580" class="box-desc">Zero Hallucination Grounding</text>
+
+  <!-- Addendum Reconciler -->
+  <rect x="540" y="460" width="200" height="170" class="box" fill="#fff7ed" stroke="#fed7aa"/>
+  <text x="555" y="490" class="box-title">Addendum Reconciler</text>
+  <text x="555" y="515" class="box-desc">Chronological Revisions</text>
+  <text x="555" y="535" class="box-desc">Supercedes Base RFP</text>
+  <text x="555" y="555" class="box-desc">Tracks AddendumChange</text>
+  <text x="555" y="575" class="box-desc">Audits Date Extensions</text>
+
+  <!-- Validator & Retry -->
+  <rect x="770" y="460" width="180" height="170" class="box" fill="#fef2f2" stroke="#fecaca"/>
+  <text x="785" y="490" class="box-title">Validator Agent</text>
+  <text x="785" y="515" class="box-desc">NO EVIDENCE -> NULL</text>
+  <text x="785" y="535" class="box-desc">Citations Integrity Check</text>
+  <text x="785" y="565" class="box-title" font-size="12">Retry Agent (Max 2)</text>
+  <text x="785" y="585" class="box-desc">Targeted Re-Retrieval</text>
+
+  <!-- Serializer -->
+  <rect x="980" y="460" width="150" height="170" class="box" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="995" y="490" class="box-title">Serializer Node</text>
+  <text x="995" y="515" class="box-desc">20 Canonical Fields</text>
+  <text x="995" y="535" class="box-desc">Provenance Citations</text>
+  <text x="995" y="555" class="box-desc">BidOutput Model</text>
+  <text x="995" y="575" class="box-desc">JSON Serialization</text>
+
+  <!-- Agent Interconnects -->
+  <line x1="290" y1="545" x2="310" y2="545" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="510" y1="545" x2="540" y2="545" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="740" y1="545" x2="770" y2="545" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="950" y1="545" x2="980" y2="545" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Layer 4: Client & API Delivery -->
+  <rect x="50" y="670" width="1100" height="180" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="70" y="695" class="box-title">4. Application Layer, Delivery &amp; Observability</text>
+
+  <rect x="70" y="715" width="330" height="115" class="box" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="85" y="740" class="box-title">FastAPI Production Backend</text>
+  <text x="85" y="760" class="box-desc">• POST /extract (20-field structured bid extraction)</text>
+  <text x="85" y="780" class="box-desc">• POST /ask (Evidence-grounded Q&amp;A)</text>
+  <text x="85" y="800" class="box-desc">• GET /search &amp; POST /index (RAG search &amp; indexing)</text>
+
+  <rect x="430" y="715" width="330" height="115" class="box" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="445" y="740" class="box-title">Streamlit Interactive UI</text>
+  <text x="445" y="760" class="box-desc">• 8 Comprehensive Screens (Dashboard, Search, Q&amp;A)</text>
+  <text x="445" y="780" class="box-desc">• 20-Field Extraction, Addendum History, Comparison</text>
+  <text x="445" y="800" class="box-desc">• Folder Indexing &amp; Agent Execution Trace</text>
+
+  <rect x="790" y="715" width="340" height="115" class="box" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="805" y="740" class="box-title">Observability &amp; Verification</text>
+  <text x="805" y="760" class="box-desc">• OpenTelemetry &amp; Structured Trace Logging</text>
+  <text x="805" y="780" class="box-desc">• Real JSON &amp; Markdown Trace Artifacts</text>
+  <text x="805" y="800" class="box-desc">• Unseen Bid Generalization (Zero Code Change)</text>
+</svg>

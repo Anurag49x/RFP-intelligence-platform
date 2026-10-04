@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfp-intelligence"
+version = "0.1.0"
+description = "RFP Intelligence Platform: RAG Search Engine & Multi-Agent System"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "RFP Intelligence Team" }]
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "groq>=0.9.0",
+    "pymupdf>=1.24.0",
+    "pdfplumber>=0.11.0",
+    "beautifulsoup4>=4.12.0",
+    "trafilatura>=1.12.0",
+    "lxml>=5.0.0",
+    "qdrant-client>=1.12.0",
+    "rank-bm25>=0.2.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.24.0",
+    "httpx>=0.27.0",
+    "pytest-cov>=5.0.0"
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+asyncio_mode = "auto"
+addopts = "-v --tb=short"
+
+[tool.setuptools.packages.find]
+include = ["app*"]

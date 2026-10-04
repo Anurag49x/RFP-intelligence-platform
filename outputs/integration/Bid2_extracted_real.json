@@ -1,0 +1,332 @@
+{
+  "Bid Number": {
+    "value": "#E20P4600040",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0002_748fcca27186",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n1\n\nSection 1 \u2013General Information\n\nPORFP Number:\n\n#E20P4600040\neMMA Project Number: BPM044557\nPORFP Type:\n\nFixed Price\nFunctional Area/s (FA)\nfor this PORFP:\n\nFA I (Printers and Associated Peripherals)\n FA V (Manufacturer\u2019s Exten",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0001_cca549114327",
+        "text": "|  | Section 1 \u2013General Information |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | PORFP Number: |  | #E20P4600040 eMMA Project Number: BPM044557 |  |  |  |  |  |\n|  | PORFP Type: |  | Fixed Price |  |  |  |  |  |\n| Functional Area/s (FA) for this PORFP: | Functi",
+        "bid_id": "Bid2",
+        "section": null,
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 1.0,
+    "notes": "Explicitly listed as 'PORFP Number' in the General Information section.",
+    "reason": null
+  },
+  "Title": {
+    "value": "Purchase Order Request for Proposals (PORFP) Hardware Master Contract",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 4,
+        "chunk_id": "chk_Bid2_p4_0010_1d007933672d",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n4\n\nEvaluation Criteria\n\n1. Accuracy of Bid (Meets All Requirements)\n\n2. Price\n\nBasis for Award Recommendation\nEvaluation criteria for award will be established at the PORFP level. PORFPs will be awarded in\naccordance with the com",
+        "bid_id": "Bid2",
+        "section": "\u2013 Evaluation Criteria \u2013 Technical Proposal",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0002_748fcca27186",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n1\n\nSection 1 \u2013General Information\n\nPORFP Number:\n\n#E20P4600040\neMMA Project Number: BPM044557\nPORFP Type:\n\nFixed Price\nFunctional Area/s (FA)\nfor this PORFP:\n\nFA I (Printers and Associated Peripherals)\n FA V (Manufacturer\u2019s Exten",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 1.0,
+    "notes": "The document header consistently identifies the document type and contract name.",
+    "reason": null
+  },
+  "Due Date": {
+    "value": "06/10/2024",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0002_748fcca27186",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n1\n\nSection 1 \u2013General Information\n\nPORFP Number:\n\n#E20P4600040\neMMA Project Number: BPM044557\nPORFP Type:\n\nFixed Price\nFunctional Area/s (FA)\nfor this PORFP:\n\nFA I (Printers and Associated Peripherals)\n FA V (Manufacturer\u2019s Exten",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 1.0,
+    "notes": "Explicitly listed as 'PROPOSAL DUE DATE and TIME: 06/10/2024' in the General Information section.",
+    "reason": null
+  },
+  "Bid Submission Type": {
+    "value": "Fixed Price",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0001_cca549114327",
+        "text": "|  | Section 1 \u2013General Information |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | PORFP Number: |  | #E20P4600040 eMMA Project Number: BPM044557 |  |  |  |  |  |\n|  | PORFP Type: |  | Fixed Price |  |  |  |  |  |\n| Functional Area/s (FA) for this PORFP: | Functi",
+        "bid_id": "Bid2",
+        "section": null,
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0002_748fcca27186",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n1\n\nSection 1 \u2013General Information\n\nPORFP Number:\n\n#E20P4600040\neMMA Project Number: BPM044557\nPORFP Type:\n\nFixed Price\nFunctional Area/s (FA)\nfor this PORFP:\n\nFA I (Printers and Associated Peripherals)\n FA V (Manufacturer\u2019s Exten",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 1.0,
+    "notes": "Listed as 'PORFP Type: Fixed Price' in the General Information section.",
+    "reason": null
+  },
+  "Term of Bid": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Pre Bid Meeting": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Installation": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Bid Bond Requirement": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Delivery Date": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents. The document requires the contractor to provide an 'estimated ship date/lead time' but does not specify a fixed delivery date.",
+    "reason": null
+  },
+  "Payment Terms": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Any Additional Documentation Required": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "MFG for Registration": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Contract or Cooperative to use": {
+    "value": "Hardware Master Contract",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 4,
+        "chunk_id": "chk_Bid2_p4_0010_1d007933672d",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n4\n\nEvaluation Criteria\n\n1. Accuracy of Bid (Meets All Requirements)\n\n2. Price\n\nBasis for Award Recommendation\nEvaluation criteria for award will be established at the PORFP level. PORFPs will be awarded in\naccordance with the com",
+        "bid_id": "Bid2",
+        "section": "\u2013 Evaluation Criteria \u2013 Technical Proposal",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0004_7d8b1f323c37",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n2\nQuestions\nDue\n(Closing)\nDate\nand\nTime:\n06/01/2024 at 2:00 PM EDT\nQuestions\nmust\nbe\nsubmitted\nin\nwriting\nto\nthawkins@treasurer.state.md.us\nwith\nthe\nsubject\nline,\n\u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be\nsubmitted in writi",
+        "bid_id": "Bid2",
+        "section": "\u2013 Agency Point of Contact (POC) Information",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0003_b515705bf4d3",
+        "text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be submitted in writing via e-mail to the Procurement Officer no later than ",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 1.0,
+    "notes": "The document is identified as a 'Purchase Order Request for Proposals (PORFP) Hardware Master Contract' and references the 'Hardware Master Contract MBE Participation Worksheet'.",
+    "reason": null
+  },
+  "Model_no": {
+    "value": "Model #\nQty\n\nDue Date\nmm",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 3,
+        "chunk_id": "chk_Bid2_p3_0008_4551e60d8beb",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPhone Number:\n410-260-7533\nAgency POC Email\nAddress:\nthawkins@treasurer.state.md\n.us\nAgency POC\nFax:\nN/A\nAgency POC Mailing\nAddress:\nMD State Treasurer\u2019s Office\n80 Calvert Street, Ro",
+        "bid_id": "Bid2",
+        "section": "\u2013 Evaluation Criteria \u2013 Technical Proposal",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Model identified in PORFP_-_Dell_Laptop_Final.pdf",
+    "reason": null
+  },
+  "Part_no": {
+    "value": "WD22TB4",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 3,
+        "chunk_id": "chk_Bid2_p3_0008_4551e60d8beb",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPhone Number:\n410-260-7533\nAgency POC Email\nAddress:\nthawkins@treasurer.state.md\n.us\nAgency POC\nFax:\nN/A\nAgency POC Mailing\nAddress:\nMD State Treasurer\u2019s Office\n80 Calvert Street, Ro",
+        "bid_id": "Bid2",
+        "section": "\u2013 Evaluation Criteria \u2013 Technical Proposal",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Part number identified in PORFP_-_Dell_Laptop_Final.pdf",
+    "reason": null
+  },
+  "Product": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "contact_info": {
+    "value": "Tamaira Hawkins, 410-260-7533, thawkins@treasurer.state.md.us",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 3,
+        "chunk_id": "chk_Bid2_p3_0006_3ac1a46d0459",
+        "text": "| Agency POC Name: |  |  |  | Tamaira Hawkins |  |  |  |  | Agency POC |  |  |  |  |  | 410-260-7533 |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | FA II - Printers and Associated Peripherals |  |  |  |  | ",
+        "bid_id": "Bid2",
+        "section": "\u2013 Agency Point of Contact (POC) Information",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0004_7d8b1f323c37",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n2\nQuestions\nDue\n(Closing)\nDate\nand\nTime:\n06/01/2024 at 2:00 PM EDT\nQuestions\nmust\nbe\nsubmitted\nin\nwriting\nto\nthawkins@treasurer.state.md.us\nwith\nthe\nsubject\nline,\n\u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be\nsubmitted in writi",
+        "bid_id": "Bid2",
+        "section": "\u2013 Agency Point of Contact (POC) Information",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 1.0,
+    "notes": "Agency POC Name is Tamaira Hawkins with phone 410-260-7533 (Page 3). Email for questions is thawkins@treasurer.state.md.us (Page 2).",
+    "reason": null
+  },
+  "company_name": {
+    "value": "Dell",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0002_748fcca27186",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n1\n\nSection 1 \u2013General Information\n\nPORFP Number:\n\n#E20P4600040\neMMA Project Number: BPM044557\nPORFP Type:\n\nFixed Price\nFunctional Area/s (FA)\nfor this PORFP:\n\nFA I (Printers and Associated Peripherals)\n FA V (Manufacturer\u2019s Exten",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0001_cca549114327",
+        "text": "|  | Section 1 \u2013General Information |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | PORFP Number: |  | #E20P4600040 eMMA Project Number: BPM044557 |  |  |  |  |  |\n|  | PORFP Type: |  | Fixed Price |  |  |  |  |  |\n| Functional Area/s (FA) for this PORFP: | Functi",
+        "bid_id": "Bid2",
+        "section": null,
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 1.0,
+    "notes": "Listed under 'Manufacturer Name' in the General Information section.",
+    "reason": null
+  },
+  "Bid Summary": {
+    "value": "Fixed Price PORFP for Dell Laptops under a Hardware Master Contract, covering Functional Area I (Printers and Associated Peripherals) and Functional Area V (Manufacturer\u2019s Extended Warranty). The proposal is due on 06/10/2024, and the award will be based on accuracy of bid and price.",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0002_748fcca27186",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n1\n\nSection 1 \u2013General Information\n\nPORFP Number:\n\n#E20P4600040\neMMA Project Number: BPM044557\nPORFP Type:\n\nFixed Price\nFunctional Area/s (FA)\nfor this PORFP:\n\nFA I (Printers and Associated Peripherals)\n FA V (Manufacturer\u2019s Exten",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      },
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 4,
+        "chunk_id": "chk_Bid2_p4_0010_1d007933672d",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n4\n\nEvaluation Criteria\n\n1. Accuracy of Bid (Meets All Requirements)\n\n2. Price\n\nBasis for Award Recommendation\nEvaluation criteria for award will be established at the PORFP level. PORFPs will be awarded in\naccordance with the com",
+        "bid_id": "Bid2",
+        "section": "\u2013 Evaluation Criteria \u2013 Technical Proposal",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.95,
+    "notes": "Synthesized from the PORFP type, manufacturer, functional areas, due date, and evaluation criteria found in the provided passages.",
+    "reason": null
+  },
+  "Product Specification": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  }
+}

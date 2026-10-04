@@ -1,0 +1,357 @@
+{
+  "bid_id": "Bid4",
+  "fields": {
+    "Bid Number": {
+      "value": "NB-IT-2026-014",
+      "sources": [
+        {
+          "file_name": "Addendum_1.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_8dedc89dd10b",
+          "text": "Addendum No. 1 \u2014 Bid NB-IT-2026-014\nAddendum No. 1 modifies the original solicitation.\nDEADLINE CHANGE: The electronic bid submission deadline is extended from November 18, 2026 at 2:00 PM\nEST to November 25, 2026 at 2:00 PM EST.\nDELIVERY CHANGE: The required delivery period is changed from 60 calen",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "addendum",
+          "addendum_number": 1
+        },
+        {
+          "file_name": "City_Northbridge_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0002_bc13291cae84",
+          "text": "City of Northbridge \u2014 Municipal Network Equipment RFP\nBid Number: NB-IT-2026-014\nTitle: Municipal Network Equipment Refresh\nIssuing Organization: City of Northbridge Department of Information Technology\nContract term: three years from contract execution, with one optional one-year renewal.\nBid bond:",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Procurement_Portal_Notice.html",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_1fb860802b89",
+          "text": "Issuing Organization: City of Northbridge Department of Information Technology\nElectronic bid submission deadline: November 18, 2026 at 2:00 PM EST.\nSubmission platform: Northbridge Vendor Portal.\nPre-bid meeting: November 5, 2026 at 11:00 AM EST, virtual.\nQuestions are due November 9, 2026 at 5:00 ",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "bid_page",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Vendor_Compliance_Form.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_e0a0410cbf4b",
+          "text": "Vendor Compliance and Affidavit Requirements\nBid Number: NB-IT-2026-014\nThe following documents must accompany the submitted proposal: signed bid form, W-9, manufacturer\nauthorization letter, and non-collusion affidavit.\nThe bidder shall certify that the proposal has not been prepared through collus",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Explicitly stated in the Addendum, RFP, Portal Notice, and Compliance Form.",
+      "reason": null
+    },
+    "Title": {
+      "value": "Municipal Network Equipment Refresh",
+      "sources": [
+        {
+          "file_name": "City_Northbridge_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0002_bc13291cae84",
+          "text": "City of Northbridge \u2014 Municipal Network Equipment RFP\nBid Number: NB-IT-2026-014\nTitle: Municipal Network Equipment Refresh\nIssuing Organization: City of Northbridge Department of Information Technology\nContract term: three years from contract execution, with one optional one-year renewal.\nBid bond:",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Found in the header of the City of Northbridge RFP document.",
+      "reason": null
+    },
+    "Due Date": {
+      "value": "November 25, 2026 at 2:00 PM EST",
+      "sources": [
+        {
+          "file_name": "Addendum_1.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_8dedc89dd10b",
+          "text": "Addendum No. 1 \u2014 Bid NB-IT-2026-014\nAddendum No. 1 modifies the original solicitation.\nDEADLINE CHANGE: The electronic bid submission deadline is extended from November 18, 2026 at 2:00 PM\nEST to November 25, 2026 at 2:00 PM EST.\nDELIVERY CHANGE: The required delivery period is changed from 60 calen",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "addendum",
+          "addendum_number": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The original deadline of November 18, 2026, was extended to November 25, 2026, per Addendum No. 1.",
+      "reason": null
+    },
+    "Bid Submission Type": {
+      "value": "Electronic bid submission via Northbridge Vendor Portal",
+      "sources": [
+        {
+          "file_name": "Procurement_Portal_Notice.html",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_1fb860802b89",
+          "text": "Issuing Organization: City of Northbridge Department of Information Technology\nElectronic bid submission deadline: November 18, 2026 at 2:00 PM EST.\nSubmission platform: Northbridge Vendor Portal.\nPre-bid meeting: November 5, 2026 at 11:00 AM EST, virtual.\nQuestions are due November 9, 2026 at 5:00 ",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "bid_page",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The RFP specifies electronic bid submission through the Northbridge Vendor Portal.",
+      "reason": null
+    },
+    "Term of Bid": {
+      "value": "Three years from contract execution, with one optional one-year renewal",
+      "sources": [
+        {
+          "file_name": "City_Northbridge_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0002_bc13291cae84",
+          "text": "City of Northbridge \u2014 Municipal Network Equipment RFP\nBid Number: NB-IT-2026-014\nTitle: Municipal Network Equipment Refresh\nIssuing Organization: City of Northbridge Department of Information Technology\nContract term: three years from contract execution, with one optional one-year renewal.\nBid bond:",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The contract term is explicitly stated in the RFP document.",
+      "reason": null
+    },
+    "Pre Bid Meeting": {
+      "value": "November 5, 2026 at 11:00 AM EST, virtual",
+      "sources": [
+        {
+          "file_name": "Procurement_Portal_Notice.html",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_1fb860802b89",
+          "text": "Issuing Organization: City of Northbridge Department of Information Technology\nElectronic bid submission deadline: November 18, 2026 at 2:00 PM EST.\nSubmission platform: Northbridge Vendor Portal.\nPre-bid meeting: November 5, 2026 at 11:00 AM EST, virtual.\nQuestions are due November 9, 2026 at 5:00 ",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "bid_page",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The pre-bid meeting details are provided in the procurement portal notice.",
+      "reason": null
+    },
+    "Installation": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "Bid Bond Requirement": {
+      "value": "5% of the total proposal amount is required",
+      "sources": [
+        {
+          "file_name": "City_Northbridge_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0002_bc13291cae84",
+          "text": "City of Northbridge \u2014 Municipal Network Equipment RFP\nBid Number: NB-IT-2026-014\nTitle: Municipal Network Equipment Refresh\nIssuing Organization: City of Northbridge Department of Information Technology\nContract term: three years from contract execution, with one optional one-year renewal.\nBid bond:",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Explicitly stated in the RFP document under 'Bid bond'.",
+      "reason": null
+    },
+    "Delivery Date": {
+      "value": "75 calendar days after purchase order issuance",
+      "sources": [
+        {
+          "file_name": "Addendum_1.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_8dedc89dd10b",
+          "text": "Addendum No. 1 \u2014 Bid NB-IT-2026-014\nAddendum No. 1 modifies the original solicitation.\nDEADLINE CHANGE: The electronic bid submission deadline is extended from November 18, 2026 at 2:00 PM\nEST to November 25, 2026 at 2:00 PM EST.\nDELIVERY CHANGE: The required delivery period is changed from 60 calen",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "addendum",
+          "addendum_number": 1
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "The original delivery period of 60 calendar days was changed to 75 calendar days per Addendum No. 1.",
+      "reason": null
+    },
+    "Payment Terms": {
+      "value": "Net 30 days after receipt and acceptance of an undisputed invoice",
+      "sources": [
+        {
+          "file_name": "City_Northbridge_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0002_bc13291cae84",
+          "text": "City of Northbridge \u2014 Municipal Network Equipment RFP\nBid Number: NB-IT-2026-014\nTitle: Municipal Network Equipment Refresh\nIssuing Organization: City of Northbridge Department of Information Technology\nContract term: three years from contract execution, with one optional one-year renewal.\nBid bond:",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Payment terms are explicitly stated in the RFP document.",
+      "reason": null
+    },
+    "Any Additional Documentation Required": {
+      "value": "signed bid form, W-9, manufacturer authorization letter, and non-collusion affidavit",
+      "sources": [
+        {
+          "file_name": "Vendor_Compliance_Form.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_e0a0410cbf4b",
+          "text": "Vendor Compliance and Affidavit Requirements\nBid Number: NB-IT-2026-014\nThe following documents must accompany the submitted proposal: signed bid form, W-9, manufacturer\nauthorization letter, and non-collusion affidavit.\nThe bidder shall certify that the proposal has not been prepared through collus",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        },
+        {
+          "file_name": "City_Northbridge_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0002_bc13291cae84",
+          "text": "City of Northbridge \u2014 Municipal Network Equipment RFP\nBid Number: NB-IT-2026-014\nTitle: Municipal Network Equipment Refresh\nIssuing Organization: City of Northbridge Department of Information Technology\nContract term: three years from contract execution, with one optional one-year renewal.\nBid bond:",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Listed as required documentation in both the Vendor Compliance Form and the RFP.",
+      "reason": null
+    },
+    "MFG for Registration": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "Contract or Cooperative to use": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "Model_no": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "Part_no": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "Product": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "contact_info": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    },
+    "company_name": {
+      "value": "City of Northbridge Department of Information Technology",
+      "sources": [
+        {
+          "file_name": "City_Northbridge_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0002_bc13291cae84",
+          "text": "City of Northbridge \u2014 Municipal Network Equipment RFP\nBid Number: NB-IT-2026-014\nTitle: Municipal Network Equipment Refresh\nIssuing Organization: City of Northbridge Department of Information Technology\nContract term: three years from contract execution, with one optional one-year renewal.\nBid bond:",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Procurement_Portal_Notice.html",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_1fb860802b89",
+          "text": "Issuing Organization: City of Northbridge Department of Information Technology\nElectronic bid submission deadline: November 18, 2026 at 2:00 PM EST.\nSubmission platform: Northbridge Vendor Portal.\nPre-bid meeting: November 5, 2026 at 11:00 AM EST, virtual.\nQuestions are due November 9, 2026 at 5:00 ",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "bid_page",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 1.0,
+      "notes": "Identified as the Issuing Organization in the RFP and Portal Notice.",
+      "reason": null
+    },
+    "Bid Summary": {
+      "value": "Procurement for municipal network equipment refresh including 24 48-port managed Layer 3 network switches, wireless access points, and firewall appliances. The contract term is three years with one optional one-year renewal. Equipment must be new, unused, and covered by manufacturer's standard warranty. A 5% bid bond is required, and payment terms are Net 30 days. The electronic bid submission deadline is November 25, 2026 at 2:00 PM EST (extended from Nov 18), and delivery is required within 75 calendar days after purchase order issuance (extended from 60 days).",
+      "sources": [
+        {
+          "file_name": "City_Northbridge_RFP.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0002_bc13291cae84",
+          "text": "City of Northbridge \u2014 Municipal Network Equipment RFP\nBid Number: NB-IT-2026-014\nTitle: Municipal Network Equipment Refresh\nIssuing Organization: City of Northbridge Department of Information Technology\nContract term: three years from contract execution, with one optional one-year renewal.\nBid bond:",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "affidavit",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Addendum_1.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_8dedc89dd10b",
+          "text": "Addendum No. 1 \u2014 Bid NB-IT-2026-014\nAddendum No. 1 modifies the original solicitation.\nDEADLINE CHANGE: The electronic bid submission deadline is extended from November 18, 2026 at 2:00 PM\nEST to November 25, 2026 at 2:00 PM EST.\nDELIVERY CHANGE: The required delivery period is changed from 60 calen",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "addendum",
+          "addendum_number": 1
+        },
+        {
+          "file_name": "Procurement_Portal_Notice.html",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0001_1fb860802b89",
+          "text": "Issuing Organization: City of Northbridge Department of Information Technology\nElectronic bid submission deadline: November 18, 2026 at 2:00 PM EST.\nSubmission platform: Northbridge Vendor Portal.\nPre-bid meeting: November 5, 2026 at 11:00 AM EST, virtual.\nQuestions are due November 9, 2026 at 5:00 ",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "bid_page",
+          "addendum_number": null
+        },
+        {
+          "file_name": "Hardware_Specifications.pdf",
+          "page_number": 1,
+          "chunk_id": "chk_Bid4_p1_0002_299d8080c892",
+          "text": "Technical Specifications \u2014 Municipal Network Equipment\nMinimum technical requirements apply to the proposed equipment.\nNetwork Switch: 48 x 1GbE copper ports, minimum 4 x 10GbE SFP+ uplinks, Layer 3 routing, VLAN support, IPv6\nsupport, and centralized management.\nWireless Access Point: Wi-Fi 6E, 2.5",
+          "bid_id": "Bid4",
+          "section": null,
+          "document_type": "specs",
+          "addendum_number": null
+        }
+      ],
+      "confidence": 0.95,
+      "notes": "Summary synthesized from the RFP details (scope, terms, bond) and Addendum No. 1 (deadline and delivery changes).",
+      "reason": null
+    },
+    "Product Specification": {
+      "value": null,
+      "sources": [],
+      "confidence": 0.0,
+      "notes": "Not found in documents.",
+      "reason": null
+    }
+  }
+}

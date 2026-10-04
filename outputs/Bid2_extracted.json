@@ -1,0 +1,208 @@
+{
+  "Bid Number": {
+    "value": "E20P4600040",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 1,
+        "chunk_id": "chk_Bid2_p1_0001_cca549114327",
+        "text": "|  | Section 1 \u2013General Information |  |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | PORFP Number: |  | #E20P4600040 eMMA Project Number: BPM044557 |  |  |  |  |  |\n|  | PORFP Type: |  | Fixed Price |  |  |  |  |  |\n| Functional Area/s (FA) for this PORFP: | Functi",
+        "bid_id": "Bid2",
+        "section": null,
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Bid number from PORFP_-_Dell_Laptop_Final.pdf",
+    "reason": null
+  },
+  "Title": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Due Date": {
+    "value": "06/01/2024",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0003_b515705bf4d3",
+        "text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be submitted in writing via e-mail to the Procurement Officer no later than ",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Extracted from PORFP_-_Dell_Laptop_Final.pdf (Page 2)",
+    "reason": null
+  },
+  "Bid Submission Type": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Term of Bid": {
+    "value": "3 Years",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 3,
+        "chunk_id": "chk_Bid2_p3_0008_4551e60d8beb",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPhone Number:\n410-260-7533\nAgency POC Email\nAddress:\nthawkins@treasurer.state.md\n.us\nAgency POC\nFax:\nN/A\nAgency POC Mailing\nAddress:\nMD State Treasurer\u2019s Office\n80 Calvert Street, Ro",
+        "bid_id": "Bid2",
+        "section": "\u2013 Evaluation Criteria \u2013 Technical Proposal",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Term identified in PORFP_-_Dell_Laptop_Final.pdf",
+    "reason": null
+  },
+  "Pre Bid Meeting": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Installation": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Bid Bond Requirement": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Delivery Date": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Payment Terms": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Any Additional Documentation Required": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "MFG for Registration": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Contract or Cooperative to use": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Model_no": {
+    "value": "Model #\nQty\n\nDue Date\nmm",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 3,
+        "chunk_id": "chk_Bid2_p3_0008_4551e60d8beb",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPhone Number:\n410-260-7533\nAgency POC Email\nAddress:\nthawkins@treasurer.state.md\n.us\nAgency POC\nFax:\nN/A\nAgency POC Mailing\nAddress:\nMD State Treasurer\u2019s Office\n80 Calvert Street, Ro",
+        "bid_id": "Bid2",
+        "section": "\u2013 Evaluation Criteria \u2013 Technical Proposal",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Model identified in PORFP_-_Dell_Laptop_Final.pdf",
+    "reason": null
+  },
+  "Part_no": {
+    "value": "WD22TB4",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 3,
+        "chunk_id": "chk_Bid2_p3_0008_4551e60d8beb",
+        "text": "Purchase Order Request for Proposals (PORFP)\nHardware Master Contract\n\n3\n\nAgency POC Name:\nTamaira Hawkins\nAgency POC\nPhone Number:\n410-260-7533\nAgency POC Email\nAddress:\nthawkins@treasurer.state.md\n.us\nAgency POC\nFax:\nN/A\nAgency POC Mailing\nAddress:\nMD State Treasurer\u2019s Office\n80 Calvert Street, Ro",
+        "bid_id": "Bid2",
+        "section": "\u2013 Evaluation Criteria \u2013 Technical Proposal",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Part number identified in PORFP_-_Dell_Laptop_Final.pdf",
+    "reason": null
+  },
+  "Product": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "contact_info": {
+    "value": "thawkins@treasurer.state.md.us",
+    "sources": [
+      {
+        "file_name": "PORFP_-_Dell_Laptop_Final.pdf",
+        "page_number": 2,
+        "chunk_id": "chk_Bid2_p2_0003_b515705bf4d3",
+        "text": "| Col_1 | Col_2 | Questions Due (Closing) Date and Time: 06/01/2024 at 2:00 PM EDT Questions must be submitted in writing to thawkins@treasurer.state.md.us with the subject line, \u201cQUESTION for Dell Laptop #E20P4600040\u201d, and be submitted in writing via e-mail to the Procurement Officer no later than ",
+        "bid_id": "Bid2",
+        "section": "BID SUBMISSION INSTRUCTIONS",
+        "document_type": "rfp",
+        "addendum_number": null
+      }
+    ],
+    "confidence": 0.85,
+    "notes": "Contact info found in PORFP_-_Dell_Laptop_Final.pdf",
+    "reason": null
+  },
+  "company_name": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Bid Summary": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  },
+  "Product Specification": {
+    "value": null,
+    "sources": [],
+    "confidence": 0.0,
+    "notes": "Not found in documents.",
+    "reason": null
+  }
+}

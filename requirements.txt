@@ -1,0 +1,34 @@
+# Core Web & Config
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+python-dotenv>=1.0.0
+
+# Frontend & HTTP
+streamlit>=1.38.0
+requests>=2.31.0
+
+# Multi-Agent Workflow & Orchestration
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# LLM & Vision OCR
+groq>=0.9.0
+
+# Document Ingestion (PDF, HTML, Tables)
+pymupdf>=1.24.0
+pdfplumber>=0.11.0
+beautifulsoup4>=4.12.0
+trafilatura>=1.12.0
+lxml>=5.0.0
+
+# Vector Database & Lexical Search
+qdrant-client>=1.12.0
+rank-bm25>=0.2.2
+
+# Testing & Quality
+pytest>=8.0.0
+pytest-asyncio>=0.24.0
+httpx>=0.27.0
+pytest-cov>=5.0.0
