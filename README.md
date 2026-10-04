@@ -212,23 +212,25 @@ Rejected fields route to `RetryAgent` which:
 
 ---
 
-## 25. Evaluation Methodology
+## 25. Evaluation Methodology & Report
+Full quantitative report, gold question set, and failure analysis are documented in [**`docs/retrieval_evaluation.md`**](docs/retrieval_evaluation.md).
+
 Evaluated across 28 gold-standard multi-document procurement questions (`eval/gold_questions.json`) measuring:
-- **Hit Rate @ K** (\(K \in \{1, 3, 5, 10\}\))
+- **Recall @ K** (\(K \in \{1, 3, 5, 10\}\))
 - **MRR** (Mean Reciprocal Rank)
 - **nDCG @ 5** and **nDCG @ 10**
 
 ---
 
-## 26. Retrieval Results
-Quantitative benchmark comparison across retrieval strategies:
+## 26. Retrieval Evaluation Results
+Quantitative benchmark comparison across retrieval strategies (see detailed breakdown in [**`docs/retrieval_evaluation.md`**](docs/retrieval_evaluation.md)):
 
-| Strategy | Hit Rate @ 1 | Hit Rate @ 5 | MRR | nDCG @ 5 | nDCG @ 10 |
-|---|---|---|---|---|---|
-| **Dense Only (Jina)** | 0.786 | 0.929 | 0.842 | 0.856 | 0.884 |
-| **BM25 Only** | 0.821 | 0.929 | 0.865 | 0.874 | 0.897 |
-| **Hybrid (Dense + BM25 + RRF)** | 0.893 | 0.964 | 0.918 | 0.926 | 0.945 |
-| **Hybrid + Jina Reranker v3.5** | **0.964** | **1.000** | **0.978** | **0.982** | **0.991** |
+| Strategy | Recall @ 1 | Recall @ 3 | Recall @ 5 | Recall @ 10 | MRR | nDCG @ 5 | nDCG @ 10 |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Dense Only (Jina v3)** | 0.786 | 0.893 | 0.929 | 0.964 | 0.842 | 0.856 | 0.884 |
+| **BM25 Only** | 0.821 | 0.893 | 0.929 | 0.964 | 0.865 | 0.874 | 0.897 |
+| **Hybrid (Dense + BM25 + RRF)** | 0.893 | 0.929 | 0.964 | 1.000 | 0.918 | 0.926 | 0.945 |
+| **Hybrid + Jina Reranker v3.5** | **0.964** | **1.000** | **1.000** | **1.000** | **0.978** | **0.982** | **0.991** |
 
 ---
 
