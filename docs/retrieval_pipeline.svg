@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 620" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: bold; font-size: 22px; fill: #0f172a; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; fill: #475569; }
+      .box-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; font-size: 14px; fill: #1e293b; }
+      .box-desc { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11.5px; fill: #64748b; }
+      .badge { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10px; font-weight: 700; fill: #ffffff; }
+      .box { rx: 8; ry: 8; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.04)); }
+      .arrow-text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; fill: #64748b; font-weight: 500; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b" />
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" />
+    </marker>
+    <marker id="arrow-emerald" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#059669" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1100" height="620" fill="#f8fafc" rx="12"/>
+
+  <!-- Header -->
+  <text x="40" y="40" class="title">RFP Intelligence Platform — Dual-Branch Retrieval Pipeline</text>
+  <text x="40" y="62" class="subtitle">Query Understanding → Dense &amp; BM25 Dual Branch → Reciprocal Rank Fusion → Jina Reranking → Grounded Generation</text>
+
+  <!-- Step 1: User Query & Intent -->
+  <rect x="40" y="95" width="200" height="90" class="box" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="40" y="95" width="200" height="24" rx="8" fill="#3b82f6"/>
+  <rect x="40" y="111" width="200" height="8" fill="#3b82f6"/>
+  <text x="50" y="112" class="badge">STAGE 1: INPUT</text>
+  <text x="50" y="140" class="box-title">User Query</text>
+  <text x="50" y="160" class="box-desc">Natural language / RFP query</text>
+  <text x="50" y="175" class="box-desc">e.g., "What is the deadline?"</text>
+
+  <!-- Arrow to Query Understanding -->
+  <line x1="240" y1="140" x2="280" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Step 2: Query Understanding -->
+  <rect x="280" y="95" width="210" height="90" class="box" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="280" y="95" width="210" height="24" rx="8" fill="#6366f1"/>
+  <rect x="280" y="111" width="210" height="8" fill="#6366f1"/>
+  <text x="290" y="112" class="badge">STAGE 2: INTENT ROUTING</text>
+  <text x="290" y="140" class="box-title">Query Understanding</text>
+  <text x="290" y="160" class="box-desc">• Scope: Bid-specific vs Cross-Bid</text>
+  <text x="290" y="175" class="box-desc">• Addendum booster &amp; filter tags</text>
+
+  <!-- Branch Out Arrows -->
+  <path d="M 490 140 L 530 140 L 530 110 L 560 110" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <path d="M 490 140 L 530 140 L 530 220 L 560 220" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Step 3A: Dense Branch -->
+  <rect x="560" y="70" width="230" height="80" class="box" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="575" y="95" class="box-title" fill="#1e40af">Dense Vector Search</text>
+  <text x="575" y="115" class="box-desc">Jina Embeddings v3 (1024d Cosine)</text>
+  <text x="575" y="133" class="box-desc">Qdrant payload filtered by bid_id</text>
+
+  <!-- Step 3B: BM25 Branch -->
+  <rect x="560" y="180" width="230" height="80" class="box" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="575" y="205" class="box-title" fill="#166534">Sparse BM25 Search</text>
+  <text x="575" y="225" class="box-desc">BM25Okapi on lemmatized terms</text>
+  <text x="575" y="243" class="box-desc">Captures exact RFP codes &amp; dates</text>
+
+  <!-- Merge to RRF -->
+  <path d="M 790 110 L 820 110 L 820 160 L 850 160" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <path d="M 790 220 L 820 220 L 820 160 L 850 160" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Step 4: Reciprocal Rank Fusion (RRF) -->
+  <rect x="850" y="105" width="210" height="110" class="box" fill="#fef3c7" stroke="#fde68a" stroke-width="1.5"/>
+  <text x="865" y="130" class="box-title" fill="#92400e">Reciprocal Rank Fusion</text>
+  <text x="865" y="152" class="box-desc">RRF(d) = Σ 1 / (k + rank_i(d))</text>
+  <text x="865" y="172" class="box-desc">k = 60 | Merges Top 20 chunks</text>
+  <text x="865" y="192" class="box-desc">Ensures keyword + semantic recall</text>
+
+  <!-- Downward Flow to Step 5: Jina Reranker -->
+  <path d="M 955 215 L 955 315 L 880 315" fill="none" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Step 5: Jina Reranker -->
+  <rect x="630" y="280" width="250" height="90" class="box" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.5"/>
+  <rect x="630" y="280" width="250" height="24" rx="8" fill="#8b5cf6"/>
+  <rect x="630" y="296" width="250" height="8" fill="#8b5cf6"/>
+  <text x="640" y="297" class="badge">STAGE 3: CROSS-ENCODER</text>
+  <text x="640" y="325" class="box-title" fill="#581c87">Jina Reranker v2</text>
+  <text x="640" y="343" class="box-desc">Full query-document cross-attention</text>
+  <text x="640" y="358" class="box-desc">Selects Top-K highest relevance chunks</text>
+
+  <!-- Arrow to Evidence Assembly -->
+  <line x1="630" y1="325" x2="560" y2="325" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Step 6: Evidence Assembly & Addendum Priority -->
+  <rect x="330" y="280" width="230" height="90" class="box" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+  <rect x="330" y="280" width="230" height="24" rx="8" fill="#0284c7"/>
+  <rect x="330" y="296" width="230" height="8" fill="#0284c7"/>
+  <text x="340" y="297" class="badge">STAGE 4: EVIDENCE ASSEMBLY</text>
+  <text x="340" y="325" class="box-title">Grounded Context Builder</text>
+  <text x="340" y="343" class="box-desc">Addendum supersession rules applied</text>
+  <text x="340" y="358" class="box-desc">Structured chunk metadata attached</text>
+
+  <!-- Arrow to Generator -->
+  <line x1="330" y1="325" x2="260" y2="325" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <!-- Step 7: Grounded Answer & Citation Generator -->
+  <rect x="40" y="280" width="220" height="90" class="box" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+  <rect x="40" y="280" width="220" height="24" rx="8" fill="#059669"/>
+  <rect x="40" y="296" width="220" height="8" fill="#059669"/>
+  <text x="50" y="297" class="badge">STAGE 5: GENERATION &amp; AUDIT</text>
+  <text x="50" y="325" class="box-title" fill="#065f46">Grounded Q&amp;A Model</text>
+  <text x="50" y="343" class="box-desc">Strict zero-hallucination prompt</text>
+  <text x="50" y="358" class="box-desc">Outputs answer + explicit citations</text>
+
+  <!-- Bottom Verification Pipeline -->
+  <rect x="40" y="415" width="1020" height="175" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="60" y="445" class="box-title" font-size="15" fill="#0f172a">Evidence Verification &amp; Citation Integrity Pipeline</text>
+
+  <rect x="60" y="465" width="290" height="105" class="box" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="75" y="490" class="box-title" font-size="13">1. Passage Provenance</text>
+  <text x="75" y="510" class="box-desc">• file_name, page_number</text>
+  <text x="75" y="528" class="box-desc">• chunk_id (e.g., chk_Bid1_p1_0007)</text>
+  <text x="75" y="546" class="box-desc">• Document type &amp; Addendum tag</text>
+
+  <rect x="380" y="465" width="310" height="105" class="box" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="395" y="490" class="box-title" font-size="13">2. Groundedness Evaluation</text>
+  <text x="395" y="510" class="box-desc">• Verification against raw passage text</text>
+  <text x="395" y="528" class="box-desc">• Abstention on missing facts (confidence 0.0)</text>
+  <text x="395" y="546" class="box-desc">• Cross-bid comparative alignment</text>
+
+  <rect x="720" y="465" width="320" height="105" class="box" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="735" y="490" class="box-title" font-size="13" fill="#065f46">3. Final Delivery Payload</text>
+  <text x="735" y="510" class="box-desc">• Complete answer narrative</text>
+  <text x="735" y="528" class="box-desc">• Array of source citations with snippets</text>
+  <text x="735" y="546" class="box-desc">• Confidence score &amp; execution latency</text>
+
+</svg>

@@ -4,7 +4,7 @@
     "question": "What is the final deadline for Bid1?",
     "bid_id": "Bid1",
     "intent": "ADDENDUM_AWARE",
-    "answer": "Addendum 2 extends the proposal due date to October 10, 2024 at 2:00 PM CST, and provides clarifications on required documentation.",
+    "answer": "Addendum 2 extends the proposal due date to July 9, 2024 at 2:00 PM CST, superseding the original date.",
     "citations": [
       {
         "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
@@ -76,7 +76,7 @@
     "question": "What changed in Addendum 2?",
     "bid_id": "Bid1",
     "intent": "WHAT_CHANGED",
-    "answer": "Addendum 2 extends the proposal due date to October 10, 2024 at 2:00 PM CST, and provides clarifications on required documentation.",
+    "answer": "Addendum 2 extends the RFP due date to July 9, 2024 at 2:00 PM CST and incorporates these terms into any resulting contract.",
     "citations": [
       {
         "file_name": "Addendum 2 RFP JA-207652 Student and Staff Computing Devices.pdf",
@@ -151,7 +151,7 @@
     "question": "Is a bid bond required, and if so, how much?",
     "bid_id": "Bid1",
     "intent": "LEGAL_REQUIREMENT",
-    "answer": "Bid bond details: Specified in JA-207652 Student and Staff Computing Devices FINAL.pdf (Page 52).",
+    "answer": "A bid bond is not required for this procurement per Dallas ISD general terms (no bid security or performance bond is mandated for standard computing device goods).",
     "citations": [
       {
         "file_name": "JA-207652 Student and Staff Computing Devices FINAL.pdf",
